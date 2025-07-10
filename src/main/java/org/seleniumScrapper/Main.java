@@ -75,8 +75,10 @@ public class Main {
         position.gridwidth = 2;
         mainWindow.add(scrollPane, position);
 
+        // SCRAPE BUTTON LOGIC
         scrapeButton.addActionListener((ActionEvent e) -> {
             String url = urlInput.getText().trim();
+            String[] keywords = keywordInput.getText().toLowerCase().split(",");
 
             if (url.isEmpty()) {
                 JOptionPane.showMessageDialog(urlSiteScrapper, "Please enter a URL.");
@@ -100,12 +102,20 @@ public class Main {
                 result.append("Matches found on database:\n\n");
 
                 Elements dbLinks = databaseDoc.select("a");
+                outerLoop:
                 for (Element dbLink : dbLinks) {
                     String dbText = dbLink.text().trim().toLowerCase();
+
                     if (namesFromMainUrl.contains(dbText)) {
-                        result.append("  → ").append(dbLink.text())
-                              .append(" → ").append(dbLink.absUrl("href"))
-                              .append("\n");
+                        for (String keyword : keywords) {
+                            keyword = keyword.trim();
+                            if (!keyword.isEmpty() && dbText.contains(keyword)) {
+                                result.append("  → ").append(dbLink.text())
+                                      .append(" → ").append(dbLink.absUrl("href"))
+                                      .append("\n");
+                                continue outerLoop;
+                            }
+                        }
                     }
                 }
 
