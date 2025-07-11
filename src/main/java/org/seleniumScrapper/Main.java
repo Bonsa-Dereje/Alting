@@ -1,3 +1,5 @@
+// ✅ Enhanced to extract Acceptance Rate and location + Common App/Test Optional/TOEFL checks
+
 package org.seleniumScrapper;
 
 import org.jsoup.Jsoup;
@@ -10,6 +12,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import com.formdev.flatlaf.FlatLightLaf;
 
@@ -75,7 +79,6 @@ public class Main {
         position.gridwidth = 2;
         mainWindow.add(scrollPane, position);
 
-        // SCRAPE BUTTON LOGIC
         scrapeButton.addActionListener((ActionEvent e) -> {
             String url = urlInput.getText().trim();
             String[] keywords = keywordInput.getText().toLowerCase().split(",");
@@ -105,7 +108,6 @@ public class Main {
                 outerLoop:
                 for (Element dbLink : dbLinks) {
                     String dbText = dbLink.text().trim().toLowerCase();
-
                     if (namesFromMainUrl.contains(dbText)) {
                         for (String keyword : keywords) {
                             keyword = keyword.trim();
@@ -113,6 +115,65 @@ public class Main {
                                 result.append("  → ").append(dbLink.text())
                                       .append(" → ").append(dbLink.absUrl("href"))
                                       .append("\n");
+
+                                for (Element anchor : anchors) {
+                                    if (anchor.text().trim().toLowerCase().equals(dbText) && anchor.hasAttr("href")) {
+                                        String clickedUrl = anchor.absUrl("href");
+
+                                        try {
+                                            Document clickedDoc = Jsoup.connect(clickedUrl).get();
+                                            Elements allElements = clickedDoc.getAllElements();
+
+                                            // ACCEPTANCE RATE
+                                            for (int i = 0; i < allElements.size(); i++) {
+                                                Element el = allElements.get(i);
+                                                if (el.text().toLowerCase().contains("acceptance rate")) {
+                                                    for (int j = i + 1; j < allElements.size(); j++) {
+                                                        String text = allElements.get(j).text();
+                                                        Matcher matcher = Pattern.compile("(\\d{1,3})\\s*%").matcher(text);
+                                                        if (matcher.find()) {
+                                                            result.append("     ↳ Acceptance rate: ").append(matcher.group(1)).append("%\n");
+                                                            break;
+                                                        }
+                                                    }
+                                                    break;
+                                                }
+                                            }
+
+                                            // LOCATION
+                                            Elements divs = clickedDoc.select("div.row.mb-3");
+                                            for (Element div : divs) {
+                                                if (div.select(".fe-map-pin").size() > 0) {
+                                                    Element locationDiv = div.select(".col.pl-0").first();
+                                                    if (locationDiv != null) {
+                                                        result.append("     ↳ Location: ").append(locationDiv.text().trim()).append("\n");
+                                                        break;
+                                                    }
+                                                }
+                                            }
+
+                                            // TICK/UNCHECK FEATURES
+                                            String bodyText = clickedDoc.text().toLowerCase();
+                                            result.append("     ↳ Accepts Common App: ")
+                                                  .append(bodyText.contains("accepts common app") ? "✔" : "✘")
+                                                  .append("\n");
+
+                                            result.append("     ↳ Test Optional: ")
+                                                  .append(bodyText.contains("test optional") ? "✔" : "✘")
+                                                  .append("\n");
+
+                                            result.append("     ↳ TOEFL Required (Intl): ")
+                                                  .append(bodyText.contains("toefl required") ? "✔" : "✘")
+                                                  .append("\n\n");
+
+                                        } catch (Exception ignored) {
+                                            result.append("     ↳ Failed to open or parse embedded link.\n\n");
+                                        }
+
+                                        break;
+                                    }
+                                }
+
                                 continue outerLoop;
                             }
                         }
