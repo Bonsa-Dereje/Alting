@@ -1,194 +1,120 @@
-// ✅ Enhanced to extract Acceptance Rate and location + Common App/Test Optional/TOEFL checks
-
 package org.seleniumScrapper;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
+import com.microsoft.playwright.*;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import com.formdev.flatlaf.FlatLightLaf;
+import java.io.File;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
+
+    static final int MAX_FIELDS = 10;
+    static final List<JTextField> collegeFields = new ArrayList<>();
+
     public static void main(String[] args) {
-        try {
-            UIManager.setLookAndFeel(new FlatLightLaf());
-        } catch (Exception ex) {
-            System.err.println("Failed to initialize LaF");
+        JFrame frame = new JFrame("College Financial Aid & Deadline Checker");
+        frame.setSize(700, 600);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(new BorderLayout());
+
+        JPanel inputPanel = new JPanel(new GridLayout(0, 1, 5, 5));
+        JScrollPane scrollPane = new JScrollPane(inputPanel);
+
+        // Add initial 3 fields
+        for (int i = 0; i < 3; i++) {
+            addTextField(inputPanel);
         }
 
-        JFrame urlSiteScrapper = new JFrame("URL Site Scraper");
-        urlSiteScrapper.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        urlSiteScrapper.setSize(700, 600);
-        urlSiteScrapper.setLocationRelativeTo(null);
-
-        JPanel mainWindow = new JPanel(new GridBagLayout());
-        GridBagConstraints position = new GridBagConstraints();
-        position.insets = new Insets(5, 5, 5, 5);
-
-        JLabel appTitle = new JLabel("Site Scraper");
-        appTitle.setFont(new Font("Roboto", Font.BOLD, 20));
-        position.gridx = 0;
-        position.gridy = 0;
-        position.gridwidth = 2;
-        mainWindow.add(appTitle, position);
-        position.gridwidth = 1;
-
-        JLabel urlLabel = new JLabel("URL:");
-        position.gridx = 0;
-        position.gridy = 1;
-        mainWindow.add(urlLabel, position);
-
-        JTextField urlInput = new JTextField(25);
-        position.gridx = 1;
-        position.gridy = 1;
-        mainWindow.add(urlInput, position);
-
-        JLabel keywordLabel = new JLabel("Keywords (comma-separated):");
-        position.gridx = 0;
-        position.gridy = 2;
-        mainWindow.add(keywordLabel, position);
-
-        JTextField keywordInput = new JTextField(25);
-        position.gridx = 1;
-        position.gridy = 2;
-        mainWindow.add(keywordInput, position);
-
-        JButton scrapeButton = new JButton("Scrape");
-        position.gridx = 0;
-        position.gridy = 3;
-        position.gridwidth = 2;
-        scrapeButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        mainWindow.add(scrapeButton, position);
-        position.gridwidth = 1;
-
-        JTextArea resultArea = new JTextArea(20, 60);
-        resultArea.setEditable(false);
-        resultArea.setFont(new Font("Monospaced", Font.PLAIN, 13));
-        JScrollPane scrollPane = new JScrollPane(resultArea);
-        position.gridx = 0;
-        position.gridy = 4;
-        position.gridwidth = 2;
-        mainWindow.add(scrollPane, position);
-
-        scrapeButton.addActionListener((ActionEvent e) -> {
-            String url = urlInput.getText().trim();
-            String[] keywords = keywordInput.getText().toLowerCase().split(",");
-
-            if (url.isEmpty()) {
-                JOptionPane.showMessageDialog(urlSiteScrapper, "Please enter a URL.");
-                return;
-            }
-
-            try {
-                Document mainDoc = Jsoup.connect(url).get();
-                Document databaseDoc = Jsoup.connect("https://mally.stanford.edu/~sr/universities.html").get();
-
-                Set<String> namesFromMainUrl = new HashSet<>();
-                Elements anchors = mainDoc.select("a");
-                for (Element a : anchors) {
-                    String name = a.text().trim().toLowerCase();
-                    if (!name.isEmpty()) {
-                        namesFromMainUrl.add(name);
-                    }
-                }
-
-                StringBuilder result = new StringBuilder();
-                result.append("Matches found on database:\n\n");
-
-                Elements dbLinks = databaseDoc.select("a");
-                outerLoop:
-                for (Element dbLink : dbLinks) {
-                    String dbText = dbLink.text().trim().toLowerCase();
-                    if (namesFromMainUrl.contains(dbText)) {
-                        for (String keyword : keywords) {
-                            keyword = keyword.trim();
-                            if (!keyword.isEmpty() && dbText.contains(keyword)) {
-                                result.append("  → ").append(dbLink.text())
-                                      .append(" → ").append(dbLink.absUrl("href"))
-                                      .append("\n");
-
-                                for (Element anchor : anchors) {
-                                    if (anchor.text().trim().toLowerCase().equals(dbText) && anchor.hasAttr("href")) {
-                                        String clickedUrl = anchor.absUrl("href");
-
-                                        try {
-                                            Document clickedDoc = Jsoup.connect(clickedUrl).get();
-                                            Elements allElements = clickedDoc.getAllElements();
-
-                                            // ACCEPTANCE RATE
-                                            for (int i = 0; i < allElements.size(); i++) {
-                                                Element el = allElements.get(i);
-                                                if (el.text().toLowerCase().contains("acceptance rate")) {
-                                                    for (int j = i + 1; j < allElements.size(); j++) {
-                                                        String text = allElements.get(j).text();
-                                                        Matcher matcher = Pattern.compile("(\\d{1,3})\\s*%").matcher(text);
-                                                        if (matcher.find()) {
-                                                            result.append("     ↳ Acceptance rate: ").append(matcher.group(1)).append("%\n");
-                                                            break;
-                                                        }
-                                                    }
-                                                    break;
-                                                }
-                                            }
-
-                                            // LOCATION
-                                            Elements divs = clickedDoc.select("div.row.mb-3");
-                                            for (Element div : divs) {
-                                                if (div.select(".fe-map-pin").size() > 0) {
-                                                    Element locationDiv = div.select(".col.pl-0").first();
-                                                    if (locationDiv != null) {
-                                                        result.append("     ↳ Location: ").append(locationDiv.text().trim()).append("\n");
-                                                        break;
-                                                    }
-                                                }
-                                            }
-
-                                            // TICK/UNCHECK FEATURES
-                                            String bodyText = clickedDoc.text().toLowerCase();
-                                            result.append("     ↳ Accepts Common App: ")
-                                                  .append(bodyText.contains("accepts common app") ? "✔" : "✘")
-                                                  .append("\n");
-
-                                            result.append("     ↳ Test Optional: ")
-                                                  .append(bodyText.contains("test optional") ? "✔" : "✘")
-                                                  .append("\n");
-
-                                            result.append("     ↳ TOEFL Required (Intl): ")
-                                                  .append(bodyText.contains("toefl required") ? "✔" : "✘")
-                                                  .append("\n\n");
-
-                                        } catch (Exception ignored) {
-                                            result.append("     ↳ Failed to open or parse embedded link.\n\n");
-                                        }
-
-                                        break;
-                                    }
-                                }
-
-                                continue outerLoop;
-                            }
-                        }
-                    }
-                }
-
-                resultArea.setText(result.toString());
-
-            } catch (Exception ex) {
-                ex.printStackTrace();
-                resultArea.setText("Error: " + ex.getMessage());
+        JButton addFieldBtn = new JButton("+ Add College");
+        addFieldBtn.addActionListener((ActionEvent e) -> {
+            if (collegeFields.size() < MAX_FIELDS) {
+                addTextField(inputPanel);
+                inputPanel.revalidate();
+                inputPanel.repaint();
             }
         });
 
-        urlSiteScrapper.add(mainWindow);
-        urlSiteScrapper.setVisible(true);
+        JButton searchBtn = new JButton("Search Google");
+
+        JTextArea resultArea = new JTextArea(15, 60);
+        resultArea.setFont(new Font("Monospaced", Font.PLAIN, 13));
+        resultArea.setEditable(false);
+        JScrollPane resultScroll = new JScrollPane(resultArea);
+
+        JPanel topPanel = new JPanel(new BorderLayout());
+        topPanel.add(addFieldBtn, BorderLayout.WEST);
+        topPanel.add(searchBtn, BorderLayout.EAST);
+
+        frame.add(scrollPane, BorderLayout.CENTER);
+        frame.add(topPanel, BorderLayout.NORTH);
+        frame.add(resultScroll, BorderLayout.SOUTH);
+
+        searchBtn.addActionListener((ActionEvent e) -> {
+            resultArea.setText("");
+            for (JTextField field : collegeFields) {
+                String college = field.getText().trim();
+                if (!college.isEmpty()) {
+                    performSearch(college, resultArea);
+                }
+            }
+        });
+
+        frame.setVisible(true);
+    }
+
+    static void addTextField(JPanel panel) {
+        JTextField field = new JTextField();
+        collegeFields.add(field);
+        panel.add(field);
+    }
+
+    static void performSearch(String collegeName, JTextArea resultArea) {
+        try (Playwright playwright = Playwright.create()) {
+            Browser browser = playwright.chromium().launch(
+                new BrowserType.LaunchOptions().setHeadless(false)
+            );
+            Page page = browser.newPage();
+
+            // 1. Search for Full Financial Aid
+            String queryAid = "Does " + collegeName + " offer full financial aid?";
+            page.navigate("https://www.google.com/search?q=" + URLEncoder.encode(queryAid, "UTF-8"));
+            page.waitForTimeout(3000);
+            String aidResult = page.locator("div").first().textContent();
+
+            // Screenshot of Aid
+            String aidScreenshotPath = "screenshot_" + collegeName.replaceAll(" ", "_") + "_aid.png";
+            page.screenshot(new Page.ScreenshotOptions().setPath(new File(aidScreenshotPath).toPath()));
+
+            // 2. Search for Deadline
+            String queryDeadline = collegeName + " admission deadline";
+            page.navigate("https://www.google.com/search?q=" + URLEncoder.encode(queryDeadline, "UTF-8"));
+            page.waitForTimeout(3000);
+            String deadlineResult = page.locator("div").first().textContent();
+
+            // Screenshot of Deadline
+            String deadlineScreenshotPath = "screenshot_" + collegeName.replaceAll(" ", "_") + "_deadline.png";
+            page.screenshot(new Page.ScreenshotOptions().setPath(new File(deadlineScreenshotPath).toPath()));
+
+            // Output to GUI
+            resultArea.append("📚 " + collegeName + "\n");
+            resultArea.append(" - Full Aid? → " + truncate(aidResult) + "\n");
+            resultArea.append(" - Deadline  → " + truncate(deadlineResult) + "\n");
+            resultArea.append(" - Screenshots saved:\n");
+            resultArea.append("    → " + aidScreenshotPath + "\n");
+            resultArea.append("    → " + deadlineScreenshotPath + "\n\n");
+
+            browser.close();
+        } catch (Exception e) {
+            resultArea.append("❌ Error with " + collegeName + ": " + e.getMessage() + "\n");
+        }
+    }
+
+    static String truncate(String text) {
+        if (text == null) return "(no result)";
+        return text.length() > 150 ? text.substring(0, 150) + "..." : text;
     }
 }

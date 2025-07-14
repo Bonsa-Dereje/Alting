@@ -16,11 +16,7 @@
 
     <dependencies>
 
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>4.21.0</version> 
-    </dependency>
+   
 
     <dependency>
         <groupId>org.jsoup</groupId>
@@ -35,26 +31,25 @@
         <version>3.4</version> 
     </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.microsoft.playwright/playwright -->
+        <dependency>
+            <groupId>com.microsoft.playwright</groupId>
+            <artifactId>playwright</artifactId>
+            <version>1.52.0</version>
+        </dependency>
     
- 
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>4.21.0</version>
-    </dependency>
 
-   
-    <dependency>
-        <groupId>io.github.bonigarcia</groupId>
-        <artifactId>webdrivermanager</artifactId>
-        <version>5.7.0</version>
-    </dependency>
+
 
 
 
 
 
 </dependencies>
+
+
+
+
 
 
 </project>
