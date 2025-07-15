@@ -190,5 +190,7 @@ public class Main {
 
         urlSiteScrapper.add(mainWindow);
         urlSiteScrapper.setVisible(true);
+        System.out.println("this is just to fix git");
+        System.out.println("one more time");
     }
 }
