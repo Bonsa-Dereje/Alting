@@ -52,7 +52,6 @@ public class MainWindow extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         extractBtn = new javax.swing.JButton();
-        jProgressBar1 = new javax.swing.JProgressBar();
         sidePanel = new javax.swing.JPanel();
         appName = new javax.swing.JLabel();
         customSearchBtn = new javax.swing.JButton();
@@ -82,21 +81,15 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(160, 160, 160)
+                .addGap(162, 162, 162)
                 .addComponent(extractBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(164, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(162, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(71, 71, 71)
+                .addGap(76, 76, 76)
                 .addComponent(extractBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -273,6 +266,7 @@ public class MainWindow extends javax.swing.JFrame {
         Elements listItems = doc.select("li");
         //boolean found = false;
         int i = 0;
+        
         for(Element li: listItems){
             
                 String fetchCollegeName = li.text().split("\\(")[0].trim();
@@ -280,7 +274,7 @@ public class MainWindow extends javax.swing.JFrame {
                 String href = (fetchCollegeLink != null) ? fetchCollegeLink.attr("href") : "No Link";
                 
                 
-                System.out.println(i+"Name: " + fetchCollegeName);
+                System.out.println(i+" Name: " + fetchCollegeName);
                 System.out.println("Link " + href);
                 System.out.println("--------------------");
                 
@@ -328,6 +322,8 @@ public class MainWindow extends javax.swing.JFrame {
     //exctr link smh
                     try{
                     Robot altingSim = new Robot();
+                    
+                    if(i==0){
                     
                     altingSim.keyPress(KeyEvent.VK_ALT);
                     altingSim.keyPress(KeyEvent.VK_TAB);
@@ -385,8 +381,16 @@ public class MainWindow extends javax.swing.JFrame {
                              e.printStackTrace();
                         }
                     
+                    }
                     
-                    String queryToType = rednSearchList[i];
+                    
+                    for( int collegeIndex = 0; collegeIndex <=24; collegeIndex++){
+                        
+                        
+                        
+                        
+                    
+                    String queryToType = rednSearchList[collegeIndex];
 
 // Type the characters of the query one by one
                 for (char c : queryToType.toCharArray()) {
@@ -402,6 +406,11 @@ public class MainWindow extends javax.swing.JFrame {
                 altingSim.keyRelease(keyCode);
 
                 if (upperCase) altingSim.keyRelease(KeyEvent.VK_SHIFT);
+                if (upperCase) try {
+                    Thread.sleep(300); // Simulate human typing delay
+                } catch (InterruptedException e) {
+                 e.printStackTrace();
+                }
 
                  try {
                     Thread.sleep(50); // Simulate human typing delay
@@ -423,15 +432,63 @@ public class MainWindow extends javax.swing.JFrame {
                     Rectangle screenRect = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
                     BufferedImage screenshot = altingSim.createScreenCapture(screenRect);
 
-// Save the screenshot
+
                 try {
-                    File outputfile = new File("screenshot_" + System.currentTimeMillis() + ".png");
+                    String fileName = fetchCollegeName +" ["+ collegeIndex + "] .png";
+                    //File outputfile = new File(fileName);
+                    String directoryPath = "D:\\imgDataset";
+                    File dir = new File(directoryPath);
+                    
+                    File outputfile = new File(dir, fileName);
                     ImageIO.write(screenshot, "png", outputfile);
                      System.out.println("Screenshot saved: " + outputfile.getAbsolutePath());
+                     
+                  while (!outputfile.exists()) {
+                    try {
+                        Thread.sleep(500); 
+                    } catch (InterruptedException e) {
+                         e.printStackTrace();
+                        }
+                    }    
                 } catch (IOException e) {
                      e.printStackTrace();
                     }
+                
+                
+               try {
+                        Thread.sleep(3000); 
+                         } catch (InterruptedException e) {
+                             e.printStackTrace();
+                        }
+
+                    //altingSim.keyRelease(KeyEvent.VK_ALT);
                     
+                    altingSim.keyPress(KeyEvent.VK_CONTROL);
+                    altingSim.keyPress(KeyEvent.VK_L);
+                    try {
+                        Thread.sleep(500); 
+                         } catch (InterruptedException e) {
+                             e.printStackTrace();
+                        }
+                    altingSim.keyRelease(KeyEvent.VK_L);
+                    altingSim.keyRelease(KeyEvent.VK_CONTROL);
+                    
+                    try {
+                        Thread.sleep(1000); 
+                         } catch (InterruptedException e) {
+                             e.printStackTrace();
+                        }
+                    
+                    altingSim.keyPress(KeyEvent.VK_CONTROL);
+                    altingSim.keyPress(KeyEvent.VK_A);
+                    try {
+                        Thread.sleep(350); 
+                         } catch (InterruptedException e) {
+                             e.printStackTrace();
+                        }
+                    altingSim.keyRelease(KeyEvent.VK_A);
+                    altingSim.keyRelease(KeyEvent.VK_CONTROL);
+                    }
                     
                    
                     
@@ -450,7 +507,7 @@ public class MainWindow extends javax.swing.JFrame {
     
                 
                 i++;
-                if(i==2){
+                if(i==12){
                     break;}
             }
                 
@@ -509,7 +566,6 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JButton historyBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JButton screenshotsBtn;
     private javax.swing.JPanel sidePanel;
     // End of variables declaration//GEN-END:variables
