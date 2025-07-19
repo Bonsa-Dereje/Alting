@@ -259,6 +259,11 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void extractBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_extractBtnActionPerformed
         //String userInput = searchSubjectInput.getText();
+        try {
+                        Thread.sleep(10000); // Wait for 1.5 seconds
+                         } catch (InterruptedException e) {
+                             e.printStackTrace();
+                        }
             String collegeUrlDatabase = "https://mally.stanford.edu/~sr/universities.html";
     
     try{
@@ -383,6 +388,7 @@ public class MainWindow extends javax.swing.JFrame {
                     
                     }
                     
+                    if(i>=4){
                     
                     for( int collegeIndex = 0; collegeIndex <=24; collegeIndex++){
                         
@@ -393,7 +399,9 @@ public class MainWindow extends javax.swing.JFrame {
                     String queryToType = rednSearchList[collegeIndex];
 
 // Type the characters of the query one by one
-                for (char c : queryToType.toCharArray()) {
+                String updatedQuery = queryToType.replace("&", " and ");
+                
+                for (char c : updatedQuery.toCharArray()) {
                     boolean upperCase = Character.isUpperCase(c);
                     int keyCode = KeyEvent.getExtendedKeyCodeForChar(c);
                        if (KeyEvent.CHAR_UNDEFINED == keyCode) {
@@ -490,7 +498,7 @@ public class MainWindow extends javax.swing.JFrame {
                     altingSim.keyRelease(KeyEvent.VK_CONTROL);
                     }
                     
-                   
+                    }
                     
                     
                     }catch(AWTException e){
@@ -507,7 +515,7 @@ public class MainWindow extends javax.swing.JFrame {
     
                 
                 i++;
-                if(i==12){
+                if(i==1050){
                     break;}
             }
                 
