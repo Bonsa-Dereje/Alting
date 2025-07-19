@@ -22,6 +22,11 @@ import java.io.File;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
 
+import java.io.*;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 
 import com.formdev.flatlaf.FlatLightLaf;
 
@@ -81,14 +86,14 @@ public class MainWindow extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(162, 162, 162)
+                .addGap(158, 158, 158)
                 .addComponent(extractBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(162, Short.MAX_VALUE))
+                .addContainerGap(166, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(76, 76, 76)
+                .addGap(74, 74, 74)
                 .addComponent(extractBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -111,7 +116,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         historyBtn.setBackground(new java.awt.Color(255, 204, 153));
         historyBtn.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        historyBtn.setText("History");
+        historyBtn.setText("Logs");
         historyBtn.setIconTextGap(2);
         historyBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -259,11 +264,7 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void extractBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_extractBtnActionPerformed
         //String userInput = searchSubjectInput.getText();
-        try {
-                        Thread.sleep(10000); // Wait for 1.5 seconds
-                         } catch (InterruptedException e) {
-                             e.printStackTrace();
-                        }
+        
             String collegeUrlDatabase = "https://mally.stanford.edu/~sr/universities.html";
     
     try{
@@ -272,6 +273,7 @@ public class MainWindow extends javax.swing.JFrame {
         //boolean found = false;
         int i = 0;
         
+        
         for(Element li: listItems){
             
                 String fetchCollegeName = li.text().split("\\(")[0].trim();
@@ -279,7 +281,7 @@ public class MainWindow extends javax.swing.JFrame {
                 String href = (fetchCollegeLink != null) ? fetchCollegeLink.attr("href") : "No Link";
                 
                 
-                System.out.println(i+" Name: " + fetchCollegeName);
+                System.out.println(i+" - Name: " + fetchCollegeName);
                 System.out.println("Link " + href);
                 System.out.println("--------------------");
                 
@@ -388,7 +390,7 @@ public class MainWindow extends javax.swing.JFrame {
                     
                     }
                     
-                    if(i>=4){
+                    if(i>=0){
                     
                     for( int collegeIndex = 0; collegeIndex <=24; collegeIndex++){
                         
@@ -440,11 +442,13 @@ public class MainWindow extends javax.swing.JFrame {
                     Rectangle screenRect = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
                     BufferedImage screenshot = altingSim.createScreenCapture(screenRect);
 
-
+                            LocalDate today = LocalDate.now();
+                            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+                            String formattedDate = today.format(formatter);
                 try {
                     String fileName = fetchCollegeName +" ["+ collegeIndex + "] .png";
                     //File outputfile = new File(fileName);
-                    String directoryPath = "D:\\imgDataset";
+                    String directoryPath = "D:\\altingData\\imgDataset";
                     File dir = new File(directoryPath);
                     
                     File outputfile = new File(dir, fileName);
@@ -461,6 +465,35 @@ public class MainWindow extends javax.swing.JFrame {
                 } catch (IOException e) {
                      e.printStackTrace();
                     }
+                 String filePath = "D:\\altingData\\log " +formattedDate +".txt";
+                    try (PrintWriter logger = new PrintWriter(new FileWriter(filePath, true))) {
+                        if(i==0){
+                            
+                            if(collegeIndex==0){
+                                logger.println("Runtime logs  of " + formattedDate + " extr");
+                                logger.print("For " + fetchCollegeName + " ");
+                            }
+                        }
+                        //logger.println("-------------------------");
+                        if(collegeIndex == 0){
+                        logger.print("rednSearchList " );}
+                       
+                        logger.print("[ " +collegeIndex + " ]");
+                        //logger.println(" --- Screenshot saved: " + outputfile.getAbsolutePath());
+                        //logger.println();
+                        System.out.println("✅ Log written.");
+                    } catch (IOException e) {
+                        System.out.println("❌ Error writing log: " + e.getMessage());
+                        e.printStackTrace();
+                    }
+                
+                
+               try {
+                        Thread.sleep(3000); 
+                         } catch (InterruptedException e) {
+                             e.printStackTrace();
+                        }
+
                 
                 
                try {
