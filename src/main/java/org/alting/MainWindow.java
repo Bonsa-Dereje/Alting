@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package org.seleniumScrapper;
+package org.alting;
 
 import javax.swing.*;
 import org.jsoup.Jsoup;

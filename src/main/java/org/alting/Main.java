@@ -1,4 +1,4 @@
-package org.seleniumScrapper;
+package org.alting;
 
 import javax.swing.*;
 
