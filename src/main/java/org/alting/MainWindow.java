@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package org.alting;
 
 import javax.swing.*;
@@ -30,10 +27,7 @@ import java.time.format.DateTimeFormatter;
 
 import com.formdev.flatlaf.FlatLightLaf;
 
-/**
- *
- * @author boni
- */
+
 
 public class MainWindow extends javax.swing.JFrame {
     
@@ -59,7 +53,7 @@ public class MainWindow extends javax.swing.JFrame {
         extractBtn = new javax.swing.JButton();
         sidePanel = new javax.swing.JPanel();
         appName = new javax.swing.JLabel();
-        customSearchBtn = new javax.swing.JButton();
+        collegeSearch = new javax.swing.JButton();
         historyBtn = new javax.swing.JButton();
         flaggedBtn = new javax.swing.JButton();
         screenshotsBtn = new javax.swing.JButton();
@@ -104,13 +98,13 @@ public class MainWindow extends javax.swing.JFrame {
         appName.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 12)); // NOI18N
         appName.setText("ALTING");
 
-        customSearchBtn.setBackground(new java.awt.Color(255, 204, 153));
-        customSearchBtn.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        customSearchBtn.setText("Custom Search");
-        customSearchBtn.setIconTextGap(2);
-        customSearchBtn.addActionListener(new java.awt.event.ActionListener() {
+        collegeSearch.setBackground(new java.awt.Color(255, 204, 153));
+        collegeSearch.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        collegeSearch.setText("College Search");
+        collegeSearch.setIconTextGap(2);
+        collegeSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                customSearchBtnActionPerformed(evt);
+                collegeSearchActionPerformed(evt);
             }
         });
 
@@ -181,7 +175,7 @@ public class MainWindow extends javax.swing.JFrame {
                         .addGap(6, 6, 6)
                         .addGroup(sidePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(historyBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(customSearchBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(collegeSearch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(flaggedBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(screenshotsBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(databaseBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -197,9 +191,9 @@ public class MainWindow extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(appName, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(customSearchBtn)
+                .addComponent(collegeSearch)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(historyBtn)
+                .addComponent(historyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(flaggedBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -238,12 +232,18 @@ public class MainWindow extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
             
-    private void customSearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customSearchBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_customSearchBtnActionPerformed
+    private void collegeSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_collegeSearchActionPerformed
+        
+        
+        
+    }//GEN-LAST:event_collegeSearchActionPerformed
 
     private void historyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyBtnActionPerformed
-        // TODO add your handling code here:
+        LogsWindow logsWindow = new LogsWindow();
+        logsWindow.setVisible(true);
+        MainWindow mainWindow = new MainWindow();
+        mainWindow.setVisible(false);
+      
     }//GEN-LAST:event_historyBtnActionPerformed
 
     private void flaggedBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flaggedBtnActionPerformed
@@ -390,7 +390,7 @@ public class MainWindow extends javax.swing.JFrame {
                     
                     }
                     
-                    if(i>=0){
+                    if(i>=165){
                     
                     for( int collegeIndex = 0; collegeIndex <=24; collegeIndex++){
                         
@@ -433,7 +433,7 @@ public class MainWindow extends javax.swing.JFrame {
                 altingSim.keyRelease(KeyEvent.VK_ENTER);
                 
                 try {
-                     Thread.sleep(4000); 
+                     Thread.sleep(5000); 
                 } catch (InterruptedException e) {
                      e.printStackTrace();
                 }
@@ -468,17 +468,19 @@ public class MainWindow extends javax.swing.JFrame {
                  String filePath = "D:\\altingData\\log " +formattedDate +".txt";
                     try (PrintWriter logger = new PrintWriter(new FileWriter(filePath, true))) {
                         if(i==0){
-                            
                             if(collegeIndex==0){
-                                logger.println("Runtime logs  of " + formattedDate + " extr");
-                                logger.print("For " + fetchCollegeName + " ");
-                            }
+                           logger.println("Runtime logs  of " + formattedDate + " extr");  
+                        }
                         }
                         //logger.println("-------------------------");
                         if(collegeIndex == 0){
-                        logger.print("rednSearchList " );}
+                            logger.print(i+" - For " + fetchCollegeName + " --rednSearchList-- ");
+                        }
+                        if(collegeIndex == 24){
+                            logger.println();
+                        }
                        
-                        logger.print("[ " +collegeIndex + " ]");
+                        logger.print("[ " + collegeIndex + " ] ");
                         //logger.println(" --- Screenshot saved: " + outputfile.getAbsolutePath());
                         //logger.println();
                         System.out.println("✅ Log written.");
@@ -541,9 +543,15 @@ public class MainWindow extends javax.swing.JFrame {
                     
     
     
-    
-    
-    
+            if(i%3 == 0){
+                try {
+                    Thread.sleep(10000); // Wait 10 seconds
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+                    
+                    
     
     
                 
@@ -599,7 +607,7 @@ public class MainWindow extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel appName;
-    private javax.swing.JButton customSearchBtn;
+    private javax.swing.JButton collegeSearch;
     private javax.swing.JButton databaseBtn;
     private javax.swing.JButton exportBtn;
     private javax.swing.JButton extractBtn;

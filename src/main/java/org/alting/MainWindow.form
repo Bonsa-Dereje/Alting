@@ -117,7 +117,7 @@
                           <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="historyBtn" max="32767" attributes="0"/>
-                              <Component id="customSearchBtn" max="32767" attributes="0"/>
+                              <Component id="collegeSearch" max="32767" attributes="0"/>
                               <Component id="flaggedBtn" max="32767" attributes="0"/>
                               <Component id="screenshotsBtn" max="32767" attributes="0"/>
                               <Component id="databaseBtn" max="32767" attributes="0"/>
@@ -139,9 +139,9 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="appName" min="-2" pref="11" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="customSearchBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="collegeSearch" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="historyBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="historyBtn" min="-2" pref="21" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="flaggedBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -166,7 +166,7 @@
             <Property name="text" type="java.lang.String" value="ALTING"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="customSearchBtn">
+        <Component class="javax.swing.JButton" name="collegeSearch">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="cc" red="ff" type="rgb"/>
@@ -174,11 +174,11 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Custom Search"/>
+            <Property name="text" type="java.lang.String" value="College Search"/>
             <Property name="iconTextGap" type="int" value="2"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="customSearchBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="collegeSearchActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="historyBtn">
