@@ -52,7 +52,7 @@ public class MainWindow extends javax.swing.JFrame {
         appName = new javax.swing.JLabel();
         collegeSearch = new javax.swing.JButton();
         historyBtn = new javax.swing.JButton();
-        flaggedBtn = new javax.swing.JButton();
+        ocrPass = new javax.swing.JButton();
         screenshotsBtn = new javax.swing.JButton();
         databaseBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -86,7 +86,7 @@ public class MainWindow extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(74, 74, 74)
                 .addComponent(extractBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
 
         sidePanel.setBackground(new java.awt.Color(232, 227, 224));
@@ -115,13 +115,13 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
 
-        flaggedBtn.setBackground(new java.awt.Color(255, 204, 153));
-        flaggedBtn.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        flaggedBtn.setText("Flagged Results");
-        flaggedBtn.setIconTextGap(2);
-        flaggedBtn.addActionListener(new java.awt.event.ActionListener() {
+        ocrPass.setBackground(new java.awt.Color(255, 204, 153));
+        ocrPass.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        ocrPass.setText("OCR Pass");
+        ocrPass.setIconTextGap(2);
+        ocrPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                flaggedBtnActionPerformed(evt);
+                ocrPassActionPerformed(evt);
             }
         });
 
@@ -173,7 +173,7 @@ public class MainWindow extends javax.swing.JFrame {
                         .addGroup(sidePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(historyBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(collegeSearch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(flaggedBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ocrPass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(screenshotsBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(databaseBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(exportBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -192,9 +192,9 @@ public class MainWindow extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(historyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(flaggedBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(screenshotsBtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ocrPass)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(databaseBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -243,9 +243,11 @@ public class MainWindow extends javax.swing.JFrame {
       
     }//GEN-LAST:event_historyBtnActionPerformed
 
-    private void flaggedBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flaggedBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_flaggedBtnActionPerformed
+    private void ocrPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ocrPassActionPerformed
+                  ocrPass ocrPass = new ocrPass();
+         ocrPass.setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_ocrPassActionPerformed
 
     private void screenshotsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_screenshotsBtnActionPerformed
         try {
@@ -455,7 +457,7 @@ public class MainWindow extends javax.swing.JFrame {
                             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
                             String formattedDate = today.format(formatter);
                 try {
-                    String fileName = fetchCollegeName +" ["+ collegeIndex + "] .png";
+                    String fileName = fetchCollegeName +" "+ collegeIndex + " .png";
                     //File outputfile = new File(fileName);
                     String directoryPath = "D:\\altingData\\imgDataset";
                     File dir = new File(directoryPath);
@@ -620,10 +622,10 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JButton databaseBtn;
     private javax.swing.JButton exportBtn;
     private javax.swing.JButton extractBtn;
-    private javax.swing.JButton flaggedBtn;
     private javax.swing.JButton historyBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton ocrPass;
     private javax.swing.JButton screenshotsBtn;
     private javax.swing.JPanel sidePanel;
     // End of variables declaration//GEN-END:variables
