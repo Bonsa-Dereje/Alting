@@ -26,6 +26,17 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.*;
 
+import java.awt.event.ActionEvent;
+import java.nio.charset.StandardCharsets;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.InputStreamReader;
+import java.io.FileWriter;
+
+
+
+
 
 
 
@@ -35,6 +46,53 @@ import com.formdev.flatlaf.FlatLightLaf;
 
 public class toDB extends javax.swing.JFrame {
     private javax.swing.JTextArea ocrTextArea;
+    private JProgressBar progressBar;
+    private JTextArea logArea;
+    private JLabel statusLabel;
+
+
+    
+    private void createMasterParsedFiles(File groupedFolder) {
+    if (!groupedFolder.exists() || !groupedFolder.isDirectory()) {
+        JOptionPane.showMessageDialog(this, "Invalid 'grouped' folder selected.", "Error", JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
+    File[] collegeFolders = groupedFolder.listFiles(File::isDirectory);
+    if (collegeFolders == null) return;
+
+    for (File collegeFolder : collegeFolders) {
+        StringBuilder masterText = new StringBuilder();
+
+        File[] txtFiles = collegeFolder.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
+        if (txtFiles == null || txtFiles.length == 0) continue;
+
+        for (File txtFile : txtFiles) {
+            try {
+                List<String> lines = Files.readAllLines(txtFile.toPath());
+                for (String line : lines) {
+                    masterText.append(line).append(System.lineSeparator());
+                }
+                masterText.append(System.lineSeparator()); // spacing between files
+            } catch (IOException e) {
+                System.err.println("Failed to read " + txtFile.getName() + ": " + e.getMessage());
+            }
+        }
+
+        String collegeName = collegeFolder.getName().trim();
+        File outputFile = new File(collegeFolder, collegeName + " masterParsed.txt");
+
+        try {
+            Files.write(outputFile.toPath(), masterText.toString().getBytes());
+            System.out.println("Written: " + outputFile.getAbsolutePath());
+        } catch (IOException e) {
+            System.err.println("Failed to write " + outputFile.getName() + ": " + e.getMessage());
+        }
+    }
+
+    JOptionPane.showMessageDialog(this, "All masterParsed files created successfully!", "Done", JOptionPane.INFORMATION_MESSAGE);
+}
+
 
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MainWindow.class.getName());
@@ -51,8 +109,9 @@ public class toDB extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        offloadToDB = new javax.swing.JButton();
-        groupFiles = new javax.swing.JButton();
+        offloadToDBbtn = new javax.swing.JButton();
+        groupFilesBtn = new javax.swing.JButton();
+        consolidateBtn = new javax.swing.JButton();
         sidePanel = new javax.swing.JPanel();
         appName = new javax.swing.JLabel();
         collegeSearch = new javax.swing.JButton();
@@ -68,20 +127,28 @@ public class toDB extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(249, 248, 249));
         jPanel1.setForeground(new java.awt.Color(248, 248, 248));
 
-        offloadToDB.setBackground(new java.awt.Color(255, 204, 153));
-        offloadToDB.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        offloadToDB.setText("Offload to Database");
-        offloadToDB.addActionListener(new java.awt.event.ActionListener() {
+        offloadToDBbtn.setBackground(new java.awt.Color(255, 204, 153));
+        offloadToDBbtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        offloadToDBbtn.setText("Offload to Database");
+        offloadToDBbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                offloadToDBActionPerformed(evt);
+                offloadToDBbtnActionPerformed(evt);
             }
         });
 
-        groupFiles.setBackground(new java.awt.Color(255, 204, 153));
-        groupFiles.setText("Group Files");
-        groupFiles.addActionListener(new java.awt.event.ActionListener() {
+        groupFilesBtn.setBackground(new java.awt.Color(255, 204, 153));
+        groupFilesBtn.setText("Group Files");
+        groupFilesBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                groupFilesActionPerformed(evt);
+                groupFilesBtnActionPerformed(evt);
+            }
+        });
+
+        consolidateBtn.setBackground(new java.awt.Color(255, 204, 153));
+        consolidateBtn.setText("Consolidate");
+        consolidateBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                consolidateBtnActionPerformed(evt);
             }
         });
 
@@ -92,20 +159,24 @@ public class toDB extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(108, 108, 108)
-                        .addComponent(offloadToDB, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(169, 169, 169)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(consolidateBtn)
+                            .addComponent(groupFilesBtn)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(178, 178, 178)
-                        .addComponent(groupFiles)))
-                .addContainerGap(122, Short.MAX_VALUE))
+                        .addGap(107, 107, 107)
+                        .addComponent(offloadToDBbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(123, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(62, 62, 62)
-                .addComponent(groupFiles)
+                .addGap(48, 48, 48)
+                .addComponent(groupFilesBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(offloadToDB)
+                .addComponent(consolidateBtn)
+                .addGap(12, 12, 12)
+                .addComponent(offloadToDBbtn)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -280,11 +351,11 @@ public class toDB extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_exportBtnActionPerformed
 
-    private void offloadToDBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_offloadToDBActionPerformed
+    private void offloadToDBbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_offloadToDBbtnActionPerformed
         
-    }//GEN-LAST:event_offloadToDBActionPerformed
+    }//GEN-LAST:event_offloadToDBbtnActionPerformed
 
-    private void groupFilesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupFilesActionPerformed
+    private void groupFilesBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupFilesBtnActionPerformed
       JFileChooser chooser = new JFileChooser();
     chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
     chooser.setDialogTitle("Select Folder to Group Similar Files");
@@ -513,7 +584,135 @@ private void showGroupingResults(File directory, Map<String, List<String>> group
         "Grouped Files in: " + directory.getAbsolutePath(),
         JOptionPane.INFORMATION_MESSAGE
     );
-    }//GEN-LAST:event_groupFilesActionPerformed
+    }//GEN-LAST:event_groupFilesBtnActionPerformed
+
+    private void consolidateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consolidateBtnActionPerformed
+        JOptionPane.showMessageDialog(this,
+        "Step 1: Select the folder that contains grouped college subfolders.\n" +
+        "Each subfolder should have .txt files to be consolidated.",
+        "Choose Grouped Folder",
+        JOptionPane.INFORMATION_MESSAGE);
+
+        JFileChooser sourceChooser = new JFileChooser();
+        sourceChooser.setDialogTitle("Select the 'grouped' folder");
+        sourceChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+
+        int sourceResult = sourceChooser.showOpenDialog(this);
+        if (sourceResult != JFileChooser.APPROVE_OPTION) {
+            JOptionPane.showMessageDialog(this, "No grouped folder selected.");
+            return;
+        }
+        File groupedFolder = sourceChooser.getSelectedFile();
+
+        // Step 2: Prompt to select destination root
+        JOptionPane.showMessageDialog(this,
+            "Step 2: Choose where the consolidated files should be saved.\n" ,
+            
+            "Choose Destination Folder",
+            JOptionPane.INFORMATION_MESSAGE);
+
+        JFileChooser destChooser = new JFileChooser();
+        destChooser.setDialogTitle("Select destination folder");
+        destChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+
+        int destResult = destChooser.showOpenDialog(this);
+        if (destResult != JFileChooser.APPROVE_OPTION) {
+            JOptionPane.showMessageDialog(this, "No destination folder selected.");
+            return;
+        }
+
+        // Create subfolder named "consolidateParseFiles" inside the selected destination
+        File destinationFolder = new File(destChooser.getSelectedFile(), "consolidatedParseFiles");
+        if (!destinationFolder.exists()) {
+            destinationFolder.mkdirs();
+        }
+
+        // Begin consolidation
+        File[] collegeFolders = groupedFolder.listFiles(File::isDirectory);
+        if (collegeFolders == null || collegeFolders.length == 0) {
+            JOptionPane.showMessageDialog(this, "No subfolders found in the selected grouped folder.");
+            return;
+        }
+
+        // Progress dialog setup
+        JDialog progressDialog = new JDialog(this, "Consolidating Files", true);
+        progressDialog.setSize(400, 150);
+        progressDialog.setLayout(new BorderLayout());
+
+        JLabel statusLabel = new JLabel("Starting...");
+        JProgressBar progressBar = new JProgressBar(0, collegeFolders.length);
+        progressBar.setStringPainted(true);
+
+        progressDialog.add(statusLabel, BorderLayout.NORTH);
+        progressDialog.add(progressBar, BorderLayout.CENTER);
+        progressDialog.setLocationRelativeTo(this);
+
+        SwingWorker<Void, String> worker = new SwingWorker<>() {
+            @Override
+            protected Void doInBackground() throws Exception {
+                int count = 0;
+
+                for (File collegeFolder : collegeFolders) {
+                    count++;
+                    publish("Reading: " + collegeFolder.getName());
+
+                    StringBuilder masterText = new StringBuilder();
+                    File[] txtFiles = collegeFolder.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
+
+                    if (txtFiles == null || txtFiles.length == 0) {
+                        publish("No .txt files in " + collegeFolder.getName() + ", skipping.");
+                        progressBar.setValue(count);
+                        continue;
+                    }
+
+                    for (File txtFile : txtFiles) {
+                        try {
+                            List<String> lines = Files.readAllLines(txtFile.toPath());
+                            for (String line : lines) {
+                                masterText.append(line).append(System.lineSeparator());
+                            }
+                            masterText.append(System.lineSeparator());
+                        } catch (IOException e) {
+                            publish("Failed to read " + txtFile.getName() + ": " + e.getMessage());
+                        }
+                    }
+
+                    File outputFile = new File(destinationFolder, collegeFolder.getName() + " masterParsed.txt");
+
+                    try {
+                        Files.write(outputFile.toPath(), masterText.toString().getBytes());
+                        publish("✅ Saved: " + outputFile.getName());
+                    } catch (IOException e) {
+                        publish("❌ Failed to write " + outputFile.getName() + ": " + e.getMessage());
+                    }
+
+                    progressBar.setValue(count);
+                }
+
+                return null;
+            }
+
+            @Override
+            protected void process(List<String> chunks) {
+                String latest = chunks.get(chunks.size() - 1);
+                statusLabel.setText(latest);
+            }
+
+            @Override
+            protected void done() {
+                progressDialog.dispose();
+                JOptionPane.showMessageDialog(
+                    toDB.this,
+                    "🎉 All masterParsed files saved successfully in:\n" + destinationFolder.getAbsolutePath(),
+                    "Done",
+                    JOptionPane.INFORMATION_MESSAGE
+                );
+            }
+        };
+
+        worker.execute();
+        progressDialog.setVisible(true);
+    }//GEN-LAST:event_consolidateBtnActionPerformed
 
     
 
@@ -556,14 +755,15 @@ private void showGroupingResults(File directory, Map<String, List<String>> group
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel appName;
     private javax.swing.JButton collegeSearch;
+    private javax.swing.JButton consolidateBtn;
     private javax.swing.JButton databaseBtn;
     private javax.swing.JButton exportBtn;
-    private javax.swing.JButton groupFiles;
+    private javax.swing.JButton groupFilesBtn;
     private javax.swing.JButton historyBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton ocrPass;
-    private javax.swing.JButton offloadToDB;
+    private javax.swing.JButton offloadToDBbtn;
     private javax.swing.JButton screenshotsBtn;
     private javax.swing.JPanel sidePanel;
     // End of variables declaration//GEN-END:variables
