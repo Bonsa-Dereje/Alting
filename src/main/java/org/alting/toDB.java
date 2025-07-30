@@ -19,6 +19,16 @@ import javax.swing.JScrollPane;
 
 
 
+import java.awt.*;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
+import java.util.*;
+
+
+
+
 import com.formdev.flatlaf.FlatLightLaf;
 
 
@@ -275,15 +285,15 @@ public class toDB extends javax.swing.JFrame {
     }//GEN-LAST:event_offloadToDBActionPerformed
 
     private void groupFilesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupFilesActionPerformed
-       JFileChooser chooser = new JFileChooser();
+      JFileChooser chooser = new JFileChooser();
     chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
     chooser.setDialogTitle("Select Folder to Group Similar Files");
 
     if (chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
         File directory = chooser.getSelectedFile();
 
-        // Create progress dialog
-        JDialog progressDialog = new JDialog(this, "Processing Files", true);
+        // Create scanning progress dialog
+        JDialog progressDialog = new JDialog(this, "Scanning Files", true);
         progressDialog.setSize(400, 200);
         progressDialog.setLayout(new BorderLayout());
 
@@ -303,7 +313,6 @@ public class toDB extends javax.swing.JFrame {
         progressDialog.add(scrollPane, BorderLayout.CENTER);
         progressDialog.setLocationRelativeTo(this);
 
-        // Start background worker
         new SwingWorker<Map<String, List<String>>, ProgressUpdate>() {
             private int fileCount = 0;
             private Map<String, List<String>> baseNameMap = new HashMap<>();
@@ -313,7 +322,7 @@ public class toDB extends javax.swing.JFrame {
                 File[] files = directory.listFiles();
                 if (files != null) {
                     for (File file : files) {
-                        if (file.isFile()) {
+                        if (file.isFile() && file.getName().toLowerCase().endsWith(".txt")) {
                             String filename = file.getName();
                             String baseName = extractBaseName(filename);
 
@@ -350,10 +359,94 @@ public class toDB extends javax.swing.JFrame {
                     Map<String, List<String>> result = get();
                     result.values().removeIf(list -> list.size() <= 1);
 
-                    progressDialog.dispose(); // Close progress dialog automatically
+                    progressDialog.dispose();
 
                     if (!result.isEmpty()) {
                         showGroupingResults(directory, result);
+
+                        // Ask where to save grouped files
+                        JFileChooser saveChooser = new JFileChooser();
+                        saveChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+                        saveChooser.setDialogTitle("Select Destination for Grouped Files");
+
+                        if (saveChooser.showSaveDialog(toDB.this) == JFileChooser.APPROVE_OPTION) {
+                            File destination = saveChooser.getSelectedFile();
+                            File groupedRoot = new File(destination, "groupedParsed");
+
+                            if (!groupedRoot.exists()) groupedRoot.mkdirs();
+
+                            // Prepare for copy progress
+                            List<File[]> filesToCopy = new ArrayList<>();
+                            for (Map.Entry<String, List<String>> entry : result.entrySet()) {
+                                String groupName = entry.getKey();
+                                List<String> matchedFiles = entry.getValue();
+
+                                File groupFolder = new File(groupedRoot, groupName);
+                                if (!groupFolder.exists()) groupFolder.mkdirs();
+
+                                for (String fileName : matchedFiles) {
+                                    File srcFile = new File(directory, fileName);
+                                    File destFile = new File(groupFolder, fileName);
+                                    filesToCopy.add(new File[]{srcFile, destFile});
+                                }
+                            }
+
+                            // Copy progress dialog
+                            JDialog copyDialog = new JDialog(toDB.this, "Copying Files", true);
+                            copyDialog.setSize(400, 150);
+                            copyDialog.setLayout(new BorderLayout());
+
+                            JLabel copyStatus = new JLabel("Preparing to copy...");
+                            JProgressBar copyBar = new JProgressBar(0, filesToCopy.size());
+                            copyBar.setStringPainted(true);
+
+                            copyDialog.add(copyStatus, BorderLayout.NORTH);
+                            copyDialog.add(copyBar, BorderLayout.CENTER);
+                            copyDialog.setLocationRelativeTo(toDB.this);
+
+                            new SwingWorker<Void, String>() {
+                                @Override
+                                protected Void doInBackground() throws Exception {
+                                    int count = 0;
+                                    for (File[] pair : filesToCopy) {
+                                        File src = pair[0];
+                                        File dest = pair[1];
+                                        count++;
+
+                                        try {
+                                            Files.copy(src.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                                        } catch (IOException e) {
+                                            System.err.println("Failed to copy " + src.getName() + ": " + e.getMessage());
+                                        }
+
+                                        publish(String.format("Copying %d/%d: %s", count, filesToCopy.size(), src.getName()));
+                                        copyBar.setValue(count);
+                                        Thread.sleep(10); // Optional slow-down to observe progress
+                                    }
+                                    return null;
+                                }
+
+                                @Override
+                                protected void process(List<String> chunks) {
+                                    String latest = chunks.get(chunks.size() - 1);
+                                    copyStatus.setText(latest);
+                                }
+
+                                @Override
+                                protected void done() {
+                                    copyDialog.dispose();
+                                    JOptionPane.showMessageDialog(
+                                        toDB.this,
+                                        "Grouped files copied to:\n" + groupedRoot.getAbsolutePath(),
+                                        "Copy Complete",
+                                        JOptionPane.INFORMATION_MESSAGE
+                                    );
+                                }
+                            }.execute();
+
+                            copyDialog.setVisible(true);
+                        }
+
                     } else {
                         JOptionPane.showMessageDialog(
                             toDB.this,
@@ -391,14 +484,14 @@ private static class ProgressUpdate {
     }
 }
 
-// Updated base name extractor for grouping
+// Extracts base name for grouping
 private String extractBaseName(String filename) {
     String name = filename.replaceFirst("\\.[^.]+$", "");
     name = name.replaceFirst("\\s*\\d.*$", "");
     return name.trim().replaceAll("[-_]+$", "").trim();
 }
 
-// Show the grouped results in a JTable dialog
+// Show grouped result in JTable
 private void showGroupingResults(File directory, Map<String, List<String>> groups) {
     String[] columnNames = {"Group Name", "Matches Found"};
     Object[][] data = new Object[groups.size()][2];
