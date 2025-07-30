@@ -1,30 +1,21 @@
 
 package org.alting;
 
+// Existing imports
 import javax.swing.*;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-import java.awt.AWTException;
-
-import java.io.IOException;
-
-import java.awt.image.BufferedImage;
-import javax.imageio.ImageIO;
+import javax.swing.table.DefaultTableModel;
+import java.awt.*;
 import java.io.File;
-import java.awt.Rectangle;
-import java.awt.Toolkit;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-import java.io.*;
-
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-
-import java.awt.Desktop;
+// New imports for live updates
+import javax.swing.SwingWorker;
+import javax.swing.JProgressBar;
+import javax.swing.JTextArea;
+import javax.swing.JScrollPane;
 
 
 
@@ -32,19 +23,16 @@ import com.formdev.flatlaf.FlatLightLaf;
 
 
 
-public class ocrPass extends javax.swing.JFrame {
+public class toDB extends javax.swing.JFrame {
     private javax.swing.JTextArea ocrTextArea;
 
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MainWindow.class.getName());
 
    
-    public ocrPass() {
+    public toDB() {
         initComponents();
-        
-
-        
-        
+            
     }
 
     
@@ -53,7 +41,8 @@ public class ocrPass extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        tessOCR = new javax.swing.JButton();
+        offloadToDB = new javax.swing.JButton();
+        groupFiles = new javax.swing.JButton();
         sidePanel = new javax.swing.JPanel();
         appName = new javax.swing.JLabel();
         collegeSearch = new javax.swing.JButton();
@@ -69,12 +58,20 @@ public class ocrPass extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(249, 248, 249));
         jPanel1.setForeground(new java.awt.Color(248, 248, 248));
 
-        tessOCR.setBackground(new java.awt.Color(255, 204, 153));
-        tessOCR.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        tessOCR.setText("Passthrough Tesseract");
-        tessOCR.addActionListener(new java.awt.event.ActionListener() {
+        offloadToDB.setBackground(new java.awt.Color(255, 204, 153));
+        offloadToDB.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        offloadToDB.setText("Offload to Database");
+        offloadToDB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tessOCRActionPerformed(evt);
+                offloadToDBActionPerformed(evt);
+            }
+        });
+
+        groupFiles.setBackground(new java.awt.Color(255, 204, 153));
+        groupFiles.setText("Group Files");
+        groupFiles.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                groupFilesActionPerformed(evt);
             }
         });
 
@@ -83,15 +80,22 @@ public class ocrPass extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(93, 93, 93)
-                .addComponent(tessOCR, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(105, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(108, 108, 108)
+                        .addComponent(offloadToDB, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(178, 178, 178)
+                        .addComponent(groupFiles)))
+                .addContainerGap(122, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addComponent(tessOCR, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(groupFiles)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(offloadToDB)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -143,7 +147,7 @@ public class ocrPass extends javax.swing.JFrame {
 
         databaseBtn.setBackground(new java.awt.Color(255, 204, 153));
         databaseBtn.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        databaseBtn.setText("Extract To Database");
+        databaseBtn.setText("Extracted Database");
         databaseBtn.setIconTextGap(2);
         databaseBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -215,7 +219,7 @@ public class ocrPass extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(13, Short.MAX_VALUE)
                 .addComponent(sidePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -254,25 +258,179 @@ public class ocrPass extends javax.swing.JFrame {
     }//GEN-LAST:event_ocrPassActionPerformed
 
     private void screenshotsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_screenshotsBtnActionPerformed
-        
-
+      
     
     }//GEN-LAST:event_screenshotsBtnActionPerformed
 
     private void databaseBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_databaseBtnActionPerformed
-        toDB toDB = new toDB();
-        toDB.setVisible(true);
-        this.dispose();
+        // TODO add your handling code here:
     }//GEN-LAST:event_databaseBtnActionPerformed
 
     private void exportBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exportBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_exportBtnActionPerformed
 
-    private void tessOCRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tessOCRActionPerformed
+    private void offloadToDBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_offloadToDBActionPerformed
         
-    }//GEN-LAST:event_tessOCRActionPerformed
+    }//GEN-LAST:event_offloadToDBActionPerformed
 
+    private void groupFilesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupFilesActionPerformed
+       JFileChooser chooser = new JFileChooser();
+    chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+    chooser.setDialogTitle("Select Folder to Group Similar Files");
+
+    if (chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
+        File directory = chooser.getSelectedFile();
+
+        // Create progress dialog
+        JDialog progressDialog = new JDialog(this, "Processing Files", true);
+        progressDialog.setSize(400, 200);
+        progressDialog.setLayout(new BorderLayout());
+
+        JLabel statusLabel = new JLabel("Starting file scan...");
+        JTextArea livePreview = new JTextArea();
+        livePreview.setEditable(false);
+        JScrollPane scrollPane = new JScrollPane(livePreview);
+
+        JProgressBar progressBar = new JProgressBar();
+        progressBar.setStringPainted(true);
+
+        JPanel progressPanel = new JPanel(new BorderLayout());
+        progressPanel.add(statusLabel, BorderLayout.NORTH);
+        progressPanel.add(progressBar, BorderLayout.CENTER);
+
+        progressDialog.add(progressPanel, BorderLayout.NORTH);
+        progressDialog.add(scrollPane, BorderLayout.CENTER);
+        progressDialog.setLocationRelativeTo(this);
+
+        // Start background worker
+        new SwingWorker<Map<String, List<String>>, ProgressUpdate>() {
+            private int fileCount = 0;
+            private Map<String, List<String>> baseNameMap = new HashMap<>();
+
+            @Override
+            protected Map<String, List<String>> doInBackground() throws Exception {
+                File[] files = directory.listFiles();
+                if (files != null) {
+                    for (File file : files) {
+                        if (file.isFile()) {
+                            String filename = file.getName();
+                            String baseName = extractBaseName(filename);
+
+                            baseNameMap.computeIfAbsent(baseName, k -> new ArrayList<>()).add(filename);
+                            fileCount++;
+
+                            publish(new ProgressUpdate(
+                                String.format("%d. %s → %s", fileCount, filename, baseName),
+                                fileCount,
+                                files.length
+                            ));
+                        }
+                        Thread.sleep(20);
+                    }
+                }
+                return baseNameMap;
+            }
+
+            @Override
+            protected void process(List<ProgressUpdate> chunks) {
+                for (ProgressUpdate update : chunks) {
+                    livePreview.append(update.message + "\n");
+                    livePreview.setCaretPosition(livePreview.getDocument().getLength());
+
+                    progressBar.setMaximum(update.total);
+                    progressBar.setValue(update.progress);
+                    statusLabel.setText(String.format("Processed %d/%d files", update.progress, update.total));
+                }
+            }
+
+            @Override
+            protected void done() {
+                try {
+                    Map<String, List<String>> result = get();
+                    result.values().removeIf(list -> list.size() <= 1);
+
+                    progressDialog.dispose(); // Close progress dialog automatically
+
+                    if (!result.isEmpty()) {
+                        showGroupingResults(directory, result);
+                    } else {
+                        JOptionPane.showMessageDialog(
+                            toDB.this,
+                            String.format("Processed %d files but found no matching groups", fileCount),
+                            "No Matches Found",
+                            JOptionPane.INFORMATION_MESSAGE
+                        );
+                    }
+                } catch (Exception e) {
+                    progressDialog.dispose();
+                    JOptionPane.showMessageDialog(
+                        toDB.this,
+                        "Error processing files: " + e.getMessage(),
+                        "Error",
+                        JOptionPane.ERROR_MESSAGE
+                    );
+                }
+            }
+        }.execute();
+
+        progressDialog.setVisible(true);
+    }
+}
+
+// Helper class for progress updates
+private static class ProgressUpdate {
+    final String message;
+    final int progress;
+    final int total;
+
+    ProgressUpdate(String message, int progress, int total) {
+        this.message = message;
+        this.progress = progress;
+        this.total = total;
+    }
+}
+
+// Updated base name extractor for grouping
+private String extractBaseName(String filename) {
+    String name = filename.replaceFirst("\\.[^.]+$", "");
+    name = name.replaceFirst("\\s*\\d.*$", "");
+    return name.trim().replaceAll("[-_]+$", "").trim();
+}
+
+// Show the grouped results in a JTable dialog
+private void showGroupingResults(File directory, Map<String, List<String>> groups) {
+    String[] columnNames = {"Group Name", "Matches Found"};
+    Object[][] data = new Object[groups.size()][2];
+
+    int i = 0;
+    for (Map.Entry<String, List<String>> entry : groups.entrySet()) {
+        data[i][0] = entry.getKey();
+        data[i][1] = entry.getValue().size();
+        i++;
+    }
+
+    JTable table = new JTable(data, columnNames);
+    JScrollPane scrollPane = new JScrollPane(table);
+    table.setFillsViewportHeight(true);
+
+    JOptionPane.showMessageDialog(
+        this,
+        scrollPane,
+        "Grouped Files in: " + directory.getAbsolutePath(),
+        JOptionPane.INFORMATION_MESSAGE
+    );
+    }//GEN-LAST:event_groupFilesActionPerformed
+
+    
+
+    
+    
+    
+    
+    
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -307,12 +465,13 @@ public class ocrPass extends javax.swing.JFrame {
     private javax.swing.JButton collegeSearch;
     private javax.swing.JButton databaseBtn;
     private javax.swing.JButton exportBtn;
+    private javax.swing.JButton groupFiles;
     private javax.swing.JButton historyBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton ocrPass;
+    private javax.swing.JButton offloadToDB;
     private javax.swing.JButton screenshotsBtn;
     private javax.swing.JPanel sidePanel;
-    private javax.swing.JButton tessOCR;
     // End of variables declaration//GEN-END:variables
 }

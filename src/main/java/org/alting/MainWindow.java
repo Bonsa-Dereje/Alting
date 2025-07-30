@@ -137,7 +137,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         databaseBtn.setBackground(new java.awt.Color(255, 204, 153));
         databaseBtn.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        databaseBtn.setText("Extracted Database");
+        databaseBtn.setText("Extract to Database");
         databaseBtn.setIconTextGap(2);
         databaseBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -266,7 +266,9 @@ public class MainWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_screenshotsBtnActionPerformed
 
     private void databaseBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_databaseBtnActionPerformed
-        // TODO add your handling code here:
+        toDB toDB = new toDB();
+        toDB.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_databaseBtnActionPerformed
 
     private void exportBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exportBtnActionPerformed
