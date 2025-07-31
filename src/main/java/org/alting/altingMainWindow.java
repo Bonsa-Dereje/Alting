@@ -85,6 +85,7 @@ public class altingMainWindow extends javax.swing.JFrame {
     public altingMainWindow() {
         initComponents();
         setLocationRelativeTo(null);
+        setResizable(false);
         
     }
 
@@ -228,7 +229,9 @@ public class altingMainWindow extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -237,6 +240,7 @@ public class altingMainWindow extends javax.swing.JFrame {
             
     private void collegeSearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_collegeSearchBtnActionPerformed
         if(isDirSelected == true){ 
+            JOptionPane.showMessageDialog(this, "Make Sure Your Browser Is 1 alt + tab Away");
         String collegeUrlDatabase = "https://mally.stanford.edu/~sr/universities.html";
         File imageSaveDirectory = null;
         
@@ -514,7 +518,7 @@ public class altingMainWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_ocrParseBtnActionPerformed
 
     private void consolidateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consolidateBtnActionPerformed
-
+        if(isDirSelected == true){
         File groupedFolder = new File(sessionMasterDirectory, "groupedParsed");
 
         
@@ -608,6 +612,10 @@ public class altingMainWindow extends javax.swing.JFrame {
 
         worker.execute();
         progressDialog.setVisible(true);
+        }else{
+          JOptionPane.showMessageDialog(this, "Parent Directory Not Selected");
+          
+        }
         
     }//GEN-LAST:event_consolidateBtnActionPerformed
 
