@@ -53,6 +53,8 @@ import javax.swing.JLabel;
 import javax.swing.SwingWorker;
 
 
+import java.awt.datatransfer.StringSelection;
+
 
 
 
@@ -620,113 +622,184 @@ public class altingMainWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_consolidateBtnActionPerformed
 
     private void exportBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exportBtnActionPerformed
-        if(isDirSelected == true){
-        
-
-        File inputFolder = new File(sessionMasterDirectory, "consolidatedParseFiles");
-
-       
-
-        File saveDirectory = sessionMasterDirectory;
-        File outputFile = new File(saveDirectory, "altingExport.txt");
-
-        JProgressBar progressBar = new JProgressBar();
-        progressBar.setStringPainted(true);
-
-        JTextArea textArea = new JTextArea(20, 50);
-        textArea.setEditable(false);
-        JScrollPane scrollPane = new JScrollPane(textArea);
-
-        JFrame progressFrame = new JFrame("Export Progress");
-        progressFrame.setLayout(new BorderLayout());
-        progressFrame.add(progressBar, BorderLayout.NORTH);
-        progressFrame.add(scrollPane, BorderLayout.CENTER);
-        progressFrame.pack();
-        progressFrame.setLocationRelativeTo(this);
-        progressFrame.setVisible(true);
-
-        SwingWorker<Void, String> worker = new SwingWorker<>() {
-            @Override
-            protected Void doInBackground() {
                 try {
-                    File[] txtFiles = inputFolder.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
-                    if (txtFiles == null || txtFiles.length == 0) {
-                        publish("No .txt files found in the selected folder.");
-                        return null;
-                    }
+            Robot robot = new Robot();
+            int i = 0;
 
-                    int totalFiles = txtFiles.length;
-                    int count = 0;
+            if (i == 0) {
+                // ALT + TAB to switch to browser
+                robot.keyPress(KeyEvent.VK_ALT);
+                robot.keyPress(KeyEvent.VK_TAB);
+                robot.keyRelease(KeyEvent.VK_TAB);
+                Thread.sleep(1000);
+                robot.keyPress(KeyEvent.VK_TAB);
+                robot.keyRelease(KeyEvent.VK_TAB);
+                Thread.sleep(3000);
+                robot.keyRelease(KeyEvent.VK_ALT);
+                Thread.sleep(3000);
 
-                    try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
-                        for (File txtFile : txtFiles) {
-                            try (BufferedReader br = new BufferedReader(new FileReader(txtFile))) {
-                                publish("Reading: " + txtFile.getName());
+                // CTRL + L to focus the URL bar
+                robot.keyPress(KeyEvent.VK_CONTROL);
+                robot.keyPress(KeyEvent.VK_L);
+                robot.keyRelease(KeyEvent.VK_L);
+                robot.keyRelease(KeyEvent.VK_CONTROL);
+                Thread.sleep(3000);
 
-                                String line;
-                                while ((line = br.readLine()) != null) {
-                                    writer.write(line);
-                                    writer.newLine();
-                                }
+                // Type URL
+                String url = "chat.deepseek.com";
+                for (char ch : url.toCharArray()) {
+                    typeChar(robot, ch);
+                }
 
-                                // Add 5 blank lines as separator
-                                for (int i = 0; i < 5; i++) {
-                                    writer.newLine();
-                                }
+                // Press Enter after typing URL
+                robot.keyPress(KeyEvent.VK_ENTER);
+                robot.keyRelease(KeyEvent.VK_ENTER);
 
-                            } catch (Exception readEx) {
-                                publish("Error reading file: " + txtFile.getName() + " → " + readEx.getMessage());
-                            }
+                // Wait 5 seconds before typing SQL message
+                Thread.sleep(9000);
 
-                            count++;
-                            int progress = (int) (((double) count / totalFiles) * 100);
-                            setProgress(progress);
+                // Full SQL message
+                String longMessage = """
+                    I'll be sending you txt files, you'll extract info that will be entered to this database later. Create a JSON file that will later be used to enter the info to my sql database. 
 
-                            if (count % 100 == 0) {
-                                publish("Reached " + count + " files. Waiting for 4 seconds...");
-                                try {
-                                    Thread.sleep(4000);
-                                } catch (InterruptedException e) {
-                                    publish("Sleep interrupted.");
-                                }
-                            }
+                    create database collegeInfo;
+                    use collegeInfo;
+
+                    create table collegeData
+                        (collegeName varchar(250),
+                        country varchar(15),
+                        stateLocation varchar(50),
+                        privateCollege varchar(3),
+                        acceptanceRate decimal(3,2),
+                        satReq varchar(30),
+                        commonAppReq varchar(30),
+                        questBridge varchar(30) NULL,
+                        proprieteryApp varchar(30) NULL,
+                        proprieteryAppLink varchar(100) NOT NULL,
+                        toeflReq varchar(100) NOT NULL,
+                        cssProfileCode int PRIMARY KEY,
+                        avgSAT int,
+                        avgACT int,
+                        appFee int,
+                        tuition int,
+                        appFeeWaiver varchar(20),
+                        intlEligiblityReq varchar(50),
+                        fafsaForm varbinary(MAX),
+                        lastUpdated datetime DEFAULT getdate());
+
+                    select *From collegeData;
+                    drop table collegeData;
+                    alter table collegeData 
+                        add lastUpdated datetime DEFAULT getdate();
+                    alter table collegeData
+                        drop column finAidOfficeEmail;
+                    ALTER TABLE collegeData
+                    ADD  finAidOfficeEmail VARCHAR(20);
+
+                    create table financialAid
+                        (cssProfileCode int PRIMARY KEY,
+                        grantsAV varchar(3) NOT NULL,
+                            grantsFullInfo TEXT,
+                        scholarshipsAV varchar(3) NOT NULL,
+                            scholarshipFullInfo TEXT,
+                        meritScholarshipsAV varchar(3) NOT NULL,
+                            meritScholarshipFullInfo TEXT,
+                        workStudyAV varchar(3),
+                            workStudyFullInfo TEXT,
+                        intlFinancialAidAV varchar(3),
+                            intlFinancialAidFullInfo TEXT,
+                        loansAV varchar(3),
+                            loansFullInfo TEXT,
+                        finAidOfficeEmail varchar(50),
+                        CONSTRAINT cssCodeReference FOREIGN KEY (cssProfileCode) 
+                            REFERENCES collegeData(cssProfileCode));
+
+                    drop table financialAid;
+
+                    create table deadlines
+                        (cssProfileCode int PRIMARY KEY,
+                        regularDecision varchar(15),
+                        earlyDecision varchar(15),
+                        earlyAction varchar(15),
+                        restrictiveEarlyAction varchar(15),
+                        rollingAdmission varchar(15),
+                        CONSTRAINT cssReference FOREIGN KEY (cssProfileCode) 
+                            REFERENCES collegeData(cssProfileCode));
+
+                    drop table deadlines;
+                    """;
+
+                for (char ch : longMessage.toCharArray()) {
+                    if (ch == '\n') {
+                        // Use Shift + Enter for newline
+                        robot.keyPress(KeyEvent.VK_SHIFT);
+                        robot.keyPress(KeyEvent.VK_ENTER);
+                        robot.keyRelease(KeyEvent.VK_ENTER);
+                        robot.keyRelease(KeyEvent.VK_SHIFT);
+                    } else if (ch == ' ') {
+                        robot.keyPress(KeyEvent.VK_SPACE);
+                        robot.keyRelease(KeyEvent.VK_SPACE);
+                        Thread.sleep(100); // space delay
+                    } else {
+                        typeChar(robot, ch);
+
+                        // Delay for capital letters
+                        if (Character.isUpperCase(ch)) {
+                            Thread.sleep(100);
                         }
-                        publish("All files written to: " + outputFile.getAbsolutePath());
-                    } catch (Exception writeEx) {
-                        publish("Error writing final file: " + writeEx.getMessage());
                     }
-                } catch (Exception ex) {
-                    publish("Unexpected error: " + ex.getMessage());
+
+                    // General delay
+                    Thread.sleep(5);
                 }
-                return null;
+
+                // Final ENTER to send the message
+                robot.keyPress(KeyEvent.VK_ENTER);
+                robot.keyRelease(KeyEvent.VK_ENTER);
             }
 
-            @Override
-            protected void process(List<String> chunks) {
-                for (String message : chunks) {
-                    textArea.append(message + "\n");
-                }
-            }
-
-            @Override
-            protected void done() {
-                progressBar.setValue(100);
-                JOptionPane.showMessageDialog(progressFrame, "Master File Export Complete.");
-            }
-        };
-
-        worker.addPropertyChangeListener(evt1 -> {
-            if ("progress".equals(evt1.getPropertyName())) {
-                progressBar.setValue((Integer) evt1.getNewValue());
-            }
-        });
-
-        worker.execute();
-        }else{
-            JOptionPane.showMessageDialog(this, "Parent Directory Not Selected");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }//GEN-LAST:event_exportBtnActionPerformed
 
+    
+    
+        private void typeChar(Robot robot, char character) {
+        try {
+            boolean upperCase = Character.isUpperCase(character);
+            int keyCode = KeyEvent.getExtendedKeyCodeForChar(character);
+
+            if (keyCode == KeyEvent.VK_UNDEFINED) return;
+
+            if (upperCase || isSpecialShiftChar(character)) {
+                robot.keyPress(KeyEvent.VK_SHIFT);
+            }
+
+            robot.keyPress(keyCode);
+            robot.keyRelease(keyCode);
+
+            if (upperCase || isSpecialShiftChar(character)) {
+                robot.keyRelease(KeyEvent.VK_SHIFT);
+            }
+        } catch (IllegalArgumentException e) {
+            if (character == '\n') {
+                robot.keyPress(KeyEvent.VK_ENTER);
+                robot.keyRelease(KeyEvent.VK_ENTER);
+            } else if (character == ' ') {
+                robot.keyPress(KeyEvent.VK_SPACE);
+                robot.keyRelease(KeyEvent.VK_SPACE);
+            }
+        }
+    }
+
+    // SHIFT-needed characters
+    private boolean isSpecialShiftChar(char ch) {
+        return "~!@#$%^&*()_+{}|:\"<>?".indexOf(ch) >= 0;
+    }
+    
+    
+    
     private void groupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupBtnActionPerformed
             if(isDirSelected == true){
                 System.out.println("you good :)");
