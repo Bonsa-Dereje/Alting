@@ -55,6 +55,10 @@ import javax.swing.SwingWorker;
 
 import java.awt.datatransfer.StringSelection;
 
+import java.awt.datatransfer.*;
+
+import java.util.Arrays;
+
 
 
 
@@ -622,142 +626,109 @@ public class altingMainWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_consolidateBtnActionPerformed
 
     private void exportBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exportBtnActionPerformed
-                try {
+           try {
             Robot robot = new Robot();
-            int i = 0;
 
-            if (i == 0) {
-                // ALT + TAB to switch to browser
-                robot.keyPress(KeyEvent.VK_ALT);
-                robot.keyPress(KeyEvent.VK_TAB);
-                robot.keyRelease(KeyEvent.VK_TAB);
-                Thread.sleep(1000);
-                robot.keyPress(KeyEvent.VK_TAB);
-                robot.keyRelease(KeyEvent.VK_TAB);
-                Thread.sleep(3000);
-                robot.keyRelease(KeyEvent.VK_ALT);
-                Thread.sleep(3000);
+            
 
-                // CTRL + L to focus the URL bar
-                robot.keyPress(KeyEvent.VK_CONTROL);
-                robot.keyPress(KeyEvent.VK_L);
-                robot.keyRelease(KeyEvent.VK_L);
-                robot.keyRelease(KeyEvent.VK_CONTROL);
-                Thread.sleep(3000);
+           
+            robot.keyPress(KeyEvent.VK_ALT);
+            robot.keyPress(KeyEvent.VK_TAB);
+            robot.keyRelease(KeyEvent.VK_TAB);
+            Thread.sleep(1000);
+            robot.keyPress(KeyEvent.VK_TAB);
+            robot.keyRelease(KeyEvent.VK_TAB);
+            Thread.sleep(3000);
+            robot.keyRelease(KeyEvent.VK_ALT);
+            Thread.sleep(3000);
 
-                // Type URL
-                String url = "chat.deepseek.com";
-                for (char ch : url.toCharArray()) {
-                    typeChar(robot, ch);
-                }
+         
+            robot.keyPress(KeyEvent.VK_CONTROL);
+            robot.keyPress(KeyEvent.VK_L);
+            robot.keyRelease(KeyEvent.VK_L);
+            robot.keyRelease(KeyEvent.VK_CONTROL);
+            Thread.sleep(3000);
 
-                // Press Enter after typing URL
-                robot.keyPress(KeyEvent.VK_ENTER);
-                robot.keyRelease(KeyEvent.VK_ENTER);
-
-                // Wait 5 seconds before typing SQL message
-                Thread.sleep(9000);
-
-                // Full SQL message
-                String longMessage = """
-                    I'll be sending you txt files, you'll extract info that will be entered to this database later. Create a JSON file that will later be used to enter the info to my sql database. 
-
-                    create database collegeInfo;
-                    use collegeInfo;
-
-                    create table collegeData
-                        (collegeName varchar(250),
-                        country varchar(15),
-                        stateLocation varchar(50),
-                        privateCollege varchar(3),
-                        acceptanceRate decimal(3,2),
-                        satReq varchar(30),
-                        commonAppReq varchar(30),
-                        questBridge varchar(30) NULL,
-                        proprieteryApp varchar(30) NULL,
-                        proprieteryAppLink varchar(100) NOT NULL,
-                        toeflReq varchar(100) NOT NULL,
-                        cssProfileCode int PRIMARY KEY,
-                        avgSAT int,
-                        avgACT int,
-                        appFee int,
-                        tuition int,
-                        appFeeWaiver varchar(20),
-                        intlEligiblityReq varchar(50),
-                        fafsaForm varbinary(MAX),
-                        lastUpdated datetime DEFAULT getdate());
-
-                    select *From collegeData;
-                    drop table collegeData;
-                    alter table collegeData 
-                        add lastUpdated datetime DEFAULT getdate();
-                    alter table collegeData
-                        drop column finAidOfficeEmail;
-                    ALTER TABLE collegeData
-                    ADD  finAidOfficeEmail VARCHAR(20);
-
-                    create table financialAid
-                        (cssProfileCode int PRIMARY KEY,
-                        grantsAV varchar(3) NOT NULL,
-                            grantsFullInfo TEXT,
-                        scholarshipsAV varchar(3) NOT NULL,
-                            scholarshipFullInfo TEXT,
-                        meritScholarshipsAV varchar(3) NOT NULL,
-                            meritScholarshipFullInfo TEXT,
-                        workStudyAV varchar(3),
-                            workStudyFullInfo TEXT,
-                        intlFinancialAidAV varchar(3),
-                            intlFinancialAidFullInfo TEXT,
-                        loansAV varchar(3),
-                            loansFullInfo TEXT,
-                        finAidOfficeEmail varchar(50),
-                        CONSTRAINT cssCodeReference FOREIGN KEY (cssProfileCode) 
-                            REFERENCES collegeData(cssProfileCode));
-
-                    drop table financialAid;
-
-                    create table deadlines
-                        (cssProfileCode int PRIMARY KEY,
-                        regularDecision varchar(15),
-                        earlyDecision varchar(15),
-                        earlyAction varchar(15),
-                        restrictiveEarlyAction varchar(15),
-                        rollingAdmission varchar(15),
-                        CONSTRAINT cssReference FOREIGN KEY (cssProfileCode) 
-                            REFERENCES collegeData(cssProfileCode));
-
-                    drop table deadlines;
-                    """;
-
-                for (char ch : longMessage.toCharArray()) {
-                    if (ch == '\n') {
-                        // Use Shift + Enter for newline
-                        robot.keyPress(KeyEvent.VK_SHIFT);
-                        robot.keyPress(KeyEvent.VK_ENTER);
-                        robot.keyRelease(KeyEvent.VK_ENTER);
-                        robot.keyRelease(KeyEvent.VK_SHIFT);
-                    } else if (ch == ' ') {
-                        robot.keyPress(KeyEvent.VK_SPACE);
-                        robot.keyRelease(KeyEvent.VK_SPACE);
-                        Thread.sleep(100); // space delay
-                    } else {
-                        typeChar(robot, ch);
-
-                        // Delay for capital letters
-                        if (Character.isUpperCase(ch)) {
-                            Thread.sleep(100);
-                        }
-                    }
-
-                    // General delay
-                    Thread.sleep(5);
-                }
-
-                // Final ENTER to send the message
-                robot.keyPress(KeyEvent.VK_ENTER);
-                robot.keyRelease(KeyEvent.VK_ENTER);
+          
+            String url = "chat.deepseek.com";
+            for (char ch : url.toCharArray()) {
+                typeChar(robot, ch);
             }
 
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            Thread.sleep(9000);
+
+           
+            File promptFile = new File("D:\\altingData\\llmRequest\\prompt.txt");
+            if (!promptFile.exists()) {
+                JOptionPane.showMessageDialog(null, "prompt.txt not found at:\n" + promptFile.getAbsolutePath());
+                return;
+            }
+
+            // Load main files
+            File inputFolder = new File("D:\\altingData\\consolidatedParseFiles");
+            File[] files = inputFolder.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
+
+            if (!inputFolder.exists() || !inputFolder.isDirectory()) {
+                JOptionPane.showMessageDialog(null, "Folder not found:\n" + inputFolder.getAbsolutePath());
+                return;
+            }
+
+            if (files != null) {
+               
+                int index = 0;
+                Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+
+                for (File file : files) {
+                    index++;
+                    
+                    String message = "[New Query] Ignore all previous messages and only answer this:";
+                    for (char ch : message.toCharArray()) {
+                        typeChar(robot, ch);
+                    }
+                    robot.keyPress(KeyEvent.VK_SHIFT);
+                    robot.keyPress(KeyEvent.VK_ENTER);
+                    robot.keyRelease(KeyEvent.VK_ENTER);
+                    robot.keyRelease(KeyEvent.VK_SHIFT);
+                    Thread.sleep(300);
+
+                    String followUp = "Respond to this independently, without considering earlier messages.";
+                    for (char ch : followUp.toCharArray()) {
+                        typeChar(robot, ch);
+                    }
+
+                  
+                    File[] promptArray = {promptFile};
+                    clipboard.setContents(new FileTransferable(promptArray), null);
+
+                    robot.keyPress(KeyEvent.VK_CONTROL);
+                    robot.keyPress(KeyEvent.VK_V);
+                    robot.keyRelease(KeyEvent.VK_V);
+                    robot.keyRelease(KeyEvent.VK_CONTROL);
+
+                    Thread.sleep(1000); // short delay
+
+                
+                    File[] fileArray = {file};
+                    clipboard.setContents(new FileTransferable(fileArray), null);
+
+                    robot.keyPress(KeyEvent.VK_CONTROL);
+                    robot.keyPress(KeyEvent.VK_V);
+                    robot.keyRelease(KeyEvent.VK_V);
+                    robot.keyRelease(KeyEvent.VK_CONTROL);
+
+                    Thread.sleep(10000); // wait before hitting enter
+
+          
+                    robot.keyPress(KeyEvent.VK_ENTER);
+                    robot.keyRelease(KeyEvent.VK_ENTER);
+
+                    Thread.sleep(36000); // wait 2 minutes before next file
+                }
+
+               
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -765,39 +736,76 @@ public class altingMainWindow extends javax.swing.JFrame {
 
     
     
-        private void typeChar(Robot robot, char character) {
-        try {
-            boolean upperCase = Character.isUpperCase(character);
-            int keyCode = KeyEvent.getExtendedKeyCodeForChar(character);
-
-            if (keyCode == KeyEvent.VK_UNDEFINED) return;
-
-            if (upperCase || isSpecialShiftChar(character)) {
-                robot.keyPress(KeyEvent.VK_SHIFT);
-            }
-
-            robot.keyPress(keyCode);
-            robot.keyRelease(keyCode);
-
-            if (upperCase || isSpecialShiftChar(character)) {
-                robot.keyRelease(KeyEvent.VK_SHIFT);
-            }
-        } catch (IllegalArgumentException e) {
-            if (character == '\n') {
-                robot.keyPress(KeyEvent.VK_ENTER);
-                robot.keyRelease(KeyEvent.VK_ENTER);
-            } else if (character == ' ') {
-                robot.keyPress(KeyEvent.VK_SPACE);
-                robot.keyRelease(KeyEvent.VK_SPACE);
+       private void typeString(Robot robot, String text) throws InterruptedException {
+            for (char ch : text.toCharArray()) {
+                typeChar(robot, ch);
+                if (ch == ' ') {
+                    Thread.sleep(100);
+                } else {
+                    Thread.sleep(20);
+                }
             }
         }
-    }
 
-    // SHIFT-needed characters
-    private boolean isSpecialShiftChar(char ch) {
-        return "~!@#$%^&*()_+{}|:\"<>?".indexOf(ch) >= 0;
-    }
-    
+        // Type individual characters
+        private void typeChar(Robot robot, char character) {
+            try {
+                boolean upperCase = Character.isUpperCase(character);
+                int keyCode = KeyEvent.getExtendedKeyCodeForChar(character);
+
+                if (keyCode == KeyEvent.VK_UNDEFINED) return;
+
+                if (upperCase || isSpecialShiftChar(character)) {
+                    robot.keyPress(KeyEvent.VK_SHIFT);
+                }
+
+                robot.keyPress(keyCode);
+                robot.keyRelease(keyCode);
+
+                if (upperCase || isSpecialShiftChar(character)) {
+                    robot.keyRelease(KeyEvent.VK_SHIFT);
+                }
+
+            } catch (IllegalArgumentException e) {
+                if (character == '\n') {
+                    robot.keyPress(KeyEvent.VK_ENTER);
+                    robot.keyRelease(KeyEvent.VK_ENTER);
+                } else if (character == ' ') {
+                    robot.keyPress(KeyEvent.VK_SPACE);
+                    robot.keyRelease(KeyEvent.VK_SPACE);
+                }
+            }
+        }
+
+// Shift-required characters
+        private boolean isSpecialShiftChar(char ch) {
+            return "~!@#$%^&*()_+{}|:\"<>?".indexOf(ch) >= 0;
+        }
+
+        // Clipboard wrapper for files
+        class FileTransferable implements Transferable {
+            private final List<File> fileList;
+
+            public FileTransferable(File[] files) {
+                this.fileList = Arrays.asList(files);
+            }
+
+            @Override
+            public DataFlavor[] getTransferDataFlavors() {
+                return new DataFlavor[]{DataFlavor.javaFileListFlavor};
+            }
+
+            @Override
+            public boolean isDataFlavorSupported(DataFlavor flavor) {
+                return DataFlavor.javaFileListFlavor.equals(flavor);
+            }
+
+            @Override
+            public Object getTransferData(DataFlavor flavor) throws UnsupportedFlavorException {
+                if (!isDataFlavorSupported(flavor)) throw new UnsupportedFlavorException(flavor);
+                return fileList;
+            }
+        }
     
     
     private void groupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupBtnActionPerformed
