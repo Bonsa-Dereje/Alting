@@ -59,6 +59,11 @@ import java.awt.datatransfer.*;
 
 import java.util.Arrays;
 
+import java.awt.event.InputEvent;
+
+import java.awt.Dimension;
+
+
 
 
 
@@ -106,9 +111,10 @@ public class altingMainWindow extends javax.swing.JFrame {
         ocrParseBtn = new javax.swing.JButton();
         consolidateBtn = new javax.swing.JButton();
         groupBtn = new javax.swing.JButton();
-        exportBtn = new javax.swing.JButton();
+        toJsonBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         dirSelectBtn = new javax.swing.JButton();
+        toDBbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -157,13 +163,13 @@ public class altingMainWindow extends javax.swing.JFrame {
             }
         });
 
-        exportBtn.setBackground(new java.awt.Color(255, 204, 153));
-        exportBtn.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        exportBtn.setText("Export");
-        exportBtn.setIconTextGap(2);
-        exportBtn.addActionListener(new java.awt.event.ActionListener() {
+        toJsonBtn.setBackground(new java.awt.Color(255, 204, 153));
+        toJsonBtn.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        toJsonBtn.setText("Parse to JSON");
+        toJsonBtn.setIconTextGap(2);
+        toJsonBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exportBtnActionPerformed(evt);
+                toJsonBtnActionPerformed(evt);
             }
         });
 
@@ -180,14 +186,24 @@ public class altingMainWindow extends javax.swing.JFrame {
             }
         });
 
+        toDBbtn.setBackground(new java.awt.Color(255, 204, 153));
+        toDBbtn.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        toDBbtn.setText("Write to Database");
+        toDBbtn.setIconTextGap(2);
+        toDBbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                toDBbtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(86, 86, 86)
+                .addGap(90, 90, 90)
                 .addComponent(appName)
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -195,19 +211,20 @@ public class altingMainWindow extends javax.swing.JFrame {
                     .addComponent(ocrParseBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(groupBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(consolidateBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(exportBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(toJsonBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(dirSelectBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(dirSelectBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
+                    .addComponent(toDBbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(7, 7, 7)
+                .addGap(13, 13, 13)
                 .addComponent(appName)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(dirSelectBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(collegeSearchBtn)
@@ -218,10 +235,12 @@ public class altingMainWindow extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(consolidateBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(exportBtn)
+                .addComponent(toJsonBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(toDBbtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(24, 24, 24))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -236,8 +255,8 @@ public class altingMainWindow extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -625,13 +644,11 @@ public class altingMainWindow extends javax.swing.JFrame {
         
     }//GEN-LAST:event_consolidateBtnActionPerformed
 
-    private void exportBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exportBtnActionPerformed
-           try {
+    private void toJsonBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toJsonBtnActionPerformed
+            try {
             Robot robot = new Robot();
 
-            
-
-           
+            // ALT + TAB to browser
             robot.keyPress(KeyEvent.VK_ALT);
             robot.keyPress(KeyEvent.VK_TAB);
             robot.keyRelease(KeyEvent.VK_TAB);
@@ -642,14 +659,13 @@ public class altingMainWindow extends javax.swing.JFrame {
             robot.keyRelease(KeyEvent.VK_ALT);
             Thread.sleep(3000);
 
-         
+            // Open chat.deepseek.com
             robot.keyPress(KeyEvent.VK_CONTROL);
             robot.keyPress(KeyEvent.VK_L);
             robot.keyRelease(KeyEvent.VK_L);
             robot.keyRelease(KeyEvent.VK_CONTROL);
             Thread.sleep(3000);
 
-          
             String url = "chat.deepseek.com";
             for (char ch : url.toCharArray()) {
                 typeChar(robot, ch);
@@ -659,14 +675,12 @@ public class altingMainWindow extends javax.swing.JFrame {
             robot.keyRelease(KeyEvent.VK_ENTER);
             Thread.sleep(9000);
 
-           
             File promptFile = new File("D:\\altingData\\llmRequest\\prompt.txt");
             if (!promptFile.exists()) {
-                JOptionPane.showMessageDialog(null, "prompt.txt not found at:\n" + promptFile.getAbsolutePath());
+                JOptionPane.showMessageDialog(null, "prompt.txt not found:\n" + promptFile.getAbsolutePath());
                 return;
             }
 
-            // Load main files
             File inputFolder = new File("D:\\altingData\\consolidatedParseFiles");
             File[] files = inputFolder.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
 
@@ -676,78 +690,157 @@ public class altingMainWindow extends javax.swing.JFrame {
             }
 
             if (files != null) {
-               
                 int index = 0;
+                int startBatchIndex = 1;
                 Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 
                 for (File file : files) {
                     index++;
-                    
+
+                    // Reload DeepSeek every 3rd file (i.e. start of a new batch)
+                    if (index % 3 == 1 && index != 1) {
+                        robot.keyPress(KeyEvent.VK_CONTROL);
+                        robot.keyPress(KeyEvent.VK_L);
+                        robot.keyRelease(KeyEvent.VK_L);
+                        robot.keyRelease(KeyEvent.VK_CONTROL);
+                        Thread.sleep(3000);
+
+                        for (char ch : url.toCharArray()) {
+                            typeChar(robot, ch);
+                        }
+
+                        robot.keyPress(KeyEvent.VK_ENTER);
+                        robot.keyRelease(KeyEvent.VK_ENTER);
+                        Thread.sleep(9000);
+                    }
+
+                    // Type prompt
                     String message = "[New Query] Ignore all previous messages and only answer this:";
                     for (char ch : message.toCharArray()) {
                         typeChar(robot, ch);
                     }
+
                     robot.keyPress(KeyEvent.VK_SHIFT);
                     robot.keyPress(KeyEvent.VK_ENTER);
                     robot.keyRelease(KeyEvent.VK_ENTER);
                     robot.keyRelease(KeyEvent.VK_SHIFT);
                     Thread.sleep(300);
 
-                    String followUp = "Respond to this independently, without considering earlier messages.";
+                    String followUp = "write sql queries that i can just run to insert them to my sql database";
                     for (char ch : followUp.toCharArray()) {
                         typeChar(robot, ch);
                     }
 
-                  
-                    File[] promptArray = {promptFile};
-                    clipboard.setContents(new FileTransferable(promptArray), null);
-
+                    // Paste prompt.txt
+                    clipboard.setContents(new FileTransferable(new File[]{promptFile}), null);
                     robot.keyPress(KeyEvent.VK_CONTROL);
                     robot.keyPress(KeyEvent.VK_V);
                     robot.keyRelease(KeyEvent.VK_V);
                     robot.keyRelease(KeyEvent.VK_CONTROL);
+                    Thread.sleep(1000);
 
-                    Thread.sleep(1000); // short delay
-
-                
-                    File[] fileArray = {file};
-                    clipboard.setContents(new FileTransferable(fileArray), null);
-
+                    // Paste current file
+                    clipboard.setContents(new FileTransferable(new File[]{file}), null);
                     robot.keyPress(KeyEvent.VK_CONTROL);
                     robot.keyPress(KeyEvent.VK_V);
                     robot.keyRelease(KeyEvent.VK_V);
                     robot.keyRelease(KeyEvent.VK_CONTROL);
+                    Thread.sleep(10000);
 
-                    Thread.sleep(10000); // wait before hitting enter
-
-          
                     robot.keyPress(KeyEvent.VK_ENTER);
                     robot.keyRelease(KeyEvent.VK_ENTER);
 
-                    Thread.sleep(36000); // wait 2 minutes before next file
-                }
+                    Thread.sleep(45000); // wait for response
 
-               
+                    // After every 3 files
+                    if (index % 3 == 0) {
+                        Thread.sleep(5000); // wait a bit more
+
+                        // Click center of screen to ensure chat is focused
+                        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+                        int centerX = screenSize.width / 4;
+                        int centerY = screenSize.height / 2;
+                        robot.mouseMove(centerX, centerY);
+                        robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+                        robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+                        Thread.sleep(500);
+
+                        // Select all and copy
+                        robot.keyPress(KeyEvent.VK_CONTROL);
+                        robot.keyPress(KeyEvent.VK_A);
+                        robot.keyRelease(KeyEvent.VK_A);
+                        robot.keyRelease(KeyEvent.VK_CONTROL);
+                        Thread.sleep(5000);
+                        
+                        robot.keyPress(KeyEvent.VK_CONTROL);
+                        robot.keyPress(KeyEvent.VK_C);
+                        robot.keyRelease(KeyEvent.VK_C);
+                        robot.keyRelease(KeyEvent.VK_CONTROL);
+                        
+
+                        String fileName = startBatchIndex + "-" + index + ".txt";
+                        File outputFile = new File("D:\\altingData\\toJSON", fileName);
+                        outputFile.getParentFile().mkdirs();
+                        outputFile.createNewFile(); // Create the empty file
+
+                        // Launch Notepad with the file
+                        Runtime.getRuntime().exec("notepad \"" + outputFile.getAbsolutePath() + "\"");
+                        Thread.sleep(5000); // Wait for Notepad to open
+
+                        // Paste clipboard content into Notepad
+                        robot.keyPress(KeyEvent.VK_CONTROL);
+                        robot.keyPress(KeyEvent.VK_V);
+                        robot.keyRelease(KeyEvent.VK_V);
+                        robot.keyRelease(KeyEvent.VK_CONTROL);
+                        Thread.sleep(500);
+
+                        // Save the file (Ctrl+S)
+                        robot.keyPress(KeyEvent.VK_CONTROL);
+                        robot.keyPress(KeyEvent.VK_S);
+                        robot.keyRelease(KeyEvent.VK_S);
+                        robot.keyRelease(KeyEvent.VK_CONTROL);
+                        Thread.sleep(500);
+
+                        // Close Notepad (Alt+F4)
+                        robot.keyPress(KeyEvent.VK_ALT);
+                        robot.keyPress(KeyEvent.VK_F4);
+                        robot.keyRelease(KeyEvent.VK_F4);
+                        robot.keyRelease(KeyEvent.VK_ALT);
+
+                        // Update for next batch
+                        startBatchIndex = index + 1;
+                        // Reload DeepSeek
+                        robot.keyPress(KeyEvent.VK_CONTROL);
+                        robot.keyPress(KeyEvent.VK_L);
+                        robot.keyRelease(KeyEvent.VK_L);
+                        robot.keyRelease(KeyEvent.VK_CONTROL);
+                        Thread.sleep(3000);
+
+                        for (char ch : url.toCharArray()) {
+                            typeChar(robot, ch);
+                        }
+
+                        robot.keyPress(KeyEvent.VK_ENTER);
+                        robot.keyRelease(KeyEvent.VK_ENTER);
+                        Thread.sleep(15000);
+                    }
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }//GEN-LAST:event_exportBtnActionPerformed
+    }//GEN-LAST:event_toJsonBtnActionPerformed
 
     
     
        private void typeString(Robot robot, String text) throws InterruptedException {
-            for (char ch : text.toCharArray()) {
-                typeChar(robot, ch);
-                if (ch == ' ') {
-                    Thread.sleep(100);
-                } else {
-                    Thread.sleep(20);
-                }
-            }
+        for (char ch : text.toCharArray()) {
+            typeChar(robot, ch);
+            if (ch == ' ') Thread.sleep(100);
+            else Thread.sleep(20);
         }
+    }
 
-        // Type individual characters
         private void typeChar(Robot robot, char character) {
             try {
                 boolean upperCase = Character.isUpperCase(character);
@@ -777,12 +870,10 @@ public class altingMainWindow extends javax.swing.JFrame {
             }
         }
 
-// Shift-required characters
         private boolean isSpecialShiftChar(char ch) {
             return "~!@#$%^&*()_+{}|:\"<>?".indexOf(ch) >= 0;
         }
 
-        // Clipboard wrapper for files
         class FileTransferable implements Transferable {
             private final List<File> fileList;
 
@@ -806,6 +897,7 @@ public class altingMainWindow extends javax.swing.JFrame {
                 return fileList;
             }
         }
+    
     
     
     private void groupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupBtnActionPerformed
@@ -1054,6 +1146,10 @@ public class altingMainWindow extends javax.swing.JFrame {
             return;
         }
     }//GEN-LAST:event_dirSelectBtnActionPerformed
+
+    private void toDBbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toDBbtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_toDBbtnActionPerformed
     
     
     
@@ -1096,10 +1192,11 @@ public class altingMainWindow extends javax.swing.JFrame {
     private javax.swing.JButton collegeSearchBtn;
     private javax.swing.JButton consolidateBtn;
     private javax.swing.JButton dirSelectBtn;
-    private javax.swing.JButton exportBtn;
     private javax.swing.JButton groupBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JButton ocrParseBtn;
+    private javax.swing.JButton toDBbtn;
+    private javax.swing.JButton toJsonBtn;
     // End of variables declaration//GEN-END:variables
 }

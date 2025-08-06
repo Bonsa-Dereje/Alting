@@ -1,0 +1,79 @@
+
+
+Extracting College Data for SQL Database
+prompt.txt
+TXT 1.97KB
+abilene christian university masterParsed.txt
+TXT 35.56KB
+[New Query] Ignore all previous messages and only answer this
+Respond to this independently, without considering earlier messages.
+Here is the extracted information for Abilene Christian University in JSON format, structured according to your database schema:
+
+json
+{
+  "collegeData": {
+    "collegeName": "Abilene Christian University",
+    "country": "USA",
+    "stateLocation": "Texas",
+    "privateCollege": "Yes",
+    "acceptanceRate": 0.64,
+    "satReq": "Not required (test-optional through 2026)",
+    "commonAppReq": "Yes",
+    "questBridge": "No",
+    "proprieteryApp": "Yes",
+    "proprieteryAppLink": "https://acu.edu/apply",
+    "toeflReq": "TOEFL minimum overall score of 80, with 19 in reading and writing",
+    "cssProfileCode": 3537,
+    "avgSAT": 1157,
+    "avgACT": 25,
+    "appFee": 50,
+    "tuition": null,
+    "appFeeWaiver": "Yes (for first-generation students, veterans, etc.)",
+    "intlEligiblityReq": "Completed secondary education, minimum GPA of 3.56 for transfers, TOEFL/IELTS for non-native English speakers",
+    "fafsaForm": null
+  },
+  "financialAid": {
+    "cssProfileCode": 3537,
+    "grantsAV": "Yes",
+    "grantsFullInfo": "Federal, state, and ACU-specific grants available. TEG for Texas residents with financial need.",
+    "scholarshipsAV": "Yes",
+    "scholarshipFullInfo": "Merit-based and need-based scholarships available, including the President's International Scholarship for $22,000/year.",
+    "meritScholarshipsAV": "Yes",
+    "meritScholarshipFullInfo": "Awards range up to $21,000 per year based on application for admission.",
+    "workStudyAV": "Yes",
+    "workStudyFullInfo": "Federal and University Work-Study programs available for part-time on-campus jobs.",
+    "intlFinancialAidAV": "Yes",
+    "intlFinancialAidFullInfo": "Competitive aid, including scholarships like the ACU International Student Scholarship (50% tuition reduction).",
+    "loansAV": "Yes",
+    "loansFullInfo": "Available as part of financial aid packages.",
+    "finAidOfficeEmail": null
+  },
+  "deadlines": {
+    "cssProfileCode": 3537,
+    "regularDecision": "Rolling admissions",
+    "earlyDecision": null,
+    "earlyAction": "November 1",
+    "restrictiveEarlyAction": "No",
+    "rollingAdmission": "Yes"
+  }
+}
+Notes:
+Tuition: The exact yearly tuition value was not found in the provided text. You may need to add this manually.
+
+FAFSA Form: Binary data (e.g., PDF) is not included in the JSON. This would typically be handled via file upload in your application.
+
+finAidOfficeEmail: Not found in the text. Replace with the actual email if available.
+
+Proprietary App Link: Assumed to be the official ACU application page. Verify the exact URL if needed.
+
+This JSON is ready to be used for inserting data into your SQL database. Let me know if you'd like any adjustments!
+
+New chat
+Extract only text from images and files.
+prompt.txt
+TXT 1.97KB
+adelphi university masterParsed.txt
+TXT 37.11KB
+[New Query] Ignore all previous messages and only answer this
+Respond to this independently, without considering earlier messages.
+AI-generated, for reference only

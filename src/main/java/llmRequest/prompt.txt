@@ -1,7 +1,7 @@
-i'll be sending you txt files, you'll extract info that will be entered to this database later. Create a JSON file that will later be used to enter the info to my sql database.
+I'll be sending you txt files and write sql queries that i can just run to insert them to my sql database
 
 create database collegeInfo;
-use collegeInfo;
+
 
 create table collegeData
 (
