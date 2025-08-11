@@ -62,13 +62,14 @@
                       <Component id="ocrParseBtn" alignment="1" max="32767" attributes="0"/>
                       <Component id="groupBtn" alignment="0" max="32767" attributes="0"/>
                       <Component id="consolidateBtn" alignment="0" max="32767" attributes="0"/>
-                      <Component id="toJsonBtn" alignment="0" max="32767" attributes="0"/>
+                      <Component id="toQueryBtn" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Component id="jLabel1" min="-2" pref="75" max="-2" attributes="0"/>
                       </Group>
                       <Component id="dirSelectBtn" alignment="0" pref="208" max="32767" attributes="0"/>
                       <Component id="toDBbtn" alignment="0" max="32767" attributes="0"/>
+                      <Component id="oneizeNFlag" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -90,10 +91,12 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="consolidateBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="toJsonBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="toQueryBtn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="12" max="32767" attributes="0"/>
+                  <Component id="oneizeNFlag" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="toDBbtn" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="20" max="32767" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -169,7 +172,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="groupBtnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="toJsonBtn">
+        <Component class="javax.swing.JButton" name="toQueryBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="cc" red="ff" type="rgb"/>
@@ -177,11 +180,11 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="10" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Parse to JSON"/>
+            <Property name="text" type="java.lang.String" value="Parse to Query"/>
             <Property name="iconTextGap" type="int" value="2"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="toJsonBtnActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="toQueryBtnActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
@@ -220,6 +223,21 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="toDBbtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="oneizeNFlag">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="cc" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="10" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Oneize query and Flag"/>
+            <Property name="iconTextGap" type="int" value="2"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="oneizeNFlagActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

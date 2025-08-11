@@ -111,10 +111,11 @@ public class altingMainWindow extends javax.swing.JFrame {
         ocrParseBtn = new javax.swing.JButton();
         consolidateBtn = new javax.swing.JButton();
         groupBtn = new javax.swing.JButton();
-        toJsonBtn = new javax.swing.JButton();
+        toQueryBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         dirSelectBtn = new javax.swing.JButton();
         toDBbtn = new javax.swing.JButton();
+        oneizeNFlag = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -163,13 +164,13 @@ public class altingMainWindow extends javax.swing.JFrame {
             }
         });
 
-        toJsonBtn.setBackground(new java.awt.Color(255, 204, 153));
-        toJsonBtn.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        toJsonBtn.setText("Parse to JSON");
-        toJsonBtn.setIconTextGap(2);
-        toJsonBtn.addActionListener(new java.awt.event.ActionListener() {
+        toQueryBtn.setBackground(new java.awt.Color(255, 204, 153));
+        toQueryBtn.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        toQueryBtn.setText("Parse to Query");
+        toQueryBtn.setIconTextGap(2);
+        toQueryBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                toJsonBtnActionPerformed(evt);
+                toQueryBtnActionPerformed(evt);
             }
         });
 
@@ -196,6 +197,16 @@ public class altingMainWindow extends javax.swing.JFrame {
             }
         });
 
+        oneizeNFlag.setBackground(new java.awt.Color(255, 204, 153));
+        oneizeNFlag.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        oneizeNFlag.setText("Oneize query and Flag");
+        oneizeNFlag.setIconTextGap(2);
+        oneizeNFlag.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                oneizeNFlagActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -211,12 +222,13 @@ public class altingMainWindow extends javax.swing.JFrame {
                     .addComponent(ocrParseBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(groupBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(consolidateBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(toJsonBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(toQueryBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(dirSelectBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
-                    .addComponent(toDBbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(toDBbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(oneizeNFlag, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -235,10 +247,12 @@ public class altingMainWindow extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(consolidateBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(toJsonBtn)
+                .addComponent(toQueryBtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addComponent(oneizeNFlag)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(toDBbtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel1)
                 .addContainerGap())
         );
@@ -644,7 +658,7 @@ public class altingMainWindow extends javax.swing.JFrame {
         
     }//GEN-LAST:event_consolidateBtnActionPerformed
 
-    private void toJsonBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toJsonBtnActionPerformed
+    private void toQueryBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toQueryBtnActionPerformed
             try {
             Robot robot = new Robot();
 
@@ -657,7 +671,7 @@ public class altingMainWindow extends javax.swing.JFrame {
             robot.keyRelease(KeyEvent.VK_TAB);
             Thread.sleep(3000);
             robot.keyRelease(KeyEvent.VK_ALT);
-            Thread.sleep(3000);
+            Thread.sleep(7000);
 
             // Open chat.deepseek.com
             robot.keyPress(KeyEvent.VK_CONTROL);
@@ -690,8 +704,8 @@ public class altingMainWindow extends javax.swing.JFrame {
             }
 
             if (files != null) {
-                int index = 0;
-                int startBatchIndex = 1;
+                int index = 906;
+                int startBatchIndex = 907;
                 Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 
                 for (File file : files) {
@@ -699,6 +713,7 @@ public class altingMainWindow extends javax.swing.JFrame {
 
                     // Reload DeepSeek every 3rd file (i.e. start of a new batch)
                     if (index % 3 == 1 && index != 1) {
+                        Thread.sleep(10000);
                         robot.keyPress(KeyEvent.VK_CONTROL);
                         robot.keyPress(KeyEvent.VK_L);
                         robot.keyRelease(KeyEvent.VK_L);
@@ -779,7 +794,7 @@ public class altingMainWindow extends javax.swing.JFrame {
                         
 
                         String fileName = startBatchIndex + "-" + index + ".txt";
-                        File outputFile = new File("D:\\altingData\\toJSON", fileName);
+                        File outputFile = new File("D:\\altingData\\sqlQueries", fileName);
                         outputFile.getParentFile().mkdirs();
                         outputFile.createNewFile(); // Create the empty file
 
@@ -822,14 +837,14 @@ public class altingMainWindow extends javax.swing.JFrame {
 
                         robot.keyPress(KeyEvent.VK_ENTER);
                         robot.keyRelease(KeyEvent.VK_ENTER);
-                        Thread.sleep(15000);
+                        Thread.sleep(30000);
                     }
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }//GEN-LAST:event_toJsonBtnActionPerformed
+    }//GEN-LAST:event_toQueryBtnActionPerformed
 
     
     
@@ -1150,6 +1165,115 @@ public class altingMainWindow extends javax.swing.JFrame {
     private void toDBbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toDBbtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_toDBbtnActionPerformed
+
+    private void oneizeNFlagActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oneizeNFlagActionPerformed
+        if(isDirSelected == true){
+            
+      
+        
+        File scourDirectory = new File(sessionMasterDirectory, "sqlQueries");
+        if (!scourDirectory.exists()) {
+            scourDirectory.mkdirs();
+        }
+        
+        File flaggedQueries = new File(sessionMasterDirectory, "flaggedQueries");
+        if (!flaggedQueries.exists()) {
+            flaggedQueries.mkdirs();
+        }
+        
+        
+        
+        JDialog progressDialog = new JDialog(this, "Merging SQL Queries", true);
+        progressDialog.setSize(500, 130);
+        progressDialog.setLocationRelativeTo(this);
+        progressDialog.setLayout(new BorderLayout());
+
+        JProgressBar progressBar = new JProgressBar(0, 100);
+        progressBar.setStringPainted(true);
+        JLabel statusLabel = new JLabel("Starting...", SwingConstants.CENTER);
+
+        progressDialog.add(progressBar, BorderLayout.NORTH);
+        progressDialog.add(statusLabel, BorderLayout.CENTER);
+
+        // Start merging in a background thread
+        SwingWorker<Void, String> worker = new SwingWorker<>() {
+            @Override
+            protected Void doInBackground() {
+                try {
+                    File[] txtFiles = scourDirectory.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
+                    if (txtFiles == null || txtFiles.length == 0) {
+                        publish("No .txt files found in " + scourDirectory.getAbsolutePath());
+                        return null;
+                    }
+
+                    File outputFile = new File(sessionMasterDirectory, "oneized_queries.sql");
+                    try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
+                        int totalFiles = txtFiles.length;
+
+                        for (int i = 0; i < totalFiles; i++) {
+                            File currentFile = txtFiles[i];
+                            publish("Reading: " + currentFile.getName());
+
+                            String content = new String(Files.readAllBytes(currentFile.toPath()));
+
+                            // Extract only between the markers
+                            String startMarker = "-- Insert into collegeData table";
+                            String endMarker = "Notes:";
+
+                            int startIdx = content.indexOf(startMarker);
+                            int endIdx = content.indexOf(endMarker);
+
+                            if (startIdx != -1 && endIdx != -1 && startIdx < endIdx) {
+                                String extracted = content.substring(startIdx + startMarker.length(), endIdx).trim();
+
+                                if (!extracted.isEmpty()) {
+                                    writer.write("-- File: " + currentFile.getName() + "\n");
+                                    writer.write(extracted);
+                                    writer.write("\n\n");
+                                }
+                            }
+
+                            publish("Written: " + currentFile.getName());
+                            int progress = (int) (((i + 1) / (double) totalFiles) * 100);
+                            setProgress(progress);
+
+                            Thread.sleep(100); // small delay for visual update
+                        }
+                    }
+                    publish("✅ Merged into: oneized_queries.sql");
+
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                    publish("Error: " + ex.getMessage());
+                }
+                return null;
+            }
+
+            @Override
+            protected void process(java.util.List<String> chunks) {
+                statusLabel.setText(chunks.get(chunks.size() - 1));
+            }
+
+            @Override
+            protected void done() {
+                progressDialog.dispose();
+            }
+        };
+
+        worker.addPropertyChangeListener(evt1 -> {
+            if ("progress".equals(evt1.getPropertyName())) {
+                progressBar.setValue((Integer) evt1.getNewValue());
+            }
+        });
+
+        worker.execute();
+        progressDialog.setVisible(true);
+        
+        }else{
+          JOptionPane.showMessageDialog(this, "Parent Directory Not Selected");
+          
+        }
+    }//GEN-LAST:event_oneizeNFlagActionPerformed
     
     
     
@@ -1196,7 +1320,8 @@ public class altingMainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JButton ocrParseBtn;
+    private javax.swing.JButton oneizeNFlag;
     private javax.swing.JButton toDBbtn;
-    private javax.swing.JButton toJsonBtn;
+    private javax.swing.JButton toQueryBtn;
     // End of variables declaration//GEN-END:variables
 }
