@@ -75,6 +75,7 @@ import java.awt.Color;
 import javax.swing.text.StyleContext;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.AttributeSet;
+import java.util.regex.Pattern;
 
 
 
@@ -1381,42 +1382,36 @@ public class altingMainWindow extends javax.swing.JFrame {
                     StringBuilder currentQuery = new StringBuilder();
                     int processedLines = 0;
 
+                    // Regex to match exactly the three types (case-insensitive)
+                    Pattern insertPattern = Pattern.compile(
+                            "(?i)insert\\s+into\\s+(collegeData|financialAid|deadlines)"
+                    );
+
                     while ((line = reader.readLine()) != null) {
                         processedLines++;
                         String trimmed = line.trim();
 
-                        // Start capturing when you see a line containing "Insert" (case-insensitive)
-                        if (trimmed.toLowerCase().contains("insert")) {
+                        // If this line starts a new query
+                        if (insertPattern.matcher(trimmed).find()) {
                             inQueryBlock = true;
                             currentQuery.setLength(0); // reset for new query
                         }
 
-                        // Stop capturing at "Notes:"
-                        if (trimmed.startsWith("Notes:")) {
-                            if (inQueryBlock) {
-                                // Write the current query to file and update live preview
+                        // Append lines if inside a query block
+                        if (inQueryBlock) {
+                            currentQuery.append(line).append("\n");
+                            // End when we hit a semicolon (assuming complete SQL statement)
+                            if (trimmed.endsWith(";")) {
                                 publish(currentQuery.toString());
                                 writer.write(currentQuery.toString());
                                 writer.newLine();
+                                inQueryBlock = false;
                             }
-                            inQueryBlock = false;
-                            writer.newLine();
-                            continue;
-                        }
-
-                        // Append lines inside the query block
-                        if (inQueryBlock && !trimmed.isEmpty()) {
-                            currentQuery.append(line).append("\n");
                         }
 
                         // Update progress
                         int progress = (int) ((processedLines / (double) totalLines) * 100);
                         setProgress(progress);
-
-                        // Live preview of the current query
-                        if (inQueryBlock) {
-                            publish(currentQuery.toString());
-                        }
                     }
                 }
 
