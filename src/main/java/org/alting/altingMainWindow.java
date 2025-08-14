@@ -64,6 +64,19 @@ import java.awt.event.InputEvent;
 import java.awt.Dimension;
 
 
+import javax.swing.table.DefaultTableModel;
+
+import javax.swing.text.StyledDocument;
+import javax.swing.text.Style;
+import javax.swing.text.StyleConstants;
+import javax.swing.text.BadLocationException;
+
+import java.awt.Color;
+import javax.swing.text.StyleContext;
+import javax.swing.text.SimpleAttributeSet;
+import javax.swing.text.AttributeSet;
+
+
 
 
 
@@ -89,6 +102,11 @@ public class altingMainWindow extends javax.swing.JFrame {
     private JProgressBar ocrProgressBar;
     private JTextArea ocrOutputArea;
     
+    private JProgressBar progressBar;
+    private JTextPane textPane;
+    private JTextPane livePreviewPane;
+    
+    
     
     
 
@@ -97,6 +115,23 @@ public class altingMainWindow extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         setResizable(false);
+        
+        
+        
+       progressBar = new JProgressBar();
+        progressBar.setStringPainted(true);
+
+        livePreviewPane = new JTextPane();
+        livePreviewPane.setEditable(false);
+
+        JScrollPane previewScroll = new JScrollPane(livePreviewPane);
+
+        JPanel bottomPanel = new JPanel(new BorderLayout());
+        bottomPanel.add(progressBar, BorderLayout.NORTH);
+        bottomPanel.add(previewScroll, BorderLayout.CENTER);
+
+        this.add(bottomPanel, BorderLayout.SOUTH);
+        this.revalidate();
         
     }
 
@@ -116,6 +151,7 @@ public class altingMainWindow extends javax.swing.JFrame {
         dirSelectBtn = new javax.swing.JButton();
         toDBbtn = new javax.swing.JButton();
         oneizeNFlag = new javax.swing.JButton();
+        sqlizeBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -207,6 +243,16 @@ public class altingMainWindow extends javax.swing.JFrame {
             }
         });
 
+        sqlizeBtn.setBackground(new java.awt.Color(255, 204, 153));
+        sqlizeBtn.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        sqlizeBtn.setText("sqlize");
+        sqlizeBtn.setIconTextGap(2);
+        sqlizeBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sqlizeBtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -228,7 +274,8 @@ public class altingMainWindow extends javax.swing.JFrame {
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(dirSelectBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
                     .addComponent(toDBbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(oneizeNFlag, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(oneizeNFlag, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(sqlizeBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -248,11 +295,13 @@ public class altingMainWindow extends javax.swing.JFrame {
                 .addComponent(consolidateBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(toQueryBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
                 .addComponent(oneizeNFlag)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(toDBbtn)
+                .addComponent(sqlizeBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(toDBbtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
                 .addContainerGap())
         );
@@ -1167,116 +1216,251 @@ public class altingMainWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_toDBbtnActionPerformed
 
     private void oneizeNFlagActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oneizeNFlagActionPerformed
-        if(isDirSelected == true){
-            
-      
-        
-        File scourDirectory = new File(sessionMasterDirectory, "sqlQueries");
-        if (!scourDirectory.exists()) {
-            scourDirectory.mkdirs();
-        }
-        
-        File flaggedQueries = new File(sessionMasterDirectory, "flaggedQueries");
-        if (!flaggedQueries.exists()) {
-            flaggedQueries.mkdirs();
-        }
-        
-        
-        
-        JDialog progressDialog = new JDialog(this, "Merging SQL Queries", true);
-        progressDialog.setSize(500, 130);
-        progressDialog.setLocationRelativeTo(this);
-        progressDialog.setLayout(new BorderLayout());
+           if (isDirSelected) {
 
-        JProgressBar progressBar = new JProgressBar(0, 100);
-        progressBar.setStringPainted(true);
-        JLabel statusLabel = new JLabel("Starting...", SwingConstants.CENTER);
+            File scourDirectory = new File(sessionMasterDirectory, "sqlQueries");
+            if (!scourDirectory.exists()) {
+                scourDirectory.mkdirs();
+            }
 
-        progressDialog.add(progressBar, BorderLayout.NORTH);
-        progressDialog.add(statusLabel, BorderLayout.CENTER);
+            File flaggedQueries = new File(sessionMasterDirectory, "flaggedQueries");
+            if (!flaggedQueries.exists()) {
+                flaggedQueries.mkdirs();
+            }
 
-        // Start merging in a background thread
-        SwingWorker<Void, String> worker = new SwingWorker<>() {
-            @Override
-            protected Void doInBackground() {
-                try {
-                    File[] txtFiles = scourDirectory.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
-                    if (txtFiles == null || txtFiles.length == 0) {
-                        publish("No .txt files found in " + scourDirectory.getAbsolutePath());
-                        return null;
-                    }
+            JDialog progressDialog = new JDialog(this, "Merging SQL Queries", true);
+            progressDialog.setSize(500, 130);
+            progressDialog.setLocationRelativeTo(this);
+            progressDialog.setLayout(new BorderLayout());
 
-                    File outputFile = new File(sessionMasterDirectory, "oneized_queries.sql");
-                    try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
-                        int totalFiles = txtFiles.length;
+            JProgressBar progressBar = new JProgressBar(0, 100);
+            progressBar.setStringPainted(true);
+            JLabel statusLabel = new JLabel("Starting...", SwingConstants.CENTER);
 
-                        for (int i = 0; i < totalFiles; i++) {
-                            File currentFile = txtFiles[i];
-                            publish("Reading: " + currentFile.getName());
+            progressDialog.add(progressBar, BorderLayout.NORTH);
+            progressDialog.add(statusLabel, BorderLayout.CENTER);
 
-                            String content = new String(Files.readAllBytes(currentFile.toPath()));
+            SwingWorker<Void, String> worker = new SwingWorker<>() {
+                @Override
+                protected Void doInBackground() {
+                    try {
+                        File[] txtFiles = scourDirectory.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
+                        if (txtFiles == null || txtFiles.length == 0) {
+                            publish("No .txt files found in " + scourDirectory.getAbsolutePath());
+                            return null;
+                        }
 
-                            // Extract only between the markers
-                            String startMarker = "-- Insert into collegeData table";
-                            String endMarker = "Notes:";
+                        File outputFile = new File(sessionMasterDirectory, "oneized_queries.txt");
+                        try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
+                            int totalFiles = txtFiles.length;
 
-                            int startIdx = content.indexOf(startMarker);
-                            int endIdx = content.indexOf(endMarker);
+                            for (int i = 0; i < totalFiles; i++) {
+                                File currentFile = txtFiles[i];
+                                publish("Reading: " + currentFile.getName());
 
-                            if (startIdx != -1 && endIdx != -1 && startIdx < endIdx) {
-                                String extracted = content.substring(startIdx + startMarker.length(), endIdx).trim();
+                                String content = new String(Files.readAllBytes(currentFile.toPath()));
+                                writer.write("-- File: " + currentFile.getName() + "\n");
+                                writer.write(content.trim());
+                                writer.write("\n\n");
 
-                                if (!extracted.isEmpty()) {
-                                    writer.write("-- File: " + currentFile.getName() + "\n");
-                                    writer.write(extracted);
-                                    writer.write("\n\n");
-                                }
+                                publish("Written: " + currentFile.getName());
+                                int progress = (int) (((i + 1) / (double) totalFiles) * 100);
+                                setProgress(progress);
+
+                                Thread.sleep(50);
                             }
+                        }
+                        publish("✅ Merged into: oneized_queries.txt");
 
-                            publish("Written: " + currentFile.getName());
-                            int progress = (int) (((i + 1) / (double) totalFiles) * 100);
-                            setProgress(progress);
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                        publish("Error: " + ex.getMessage());
+                    }
+                    return null;
+                }
 
-                            Thread.sleep(100); // small delay for visual update
+                @Override
+                protected void process(java.util.List<String> chunks) {
+                    statusLabel.setText(chunks.get(chunks.size() - 1));
+                }
+
+                @Override
+                protected void done() {
+                    progressDialog.dispose();
+
+                    // Show college table after merging
+                    SwingUtilities.invokeLater(() -> showCollegeTable());
+                }
+            };
+
+            worker.addPropertyChangeListener(evt1 -> {
+                if ("progress".equals(evt1.getPropertyName())) {
+                    progressBar.setValue((Integer) evt1.getNewValue());
+                }
+            });
+
+            worker.execute();
+            progressDialog.setVisible(true);
+
+        } else {
+            JOptionPane.showMessageDialog(this, "Parent Directory Not Selected");
+        }
+    }
+
+    private void showCollegeTable() {
+        JDialog dialog = new JDialog(this, "College List", true);
+        dialog.setSize(700, 500);
+        dialog.setLocationRelativeTo(this);
+        dialog.setLayout(new BorderLayout());
+
+        String[] columnNames = {"College Name", "College URL"};
+        DefaultTableModel model = new DefaultTableModel(columnNames, 0);
+        JTable table = new JTable(model);
+        JScrollPane scrollPane = new JScrollPane(table);
+
+        java.util.List<String> collegeEntries = new java.util.ArrayList<>();
+
+        try {
+            String collegeUrlDatabase = "https://mally.stanford.edu/~sr/universities.html";
+            org.jsoup.nodes.Document doc = org.jsoup.Jsoup.connect(collegeUrlDatabase).get();
+            org.jsoup.select.Elements listItems = doc.select("li");
+
+            for (org.jsoup.nodes.Element li : listItems) {
+                String fetchCollegeName = li.text().split("\\(")[0].trim();
+                org.jsoup.nodes.Element fetchCollegeLink = li.selectFirst("a[href]");
+                String href = (fetchCollegeLink != null) ? fetchCollegeLink.attr("abs:href") : "No Link";
+
+                if (!fetchCollegeName.isEmpty()) {
+                    model.addRow(new Object[]{fetchCollegeName, href});
+                    collegeEntries.add(fetchCollegeName + " - " + href);
+                }
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(dialog, "Error fetching colleges: " + e.getMessage());
+        }
+
+        JButton copyBtn = new JButton("Copy All");
+        copyBtn.addActionListener(ev -> {
+            String allColleges = String.join("\n", collegeEntries);
+            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(allColleges), null);
+            JOptionPane.showMessageDialog(dialog, "Copied " + collegeEntries.size() + " colleges to clipboard.");
+        });
+
+        JPanel bottomPanel = new JPanel();
+        bottomPanel.add(copyBtn);
+
+        dialog.add(scrollPane, BorderLayout.CENTER);
+        dialog.add(bottomPanel, BorderLayout.SOUTH);
+
+        dialog.setVisible(true);
+    }//GEN-LAST:event_oneizeNFlagActionPerformed
+
+    private void sqlizeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sqlizeBtnActionPerformed
+                new SwingWorker<Void, String>() {
+            @Override
+            protected Void doInBackground() throws Exception {
+                File inputFile = new File("D:\\altingData", "oneized_queries.txt");
+                File outputFile = new File("D:\\altingData", "master sqlized.sql");
+
+                if (!inputFile.exists()) {
+                    JOptionPane.showMessageDialog(null, "oneized_queries.txt not found in D:\\altingData");
+                    return null;
+                }
+
+                // Count total lines for progress
+                int totalLines = 0;
+                try (BufferedReader lineCounter = new BufferedReader(new FileReader(inputFile))) {
+                    while (lineCounter.readLine() != null) totalLines++;
+                }
+
+                try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+                     BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
+
+                    String line;
+                    boolean inQueryBlock = false;
+                    StringBuilder currentQuery = new StringBuilder();
+                    int processedLines = 0;
+
+                    while ((line = reader.readLine()) != null) {
+                        processedLines++;
+                        String trimmed = line.trim();
+
+                        // Start capturing when you see a line containing "Insert" (case-insensitive)
+                        if (trimmed.toLowerCase().contains("insert")) {
+                            inQueryBlock = true;
+                            currentQuery.setLength(0); // reset for new query
+                        }
+
+                        // Stop capturing at "Notes:"
+                        if (trimmed.startsWith("Notes:")) {
+                            if (inQueryBlock) {
+                                // Write the current query to file and update live preview
+                                publish(currentQuery.toString());
+                                writer.write(currentQuery.toString());
+                                writer.newLine();
+                            }
+                            inQueryBlock = false;
+                            writer.newLine();
+                            continue;
+                        }
+
+                        // Append lines inside the query block
+                        if (inQueryBlock && !trimmed.isEmpty()) {
+                            currentQuery.append(line).append("\n");
+                        }
+
+                        // Update progress
+                        int progress = (int) ((processedLines / (double) totalLines) * 100);
+                        setProgress(progress);
+
+                        // Live preview of the current query
+                        if (inQueryBlock) {
+                            publish(currentQuery.toString());
                         }
                     }
-                    publish("✅ Merged into: oneized_queries.sql");
-
-                } catch (Exception ex) {
-                    ex.printStackTrace();
-                    publish("Error: " + ex.getMessage());
                 }
+
                 return null;
             }
 
             @Override
             protected void process(java.util.List<String> chunks) {
-                statusLabel.setText(chunks.get(chunks.size() - 1));
+                String latest = chunks.get(chunks.size() - 1);
+                updateLivePreview(latest, "", false);
             }
 
             @Override
             protected void done() {
-                progressDialog.dispose();
+                JOptionPane.showMessageDialog(null, "SQL queries extracted successfully!");
+                setProgress(100);
             }
-        };
+        }.execute();
 
-        worker.addPropertyChangeListener(evt1 -> {
-            if ("progress".equals(evt1.getPropertyName())) {
-                progressBar.setValue((Integer) evt1.getNewValue());
+    }//GEN-LAST:event_sqlizeBtnActionPerformed
+    
+    
+        private void updateLivePreview(String keptText, String cutOffText, boolean finished) {
+        SwingUtilities.invokeLater(() -> {
+            StyledDocument doc = livePreviewPane.getStyledDocument();
+            StyleContext sc = StyleContext.getDefaultStyleContext();
+            AttributeSet green = sc.addAttribute(SimpleAttributeSet.EMPTY, StyleConstants.Foreground, Color.GREEN);
+            AttributeSet red = sc.addAttribute(SimpleAttributeSet.EMPTY, StyleConstants.Foreground, Color.RED);
+
+            livePreviewPane.setText("");
+            try {
+                if (!keptText.isEmpty()) {
+                    doc.insertString(doc.getLength(), keptText, green);
+                }
+                if (!cutOffText.isEmpty()) {
+                    doc.insertString(doc.getLength(), cutOffText, red);
+                }
+            } catch (BadLocationException e) {
+                e.printStackTrace();
             }
         });
+    }
 
-        worker.execute();
-        progressDialog.setVisible(true);
-        
-        }else{
-          JOptionPane.showMessageDialog(this, "Parent Directory Not Selected");
-          
-        }
-    }//GEN-LAST:event_oneizeNFlagActionPerformed
-    
-    
-    
+
     
     
     
@@ -1321,6 +1505,7 @@ public class altingMainWindow extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JButton ocrParseBtn;
     private javax.swing.JButton oneizeNFlag;
+    private javax.swing.JButton sqlizeBtn;
     private javax.swing.JButton toDBbtn;
     private javax.swing.JButton toQueryBtn;
     // End of variables declaration//GEN-END:variables
