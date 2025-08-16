@@ -77,6 +77,17 @@ import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.AttributeSet;
 import java.util.regex.Pattern;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.awt.Font;
+
+import java.awt.Frame;
+
+import java.nio.charset.StandardCharsets;
+
 
 
 
@@ -153,6 +164,7 @@ public class altingMainWindow extends javax.swing.JFrame {
         toDBbtn = new javax.swing.JButton();
         oneizeNFlag = new javax.swing.JButton();
         sqlizeBtn = new javax.swing.JButton();
+        flagIncBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -236,7 +248,7 @@ public class altingMainWindow extends javax.swing.JFrame {
 
         oneizeNFlag.setBackground(new java.awt.Color(255, 204, 153));
         oneizeNFlag.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        oneizeNFlag.setText("Oneize query and Flag");
+        oneizeNFlag.setText("Oneize query ");
         oneizeNFlag.setIconTextGap(2);
         oneizeNFlag.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -251,6 +263,16 @@ public class altingMainWindow extends javax.swing.JFrame {
         sqlizeBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sqlizeBtnActionPerformed(evt);
+            }
+        });
+
+        flagIncBtn.setBackground(new java.awt.Color(255, 204, 153));
+        flagIncBtn.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        flagIncBtn.setText("Flag Incomplete ");
+        flagIncBtn.setIconTextGap(2);
+        flagIncBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                flagIncBtnActionPerformed(evt);
             }
         });
 
@@ -276,7 +298,8 @@ public class altingMainWindow extends javax.swing.JFrame {
                     .addComponent(dirSelectBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
                     .addComponent(toDBbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(oneizeNFlag, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(sqlizeBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(sqlizeBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(flagIncBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -296,11 +319,13 @@ public class altingMainWindow extends javax.swing.JFrame {
                 .addComponent(consolidateBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(toQueryBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(oneizeNFlag)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(sqlizeBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(flagIncBtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addComponent(toDBbtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
@@ -1357,11 +1382,14 @@ public class altingMainWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_oneizeNFlagActionPerformed
 
     private void sqlizeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sqlizeBtnActionPerformed
-                new SwingWorker<Void, String>() {
+            new SwingWorker<Void, String>() {
+
+            List<String> incompleteColleges = new ArrayList<>();
+
             @Override
             protected Void doInBackground() throws Exception {
                 File inputFile = new File("D:\\altingData", "oneized_queries.txt");
-                File outputFile = new File("D:\\altingData", "master sqlized.sql");
+                File outputFile = new File("D:\\altingData", "sqlized.sql");
 
                 if (!inputFile.exists()) {
                     JOptionPane.showMessageDialog(null, "oneized_queries.txt not found in D:\\altingData");
@@ -1378,40 +1406,74 @@ public class altingMainWindow extends javax.swing.JFrame {
                      BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
 
                     String line;
-                    boolean inQueryBlock = false;
-                    StringBuilder currentQuery = new StringBuilder();
+                    StringBuilder currentBlock = new StringBuilder();
                     int processedLines = 0;
+                    int semicolonCount = 0;
+                    boolean inCollegeBlock = false;
+                    String currentCollegeName = null;
 
-                    // Regex to match exactly the three types (case-insensitive)
-                    Pattern insertPattern = Pattern.compile(
-                            "(?i)insert\\s+into\\s+(collegeData|financialAid|deadlines)"
-                    );
+                    Pattern collegeNamePattern = Pattern.compile("(?i)values\\s*\\(\\s*'([^']+)'");
 
                     while ((line = reader.readLine()) != null) {
                         processedLines++;
                         String trimmed = line.trim();
 
-                        // If this line starts a new query
-                        if (insertPattern.matcher(trimmed).find()) {
-                            inQueryBlock = true;
-                            currentQuery.setLength(0); // reset for new query
+                        // Start of a college block
+                        if (trimmed.equals("sql")) {
+                            if (inCollegeBlock) {
+                                // Found another 'sql' before finishing 3 queries → mark incomplete
+                                if (semicolonCount < 3 && currentCollegeName != null) {
+                                    incompleteColleges.add(currentCollegeName);
+                                }
+                            }
+                            // Reset for new block
+                            inCollegeBlock = true;
+                            semicolonCount = 0;
+                            currentBlock.setLength(0);
+                            currentCollegeName = null;
+                            continue;
                         }
 
-                        // Append lines if inside a query block
-                        if (inQueryBlock) {
-                            currentQuery.append(line).append("\n");
-                            // End when we hit a semicolon (assuming complete SQL statement)
-                            if (trimmed.endsWith(";")) {
-                                publish(currentQuery.toString());
-                                writer.write(currentQuery.toString());
+                        if (inCollegeBlock) {
+                            // Accumulate SQL block
+                            currentBlock.append(line).append("\n");
+
+                            // Extract college name from VALUES
+                            if (currentCollegeName == null && collegeNamePattern.matcher(line).find()) {
+                                java.util.regex.Matcher m = collegeNamePattern.matcher(line);
+                                if (m.find()) {
+                                    currentCollegeName = m.group(1);
+                                }
+                            }
+
+                            // Count SQL statements
+                            if (trimmed.endsWith(");")) {
+                                semicolonCount++;
+                            }
+
+                            // If we have 3 queries → write block
+                            if (semicolonCount == 3) {
+                                writer.write(currentBlock.toString());
                                 writer.newLine();
-                                inQueryBlock = false;
+                                publish(currentBlock.toString());
+                                inCollegeBlock = false;
+                            }
+                        } else {
+                            // Outside SQL block → comment it out
+                            if (!trimmed.isEmpty()) {
+                                writer.write("-- " + line);
+                                writer.newLine();
                             }
                         }
 
                         // Update progress
                         int progress = (int) ((processedLines / (double) totalLines) * 100);
                         setProgress(progress);
+                    }
+
+                    // Check last block at EOF
+                    if (inCollegeBlock && semicolonCount < 3 && currentCollegeName != null) {
+                        incompleteColleges.add(currentCollegeName);
                     }
                 }
 
@@ -1426,12 +1488,152 @@ public class altingMainWindow extends javax.swing.JFrame {
 
             @Override
             protected void done() {
-                JOptionPane.showMessageDialog(null, "SQL queries extracted successfully!");
                 setProgress(100);
+                JOptionPane.showMessageDialog(null, "SQL processing finished!");
+
+                if (!incompleteColleges.isEmpty()) {
+                    // Show list with copy button
+                    JTextArea textArea = new JTextArea(String.join("\n", incompleteColleges));
+                    textArea.setEditable(false);
+                    JScrollPane scrollPane = new JScrollPane(textArea);
+                    scrollPane.setPreferredSize(new Dimension(400, 300));
+
+                    JButton copyButton = new JButton("Copy All");
+                    copyButton.addActionListener(e -> {
+                        StringSelection selection = new StringSelection(String.join("\n", incompleteColleges));
+                        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
+                    });
+
+                    JPanel panel = new JPanel(new BorderLayout());
+                    panel.add(scrollPane, BorderLayout.CENTER);
+                    panel.add(copyButton, BorderLayout.SOUTH);
+
+                    JOptionPane.showMessageDialog(null, panel, "Incomplete Colleges", JOptionPane.WARNING_MESSAGE);
+                }
             }
         }.execute();
 
     }//GEN-LAST:event_sqlizeBtnActionPerformed
+
+    private void flagIncBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flagIncBtnActionPerformed
+            File sqlizedFile = new File("D:\\altingData\\sqlized.sql");
+        File sqlEdFolder = new File("D:\\altingData\\sqlEd");
+
+        if (!sqlizedFile.exists() || !sqlEdFolder.exists()) {
+            JOptionPane.showMessageDialog(this, "Required file or folder not found.");
+            return;
+        }
+
+        // Progress Dialog
+        JDialog progressDialog = new JDialog(this, "Checking Colleges", true);
+        progressDialog.setSize(800, 150);
+        progressDialog.setLocationRelativeTo(this);
+        progressDialog.setLayout(new BorderLayout());
+
+        JLabel statusLabel = new JLabel("Starting...", SwingConstants.CENTER);
+        statusLabel.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+        progressDialog.add(statusLabel, BorderLayout.NORTH);
+
+        JProgressBar progressBar = new JProgressBar();
+        progressBar.setStringPainted(true);
+        progressDialog.add(progressBar, BorderLayout.SOUTH);
+
+        // Table for logging (in separate frame so it stays)
+        DefaultTableModel tableModel = new DefaultTableModel(new String[]{"College Name", "SQL Lines", "Status"}, 0);
+        JTable logTable = new JTable(tableModel);
+        logTable.setRowHeight(25);
+        JScrollPane scrollPane = new JScrollPane(logTable);
+
+        JFrame tableFrame = new JFrame("College SQL Status");
+        tableFrame.setSize(800, 500);
+        tableFrame.setLocationRelativeTo(null);
+        tableFrame.setLayout(new BorderLayout());
+        tableFrame.add(scrollPane, BorderLayout.CENTER);
+        tableFrame.setVisible(false);
+
+        SwingWorker<Void, Object[]> worker = new SwingWorker<>() {
+            final int thresholdLines = 53; // Hardcoded threshold
+
+            @Override
+            protected Void doInBackground() throws Exception {
+                List<String> sqlLines = Files.readAllLines(sqlizedFile.toPath(), StandardCharsets.UTF_8);
+                File[] collegeFiles = sqlEdFolder.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
+                if (collegeFiles == null) return null;
+
+                int total = collegeFiles.length;
+                int count = 0;
+
+                for (File collegeFile : collegeFiles) {
+                    String collegeName = collegeFile.getName().replace(".txt", "").replace("masterParsed", "").trim();
+                    int blockLineCount = 0;
+                    boolean inBlock = false;
+                    boolean counting = false;
+
+                    for (String line : sqlLines) {
+                        String trimmed = line.trim();
+
+                        if (trimmed.contains("prompt.txt")) {
+                            if (inBlock) break; // End of current block
+                            inBlock = true; // Start new block
+                            counting = false;
+                            blockLineCount = 0;
+                            continue;
+                        }
+
+                        if (inBlock) {
+                            if (!counting && trimmed.toLowerCase().startsWith("insert into collegedata")) {
+                                counting = true; // start counting from this line
+                            }
+
+                            if (counting && !trimmed.startsWith("--") && !trimmed.isEmpty()) {
+                                blockLineCount++;
+                            }
+                        }
+                    }
+
+                    // Determine status based on hardcoded threshold
+                    String statusIcon;
+                    if (blockLineCount == 0) statusIcon = "❌ Not found";
+                    else if (blockLineCount < thresholdLines) statusIcon = "❌ Incomplete (" + blockLineCount + ")";
+                    else statusIcon = "✅ Complete (" + blockLineCount + ")";
+
+                    count++;
+                    publish(new Object[]{collegeName, blockLineCount, statusIcon});
+                    setProgress((int) ((double) count / total * 100));
+                    Thread.sleep(30);
+                }
+
+                return null;
+            }
+
+            @Override
+            protected void process(java.util.List<Object[]> chunks) {
+                for (Object[] data : chunks) {
+                    String collegeName = (String) data[0];
+                    int sqlLines = (int) data[1];
+                    String statusIcon = (String) data[2];
+                    tableModel.addRow(new Object[]{collegeName, sqlLines, statusIcon});
+                    statusLabel.setText("Processed: " + collegeName);
+                }
+            }
+
+            @Override
+            protected void done() {
+                progressDialog.dispose();
+                tableFrame.setVisible(true);
+                JOptionPane.showMessageDialog(tableFrame, "SQL processing finished!");
+            }
+        };
+
+        worker.addPropertyChangeListener(evt1 -> {
+            if ("progress".equals(evt1.getPropertyName())) {
+                progressBar.setValue((Integer) evt1.getNewValue());
+            }
+        });
+
+        worker.execute();
+        progressDialog.setVisible(true);
+    }//GEN-LAST:event_flagIncBtnActionPerformed
     
     
         private void updateLivePreview(String keptText, String cutOffText, boolean finished) {
@@ -1495,6 +1697,7 @@ public class altingMainWindow extends javax.swing.JFrame {
     private javax.swing.JButton collegeSearchBtn;
     private javax.swing.JButton consolidateBtn;
     private javax.swing.JButton dirSelectBtn;
+    private javax.swing.JButton flagIncBtn;
     private javax.swing.JButton groupBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
