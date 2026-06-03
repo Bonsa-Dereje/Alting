@@ -1,0 +1,893 @@
+============================================================
+  Logo Scraper Run — 2026-06-03_21-55-30
+============================================================
+
+[21:55:50] 📋 Total colleges in 'colleges' folder : 1076
+[21:55:50] ✅ Already completed (logos exist)         : 687
+[21:55:50] 🔄 Remaining to process                    : 389
+[21:55:50] 📁 Logos output root                       : C:\Users\Boni\Desktop\Projects\alting_img\logos
+[21:55:50] 📝 Log file                                : C:\Users\Boni\Desktop\Projects\alting_img\logs\run_2026-06-03_21-55-30.txt
+[21:55:50] 
+--- Skipping already-done colleges ---
+[21:55:50]   ⏭  abilene christian university
+[21:55:50]   ⏭  adelphi university
+[21:55:50]   ⏭  agnes scott college
+[21:55:50]   ⏭  air force institute of technology
+[21:55:50]   ⏭  alabama a&m university
+[21:55:50]   ⏭  alabama state university
+[21:55:50]   ⏭  alaska pacific university
+[21:55:50]   ⏭  albertson college of idaho
+[21:55:50]   ⏭  albion college
+[21:55:50]   ⏭  alderson-broaddus college
+[21:55:50]   ⏭  alfred university
+[21:55:50]   ⏭  allegheny college
+[21:55:50]   ⏭  allentown college of saint francis de sales
+[21:55:50]   ⏭  alma college
+[21:55:50]   ⏭  alverno college
+[21:55:50]   ⏭  ambassador university
+[21:55:50]   ⏭  american graduate school of international management
+[21:55:50]   ⏭  american international college
+[21:55:50]   ⏭  american university
+[21:55:50]   ⏭  amherst college
+[21:55:50]   ⏭  andrews university
+[21:55:50]   ⏭  angelo state university
+[21:55:51]   ⏭  antioch college
+[21:55:51]   ⏭  antioch new england
+[21:55:51]   ⏭  antioch university-los angeles
+[21:55:51]   ⏭  antioch university-seattle
+[21:55:51]   ⏭  appalachian state university
+[21:55:51]   ⏭  aquinas college
+[21:55:51]   ⏭  arizona state university
+[21:55:51]   ⏭  arizona state university east
+[21:55:51]   ⏭  arizona state university west
+[21:55:51]   ⏭  arizona western college
+[21:55:51]   ⏭  arkansas tech university
+[21:55:51]   ⏭  armstrong state college
+[21:55:51]   ⏭  ashland university
+[21:55:51]   ⏭  athens state college
+[21:55:51]   ⏭  auburn university
+[21:55:51]   ⏭  auburn university - montgomery
+[21:55:51]   ⏭  augsburg college
+[21:55:51]   ⏭  augustana college
+[21:55:51]   ⏭  aurora university
+[21:55:51]   ⏭  austin college
+[21:55:51]   ⏭  austin peay state university
+[21:55:51]   ⏭  averett college
+[21:55:51]   ⏭  azusa pacific university
+[21:55:51]   ⏭  babson college
+[21:55:51]   ⏭  baker university
+[21:55:51]   ⏭  baldwin-wallace college
+[21:55:51]   ⏭  ball state university
+[21:55:51]   ⏭  baptist bible college
+[21:55:51]   ⏭  bard college
+[21:55:51]   ⏭  barry university
+[21:55:51]   ⏭  bastyr university
+[21:55:51]   ⏭  bates college
+[21:55:51]   ⏭  baylor college of medicine
+[21:55:51]   ⏭  baylor university
+[21:55:51]   ⏭  beaver college
+[21:55:51]   ⏭  belmont university
+[21:55:51]   ⏭  beloit college
+[21:55:51]   ⏭  bemidji state university
+[21:55:51]   ⏭  benedictine college
+[21:55:51]   ⏭  bennington college
+[21:55:51]   ⏭  bentley college
+[21:55:51]   ⏭  berea college
+[21:55:51]   ⏭  berklee college of music
+[21:55:51]   ⏭  bethany college
+[21:55:51]   ⏭  bethel college
+[21:55:51]   ⏭  bethel college and seminary
+[21:55:51]   ⏭  biola university
+[21:55:51]   ⏭  birmingham-southern college
+[21:55:51]   ⏭  black hills state university
+[21:55:51]   ⏭  bloomsburg university of pennsylvania
+[21:55:51]   ⏭  bluffton college
+[21:55:51]   ⏭  bob jones university
+[21:55:51]   ⏭  boise state university
+[21:55:51]   ⏭  boston college
+[21:55:51]   ⏭  boston graduate school of psychoanalysis
+[21:55:51]   ⏭  boston university
+[21:55:51]   ⏭  bowdoin college
+[21:55:51]   ⏭  bowie state university
+[21:55:51]   ⏭  bowling green state university
+[21:55:51]   ⏭  bradley university
+[21:55:51]   ⏭  brandeis university
+[21:55:51]   ⏭  brenau university
+[21:55:51]   ⏭  briar cliff college
+[21:55:51]   ⏭  bridgewater college
+[21:55:51]   ⏭  brigham young university
+[21:55:51]   ⏭  brigham young university hawaii
+[21:55:51]   ⏭  brown university
+[21:55:51]   ⏭  bryant college
+[21:55:51]   ⏭  bryn mawr college
+[21:55:51]   ⏭  bucknell university
+[21:55:51]   ⏭  buena vista university
+[21:55:51]   ⏭  butler university
+[21:55:51]   ⏭  california coast university
+[21:55:51]   ⏭  california institute of technology
+[21:55:51]   ⏭  california lutheran university
+[21:55:51]   ⏭  california maritime academy
+[21:55:51]   ⏭  california national university
+[21:55:51]   ⏭  california polytechnic state university, san luis obispo
+[21:55:51]   ⏭  california school of professional psychology
+[21:55:51]   ⏭  california state polytechnic university, pomona
+[21:55:51]   ⏭  california state university system
+[21:55:51]   ⏭  california state university, bakersfield
+[21:55:51]   ⏭  california state university, chico
+[21:55:51]   ⏭  california state university, dominguez hills
+[21:55:51]   ⏭  california state university, fresno
+[21:55:51]   ⏭  california state university, fullerton
+[21:55:51]   ⏭  california state university, hayward
+[21:55:51]   ⏭  carnegie mellon university
+[21:55:51]   ⏭  carroll college
+[21:55:51]   ⏭  carson-newman college
+[21:55:51]   ⏭  carthage college
+[21:55:51]   ⏭  case western reserve university
+[21:55:51]   ⏭  cedarville college
+[21:55:51]   ⏭  centenary college of louisiana
+[21:55:51]   ⏭  central college
+[21:55:51]   ⏭  central connecticut state university
+[21:55:51]   ⏭  central methodist college
+[21:55:51]   ⏭  central michigan university
+[21:55:51]   ⏭  central missouri state university
+[21:55:51]   ⏭  central washington university
+[21:55:51]   ⏭  centre college
+[21:55:51]   ⏭  chadron state college
+[21:55:51]   ⏭  champlain college
+[21:55:51]   ⏭  chapman university
+[21:55:51]   ⏭  chatham college
+[21:55:51]   ⏭  chesapeake college
+[21:55:51]   ⏭  cheyney university
+[21:55:51]   ⏭  christian brothers university
+[21:55:51]   ⏭  christopher newport university
+[21:55:51]   ⏭  city university
+[21:55:51]   ⏭  city university of new york
+[21:55:51]   ⏭  claremont graduate school
+[21:55:51]   ⏭  claremont mckenna college
+[21:55:51]   ⏭  clarion university of pennsylvania
+[21:55:51]   ⏭  clark university
+[21:55:51]   ⏭  clarke college
+[21:55:51]   ⏭  clarkson university
+[21:55:51]   ⏭  clayton state college
+[21:55:51]   ⏭  clemson university
+[21:55:51]   ⏭  cleveland state university
+[21:55:51]   ⏭  clinch valley college
+[21:55:51]   ⏭  coastal carolina university
+[21:55:51]   ⏭  coe college
+[21:55:51]   ⏭  coker college
+[21:55:51]   ⏭  colby college
+[21:55:51]   ⏭  colgate university
+[21:55:51]   ⏭  college of charleston
+[21:55:51]   ⏭  college of eastern utah
+[21:55:51]   ⏭  college of saint benedict
+[21:55:51]   ⏭  college of saint catherine
+[21:55:51]   ⏭  college of saint rose
+[21:55:51]   ⏭  college of st. francis
+[21:55:51]   ⏭  college of st. scholastica
+[21:55:51]   ⏭  college of the atlantic
+[21:55:51]   ⏭  college of the holy cross
+[21:55:51]   ⏭  college of william and mary
+[21:55:51]   ⏭  colorado christian university
+[21:55:51]   ⏭  colorado college
+[21:55:51]   ⏭  colorado school of mines
+[21:55:51]   ⏭  colorado state university
+[21:55:51]   ⏭  columbia college chicago
+[21:55:51]   ⏭  columbia southern university
+[21:55:51]   ⏭  columbia union college
+[21:55:51]   ⏭  columbia university
+[21:55:51]   ⏭  concordia college-ann arbor
+[21:55:51]   ⏭  concordia college-moorhead
+[21:55:51]   ⏭  connecticut college
+[21:55:51]   ⏭  coppin state college
+[21:55:51]   ⏭  cornell college
+[21:55:51]   ⏭  cornell university
+[21:55:51]   ⏭  creighton university
+[21:55:51]   ⏭  curry college
+[21:55:51]   ⏭  daemen college
+[21:55:51]   ⏭  dakota state university
+[21:55:51]   ⏭  dowling college
+[21:55:51]   ⏭  drake university
+[21:55:51]   ⏭  drew university
+[21:55:51]   ⏭  drexel university
+[21:55:51]   ⏭  drury college
+[21:55:51]   ⏭  duke university
+[21:55:51]   ⏭  duquesne university
+[21:55:51]   ⏭  earlham college
+[21:55:51]   ⏭  east carolina university
+[21:55:51]   ⏭  east central university
+[21:55:51]   ⏭  east tennessee state university
+[21:55:51]   ⏭  east texas state university
+[21:55:51]   ⏭  eastern connecticut state university
+[21:55:51]   ⏭  eastern illinois university
+[21:55:51]   ⏭  eastern kentucky university
+[21:55:51]   ⏭  eastern mennonite university
+[21:55:51]   ⏭  eastern michigan university
+[21:55:51]   ⏭  eastern nazarene college
+[21:55:51]   ⏭  eastern new mexico university
+[21:55:51]   ⏭  eastern oregon state college
+[21:55:51]   ⏭  eastern washington university
+[21:55:51]   ⏭  edgewood college
+[21:55:51]   ⏭  edinboro university of pennsylvania
+[21:55:51]   ⏭  elizabeth city state university
+[21:55:51]   ⏭  elizabethtown college
+[21:55:51]   ⏭  elmhurst college
+[21:55:51]   ⏭  elon college
+[21:55:51]   ⏭  embry-riddle aeronautical university, arizona
+[21:55:51]   ⏭  embry-riddle aeronautical university, florida
+[21:55:51]   ⏭  emerson college
+[21:55:51]   ⏭  emmanuel college
+[21:55:51]   ⏭  emmaus bible college
+[21:55:51]   ⏭  emory & henry college
+[21:55:51]   ⏭  emory university
+[21:55:51]   ⏭  emporia state university
+[21:55:51]   ⏭  evergreen state college
+[21:55:51]   ⏭  fairfield university
+[21:55:52]   ⏭  fairleigh dickinson university
+[21:55:52]   ⏭  fairmont state college
+[21:55:52]   ⏭  fayetteville state university
+[21:55:52]   ⏭  ferris state university
+[21:55:52]   ⏭  fielding institute
+[21:55:52]   ⏭  fisk university
+[21:55:52]   ⏭  fitchburg state college
+[21:55:52]   ⏭  florida agricultural and mechanical university
+[21:55:52]   ⏭  florida atlantic university
+[21:55:52]   ⏭  florida gulf coast university
+[21:55:52]   ⏭  florida institute of technology
+[21:55:52]   ⏭  florida international university
+[21:55:52]   ⏭  florida state university
+[21:55:52]   ⏭  fontbonne college
+[21:55:52]   ⏭  fordham university
+[21:55:52]   ⏭  fort hays state university
+[21:55:52]   ⏭  fort lewis college
+[21:55:52]   ⏭  franklin and marshall college
+[21:55:52]   ⏭  franklin pierce law center
+[21:55:52]   ⏭  franklin university
+[21:55:52]   ⏭  fresno pacific university
+[21:55:52]   ⏭  friends university
+[21:55:52]   ⏭  frostburg state university
+[21:55:52]   ⏭  fuller theological seminary
+[21:55:52]   ⏭  furman university
+[21:55:52]   ⏭  gallaudet university
+[21:55:52]   ⏭  gannon university
+[21:55:52]   ⏭  geneva college
+[21:55:52]   ⏭  george fox college
+[21:55:52]   ⏭  george mason university
+[21:55:52]   ⏭  george washington university
+[21:55:52]   ⏭  georgetown university
+[21:55:52]   ⏭  georgia college
+[21:55:52]   ⏭  georgia institute of technology
+[21:55:52]   ⏭  georgia southern university
+[21:55:52]   ⏭  georgia southwestern college
+[21:55:52]   ⏭  georgia state university
+[21:55:52]   ⏭  georgian court college
+[21:55:52]   ⏭  gettysburg college
+[21:55:52]   ⏭  gmi engineering and management institute
+[21:55:52]   ⏭  golden gate university
+[21:55:52]   ⏭  goldey-beacom college
+[21:55:52]   ⏭  gonzaga university
+[21:55:52]   ⏭  goshen college
+[21:55:52]   ⏭  goucher college
+[21:55:52]   ⏭  governors state university
+[21:55:52]   ⏭  grace college
+[21:55:52]   ⏭  graceland college
+[21:55:52]   ⏭  grand valley state university
+[21:55:52]   ⏭  grinnell college
+[21:55:52]   ⏭  guilford college
+[21:55:52]   ⏭  gustavus adolphus college
+[21:55:52]   ⏭  gutenberg college h
+[21:55:52]   ⏭  hamilton college
+[21:55:52]   ⏭  hamline university
+[21:55:52]   ⏭  hampden-sydney college
+[21:55:52]   ⏭  hampshire college
+[21:55:52]   ⏭  hampton university
+[21:55:52]   ⏭  hanover college
+[21:55:52]   ⏭  harding university
+[21:55:52]   ⏭  hartwick college
+[21:55:52]   ⏭  harvard university
+[21:55:52]   ⏭  harvey mudd college
+[21:55:52]   ⏭  haskell indian nations university
+[21:55:52]   ⏭  hastings college
+[21:55:52]   ⏭  haverford college in pennsylvania
+[21:55:52]   ⏭  hawaii pacific university
+[21:55:52]   ⏭  heidelberg college
+[21:55:52]   ⏭  john brown university
+[21:55:52]   ⏭  john f. kennedy university
+[21:55:52]   ⏭  johns hopkins university
+[21:55:52]   ⏭  johnson & wales university
+[21:55:52]   ⏭  johnson bible college
+[21:55:52]   ⏭  johnson c. smith university
+[21:55:52]   ⏭  jones college
+[21:55:52]   ⏭  judson college
+[21:55:52]   ⏭  juniata college
+[21:55:52]   ⏭  kalamazoo college
+[21:55:52]   ⏭  kansas state university
+[21:55:52]   ⏭  kansas wesleyan university
+[21:55:52]   ⏭  kean college
+[21:55:52]   ⏭  keene state college
+[21:55:52]   ⏭  kent state university
+[21:55:52]   ⏭  kenyon college
+[21:55:52]   ⏭  king's college
+[21:55:52]   ⏭  kutztown university of pennsylvania
+[21:55:52]   ⏭  la sierra university
+[21:55:52]   ⏭  lafayette college
+[21:55:52]   ⏭  lagrange college
+[21:55:52]   ⏭  lake forest college
+[21:55:52]   ⏭  lake superior state university
+[21:55:52]   ⏭  lamar university
+[21:55:52]   ⏭  langston university
+[21:55:52]   ⏭  lasalle university
+[21:55:52]   ⏭  lawrence technological university
+[21:55:52]   ⏭  lawrence university
+[21:55:52]   ⏭  le moyne college
+[21:55:52]   ⏭  lebanon valley college
+[21:55:52]   ⏭  lehigh univervsity
+[21:55:52]   ⏭  lenoir-rhyne college
+[21:55:52]   ⏭  letourneau university
+[21:55:52]   ⏭  lewis & clark college
+[21:55:52]   ⏭  lewis university
+[21:55:52]   ⏭  lewis-clark state college
+[21:55:52]   ⏭  liberty university
+[21:55:52]   ⏭  linfield college
+[21:55:52]   ⏭  lock haven university of pennsylvania
+[21:55:52]   ⏭  loma linda university
+[21:55:52]   ⏭  long island university
+[21:55:52]   ⏭  longwood college
+[21:55:52]   ⏭  loras college
+[21:55:52]   ⏭  louisiana college
+[21:55:52]   ⏭  louisiana state university
+[21:55:52]   ⏭  louisiana state university at alexandria
+[21:55:52]   ⏭  louisiana state university at shreveport
+[21:55:52]   ⏭  louisiana tech university
+[21:55:52]   ⏭  loyola college
+[21:55:52]   ⏭  loyola marymount university
+[21:55:52]   ⏭  loyola university chicago
+[21:55:52]   ⏭  luther college
+[21:55:52]   ⏭  luther seminary
+[21:55:52]   ⏭  lycoming college
+[21:55:52]   ⏭  lynchburg college
+[21:55:52]   ⏭  lyndon state college
+[21:55:52]   ⏭  lyon college
+[21:55:52]   ⏭  macalester college
+[21:55:52]   ⏭  maine maritime academy
+[21:55:52]   ⏭  malone college
+[21:55:52]   ⏭  manhattan college
+[21:55:52]   ⏭  mankato state university
+[21:55:52]   ⏭  mansfield university of pennsylvania
+[21:55:52]   ⏭  marietta college
+[21:55:52]   ⏭  marist college
+[21:55:52]   ⏭  marlboro college
+[21:55:52]   ⏭  marquette university
+[21:55:52]   ⏭  marshall university
+[21:55:52]   ⏭  mary baldwin college
+[21:55:52]   ⏭  mary washington college
+[21:55:52]   ⏭  marymount college
+[21:55:52]   ⏭  marymount university
+[21:55:52]   ⏭  massachusetts institute of technology
+[21:55:52]   ⏭  mcmurry university
+[21:55:52]   ⏭  mcneese state university
+[21:55:52]   ⏭  medical college of georgia
+[21:55:52]   ⏭  medical college of wisconsin
+[21:55:52]   ⏭  mercer university
+[21:55:52]   ⏭  mercyhurst college
+[21:55:52]   ⏭  meredith college
+[21:55:53]   ⏭  messiah college
+[21:55:53]   ⏭  metropolitan state college of denver
+[21:55:53]   ⏭  metropolitan state university
+[21:55:53]   ⏭  miami university of ohio
+[21:55:53]   ⏭  michigan state university
+[21:55:53]   ⏭  michigan technological university
+[21:55:53]   ⏭  new college of california
+[21:55:53]   ⏭  new england institute of technology
+[21:55:53]   ⏭  new hampshire college
+[21:55:53]   ⏭  new jersey institute of technology
+[21:55:53]   ⏭  new mexico highlands university
+[21:55:53]   ⏭  new mexico institute of mining & technology
+[21:55:53]   ⏭  new mexico state university
+[21:55:53]   ⏭  new york institute of technology
+[21:55:53]   ⏭  new york university
+[21:55:53]   ⏭  newberry college
+[21:55:54]   ⏭  niagara university
+[21:55:54]   ⏭  nicholls state university
+[21:55:54]   ⏭  norfolk state university
+[21:55:54]   ⏭  north adams state college
+[21:55:54]   ⏭  north carolina a&t state university
+[21:55:54]   ⏭  north carolina central university
+[21:55:54]   ⏭  north carolina state university
+[21:55:54]   ⏭  north carolina wesleyan college
+[21:55:54]   ⏭  north central bible college
+[21:55:54]   ⏭  north dakota state university
+[21:55:54]   ⏭  north park college and theological seminary
+[21:55:54]   ⏭  northeastern illinois university
+[21:55:54]   ⏭  northeastern state university
+[21:55:54]   ⏭  oregon health sciences university
+[21:55:54]   ⏭  oregon institute of technology
+[21:55:54]   ⏭  oregon state university
+[21:55:54]   ⏭  otterbein college
+[21:55:54]   ⏭  our lady of the lake university
+[21:55:54]   ⏭  pace university
+[21:55:54]   ⏭  pacific lutheran university
+[21:55:54]   ⏭  pacific union college
+[21:55:54]   ⏭  pacific university
+[21:55:54]   ⏭  palm beach atlantic college
+[21:55:54]   ⏭  peace college
+[21:55:54]   ⏭  pembroke state university
+[21:55:54]   ⏭  pennsylvania state system of higher education
+[21:55:54]   ⏭  pennsylvania state university
+[21:55:54]   ⏭  pensacola christian college
+[21:55:54]   ⏭  quinnipiac college
+[21:55:54]   ⏭  radford university
+[21:55:54]   ⏭  ramapo college
+[21:55:54]   ⏭  randolph-macon college
+[21:55:54]   ⏭  randolph-macon woman's college
+[21:55:54]   ⏭  reed college
+[21:55:54]   ⏭  regent university
+[21:55:54]   ⏭  regis university
+[21:55:54]   ⏭  rensselaer polytechnic institute
+[21:55:54]   ⏭  rhode island college
+[21:55:54]   ⏭  rhodes college
+[21:55:54]   ⏭  rice university
+[21:55:54]   ⏭  richard stockton college of new jersey
+[21:55:54]   ⏭  rider university
+[21:55:54]   ⏭  ripon college
+[21:55:54]   ⏭  rivier college
+[21:55:54]   ⏭  roanoke college
+[21:55:54]   ⏭  rochester institute of technology
+[21:55:54]   ⏭  rockford college
+[21:55:54]   ⏭  rockhurst college
+[21:55:54]   ⏭  rocky mountain college
+[21:55:54]   ⏭  roger williams university
+[21:55:54]   ⏭  rollins college
+[21:55:54]   ⏭  rosary college
+[21:55:54]   ⏭  rose-hulman institute of technology
+[21:55:54]   ⏭  rowan college
+[21:55:54]   ⏭  rutgers university
+[21:55:54]   ⏭  rutgers university, camden
+[21:55:54]   ⏭  rutgers university, newark
+[21:55:54]   ⏭  sacred heart university
+[21:55:54]   ⏭  saginaw valley state university
+[21:55:54]   ⏭  saint anselm college
+[21:55:54]   ⏭  saint cloud state university
+[21:55:55]   ⏭  saint edward's university
+[21:55:55]   ⏭  saint francis college
+[21:55:55]   ⏭  saint joseph's college
+[21:55:55]   ⏭  saint joseph's university
+[21:55:55]   ⏭  saint louis university
+[21:55:55]   ⏭  saint mary's college
+[21:55:55]   ⏭  saint mary's college of california
+[21:55:55]   ⏭  saint mary's university of minnesota
+[21:55:55]   ⏭  south dakota state university
+[21:55:55]   ⏭  south texas college of law
+[21:55:55]   ⏭  southampton college
+[21:55:55]   ⏭  southeast missouri state university
+[21:55:55]   ⏭  southeastern louisiana university
+[21:55:55]   ⏭  southern college
+[21:55:55]   ⏭  southern college of technology
+[21:55:55]   ⏭  southern connecticut state university
+[21:55:55]   ⏭  southern illinois university
+[21:55:55]   ⏭  southern illinois university-carbondale
+[21:55:55]   ⏭  southern illinois university-edwardsville
+[21:55:55]   ⏭  southern methodist university
+[21:55:55]   ⏭  southern nazarene university
+[21:55:55]   ⏭  southern oregon state college
+[21:55:55]   ⏭  southern university
+[21:55:55]   ⏭  southern utah university
+[21:55:55]   ⏭  state university of new york at albany
+[21:55:55]   ⏭  state university of new york at binghamton
+[21:55:55]   ⏭  state university of new york at buffalo
+[21:55:55]   ⏭  state university of new york at farmingdale
+[21:55:55]   ⏭  state university of new york at fredonia
+[21:55:55]   ⏭  state university of new york at oswego
+[21:55:55]   ⏭  teachers college, columbia university
+[21:55:55]   ⏭  teikyo marycrest university
+[21:55:55]   ⏭  temple university
+[21:55:55]   ⏭  tennessee state university
+[21:55:55]   ⏭  tennessee technological university
+[21:55:55]   ⏭  texas a&m international university
+[21:55:55]   ⏭  texas a&m university-college station
+[21:55:55]   ⏭  texas a&m university-corpus christi
+[21:55:55]   ⏭  texas a&m university-kingsville
+[21:55:55]   ⏭  texas christian university
+[21:55:55]   ⏭  texas southern university
+[21:55:55]   ⏭  trinity university
+[21:55:55]   ⏭  troy state university
+[21:55:55]   ⏭  truman state university
+[21:55:55]   ⏭  tucson university
+[21:55:55]   ⏭  tufts university
+[21:55:55]   ⏭  tulane university
+[21:55:55]   ⏭  tuskegee university
+[21:55:55]   ⏭  union college
+[21:55:55]   ⏭  university of denver
+[21:55:55]   ⏭  university of detroit mercy
+[21:55:55]   ⏭  university of dubuque
+[21:55:55]   ⏭  university of evansville
+[21:55:55]   ⏭  university of florida
+[21:55:55]   ⏭  university of georgia
+[21:55:55]   ⏭  university of great falls
+[21:55:55]   ⏭  university of guam
+[21:55:55]   ⏭  university of hartford
+[21:55:55]   ⏭  university of hawaii at manoa
+[21:55:55]   ⏭  university of houston
+[21:55:55]   ⏭  university of idaho
+[21:55:55]   ⏭  university of ilinois at urbana-champaign
+[21:55:56]   ⏭  university of illinois at chicago
+[21:55:56]   ⏭  university of illinois at springfield
+[21:55:56]   ⏭  university of indianapolis
+[21:55:56]   ⏭  university of iowa
+[21:55:56]   ⏭  university of kansas
+[21:55:56]   ⏭  university of kansas school of medicine
+[21:55:56]   ⏭  university of kentucky
+[21:55:56]   ⏭  university of la verne
+[21:55:56]   ⏭  university of louisville
+[21:55:56]   ⏭  university of maine
+[21:55:56]   ⏭  university of maine at farmington
+[21:55:56]   ⏭  university of maine at fort kent
+[21:55:56]   ⏭  university of maine at machias
+[21:55:56]   ⏭  university of maine system
+[21:55:56]   ⏭  university of maryland - university college
+[21:55:56]   ⏭  university of maryland at baltimore
+[21:55:56]   ⏭  university of maryland at baltimore county
+[21:55:56]   ⏭  university of maryland at college park
+[21:55:56]   ⏭  university of massachusetts at amherst
+[21:55:56]   ⏭  university of massachusetts at dartmouth
+[21:55:56]   ⏭  university of massachusetts at lowell
+[21:55:56]   ⏭  university of massachusetts system
+[21:55:56]   ⏭  university of memphis
+[21:55:56]   ⏭  university of miami
+[21:55:56]   ⏭  university of michigan-ann arbor
+[21:55:56]   ⏭  university of michigan-dearborn
+[21:55:56]   ⏭  university of minnesota
+[21:55:56]   ⏭  university of minnesota-crookston
+[21:55:56]   ⏭  university of minnesota-duluth
+[21:55:56]   ⏭  university of minnesota-morris
+[21:55:56]   ⏭  university of minnesota-twin cities
+[21:55:56]   ⏭  university of mississippi
+[21:55:56]   ⏭  university of mississippi medical center
+[21:55:56]   ⏭  university of missouri system
+[21:55:56]   ⏭  university of san francisco
+[21:55:56]   ⏭  university of sarasota
+[21:55:56]   ⏭  university of science & arts of oklahoma
+[21:55:56]   ⏭  university of scranton
+[21:55:56]   ⏭  university of sioux falls
+[21:55:56]   ⏭  university of south alabama
+[21:55:56]   ⏭  university of south carolina
+[21:55:56]   ⏭  university of south carolina - aiken
+[21:55:56]   ⏭  university of south dakota
+[21:55:56]   ⏭  university of south florida
+[21:55:56]   ⏭  university of southern california
+[21:55:56]   ⏭  university of southern colorado
+[21:55:56]   ⏭  university of southern indiana
+[21:55:56]   ⏭  university of southern maine
+[21:55:56]   ⏭  university of southern mississippi
+[21:55:56]   ⏭  university of southwestern louisiana
+[21:55:56]   ⏭  university of tampa
+[21:55:56]   ⏭  university of tennessee, knoxville
+[21:55:56]   ⏭  university of tennessee, martin
+[21:55:56]   ⏭  university of texas at arlington
+[21:55:56]   ⏭  university of texas at austin
+[21:55:56]   ⏭  university of texas at brownsville
+[21:55:56]   ⏭  university of texas at dallas
+[21:55:56]   ⏭  university of texas at el paso
+[21:55:56]   ⏭  university of texas at san antonio
+[21:55:56]   ⏭  university of texas at tyler
+[21:55:56]   ⏭  university of texas health center at tyler
+[21:55:56]   ⏭  university of texas health science center at houston
+[21:55:56]   ⏭  university of texas health science center at san antonio
+[21:55:56]   ⏭  university of texas m.d. anderson cancer center
+[21:55:56]   ⏭  university of texas medical branch
+[21:55:56]   ⏭  university of texas southwestern medical center at dallas
+[21:55:56]   ⏭  university of texas system
+[21:55:56]   ⏭  university of texas-pan american
+[21:55:56]   ⏭  university of the district of columbia
+[21:55:56]   ⏭  university of the ozarks
+[21:55:56]   ⏭  university of the virgin islands
+[21:55:56]   ⏭  university of toledo
+[21:55:56]   ⏭  university of tulsa
+[21:55:56]   ⏭  university of utah
+[21:55:56]   ⏭  university of vermont
+[21:55:56]   ⏭  university of virginia, charlottesville
+[21:55:56]   ⏭  university of washington
+[21:55:56]   ⏭  university of west alabama
+[21:55:56]   ⏭  university of west florida
+[21:55:56]   ⏭  university of wisconsin system
+[21:55:56]   ⏭  university of wisconsin-eau claire
+[21:55:56]   ⏭  university of wisconsin-green bay
+[21:55:56]   ⏭  university of wisconsin-lacrosse
+[21:55:56]   ⏭  university of wisconsin-madison
+[21:55:56]   ⏭  university of wisconsin-milwaukee
+[21:55:56]   ⏭  university of wisconsin-oshkosh
+[21:55:56]   ⏭  university of wisconsin-parkside
+[21:55:56]   ⏭  university of wisconsin-platteville
+[21:55:56]   ⏭  university of wisconsin-river falls
+[21:55:56]   ⏭  university of wisconsin-stevens point
+[21:55:56]   ⏭  university of wisconsin-stout
+[21:55:56]   ⏭  university of wisconsin-superior
+[21:55:56]   ⏭  university of wisconsin-whitewater
+[21:55:56]   ⏭  university of wyoming
+[21:55:56]   ⏭  upper iowa university
+[21:55:56]   ⏭  ursinus college
+[21:55:56]   ⏭  utah state university
+[21:55:56]   ⏭  utah valley state college
+[21:55:56]   ⏭  valdosta state university
+[21:55:56]   ⏭  valley city state university
+[21:55:56]   ⏭  valparaiso university
+[21:55:56]   ⏭  vanderbilt university
+[21:55:56]   ⏭  vassar college
+[21:55:56]   ⏭  vermont technical college
+[21:55:56]   ⏭  villa julie college
+[21:55:56]   ⏭  villanova university
+[21:55:56]   ⏭  virginia commonwealth university
+[21:55:56]   ⏭  virginia intermont college
+[21:55:56]   ⏭  virginia military institute
+[21:55:56]   ⏭  virginia polytechnic institute and state university
+[21:55:56]   ⏭  virginia state university
+[21:55:56]   ⏭  virginia wesleyan college
+[21:55:56]   ⏭  wabash college
+[21:55:56]   ⏭  wake forest university
+[21:55:56]   ⏭  walden university
+[21:55:56]   ⏭  walla walla college
+[21:55:56]   ⏭  warren wilson college
+[21:55:56]   ⏭  wartburg college
+[21:55:56]   ⏭  washburn university
+[21:55:56]   ⏭  washington & lee university
+[21:55:56]   ⏭  washington college
+[21:55:56]   ⏭  washington state university
+[21:55:56]   ⏭  washington state university at tri-cities
+[21:55:56]   ⏭  washington state university at vancouver
+[21:55:56]   ⏭  washington university, saint louis
+[21:55:57]   ⏭  wayne state university
+[21:55:57]   ⏭  waynesburg college
+[21:55:57]   ⏭  weber state university
+[21:55:57]   ⏭  webster university
+[21:55:57]   ⏭  wellesley college
+[21:55:57]   ⏭  wells college
+[21:55:57]   ⏭  wentworth institute of technology
+[21:55:57]   ⏭  wesley college
+[21:55:57]   ⏭  wesleyan university
+[21:55:57]   ⏭  west chester university of pennsylvania
+[21:55:57]   ⏭  west coast university
+[21:55:57]   ⏭  west georgia college
+[21:55:57]   ⏭  west liberty state college
+[21:55:57]   ⏭  west texas a&m university
+[21:55:57]   ⏭  west virginia university
+[21:55:57]   ⏭  west virginia university at parkersburg
+[21:55:57]   ⏭  western carolina university
+[21:55:57]   ⏭  western connecticut state university
+[21:55:57]   ⏭  western illinois university
+[21:55:57]   ⏭  western kentucky university
+[21:55:57]   ⏭  western maryland college
+[21:55:57]   ⏭  western michigan university
+[21:55:57]   ⏭  western montana college
+[21:55:57]   ⏭  western new england college
+[21:55:57]   ⏭  western new mexico university
+[21:55:57]   ⏭  western state college
+[21:55:57]   ⏭  western washington university
+[21:55:57]   ⏭  westfield state college
+[21:55:57]   ⏭  westminster college
+[21:55:57]   ⏭  westminster college of salt lake city
+[21:55:57]   ⏭  westminster theological seminary
+[21:55:57]   ⏭  westmont college
+[21:55:57]   ⏭  wheaton college
+[21:55:57]   ⏭  wheeling jesuit college
+[21:55:57]   ⏭  whitman college
+[21:55:57]   ⏭  whittier college
+[21:55:57]   ⏭  whitworth college
+[21:55:57]   ⏭  wichita state university
+[21:55:57]   ⏭  widener university
+[21:55:57]   ⏭  wilberforce university
+[21:55:57]   ⏭  wilkes university
+[21:55:57]   ⏭  willamette university
+[21:55:57]   ⏭  william howard taft university
+[21:55:57]   ⏭  william jewell college
+[21:55:57]   ⏭  william mitchell college of law
+[21:55:57]   ⏭  william paterson college
+[21:55:57]   ⏭  william penn college
+[21:55:57]   ⏭  william woods university
+[21:55:57]   ⏭  williams college
+[21:55:57]   ⏭  wilmington college
+[21:55:57]   ⏭  winona state university
+[21:55:57]   ⏭  winthrop university
+[21:55:57]   ⏭  wittenberg university
+[21:55:57]   ⏭  wofford college
+[21:55:57]   ⏭  woodbury university
+[21:55:57]   ⏭  worcester polytechnic institute
+[21:55:57]   ⏭  wright state university
+[21:55:57]   ⏭  xavier university of louisiana
+[21:55:57]   ⏭  yale university
+[21:55:57]   ⏭  yeshiva university
+[21:55:57]   ⏭  york college of pennsylvania
+[21:55:57]   ⏭  youngstown state university
+
+  Progress: [█████████████████████████░░░░░░░░░░░░░░░] 687/1076 (64%)  overall (resume point)
+
+[21:55:57] 
+--- Starting processing for 389 college(s) ---
+
+[21:56:29] 
+[This run: 1/389]
+[21:56:29] 
+==================================================
+[21:56:29] COLLEGE: american coastline university
+[21:56:29] ==================================================
+[21:56:29]   Searching API: american coastline university
+[21:56:45]   No article found for: american coastline university
+[21:56:45]   ❌ No Wikipedia article found
+
+  Progress: [█████████████████████████░░░░░░░░░░░░░░░] 687/1076 (64%)  total — just finished: american coastline university
+
+[21:56:45] 
+  Waiting 3s before next college...
+[21:56:48] 
+[This run: 2/389]
+[21:56:48] 
+==================================================
+[21:56:48] COLLEGE: arkansas state university, jonesboro
+[21:56:48] ==================================================
+[21:56:48]   Searching API: arkansas state university, jonesboro
+[21:56:49]   No article found for: arkansas state university, jonesboro
+[21:56:49]   ❌ No Wikipedia article found
+
+  Progress: [█████████████████████████░░░░░░░░░░░░░░░] 687/1076 (64%)  total — just finished: arkansas state university, jonesboro
+
+[21:56:49] 
+  Waiting 3s before next college...
+[21:56:52] 
+[This run: 3/389]
+[21:56:52] 
+==================================================
+[21:56:52] COLLEGE: assumption college
+[21:56:52] ==================================================
+[21:56:52]   Searching API: assumption college
+[21:56:53]   Found title: Assumption College
+[21:56:55]   API returned 0 usable image filename(s)
+[21:56:55]   ❌ No images found on page
+
+  Progress: [█████████████████████████░░░░░░░░░░░░░░░] 687/1076 (64%)  total — just finished: assumption college
+
+[21:56:55] 
+  Waiting 3s before next college...
+[21:56:58] 
+[This run: 4/389]
+[21:56:58] 
+==================================================
+[21:56:58] COLLEGE: avila college
+[21:56:58] ==================================================
+[21:56:58]   Searching API: avila college
+[21:56:59]   Found title: Avila College
+[21:57:02]   API returned 0 usable image filename(s)
+[21:57:02]   ❌ No images found on page
+
+  Progress: [█████████████████████████░░░░░░░░░░░░░░░] 687/1076 (64%)  total — just finished: avila college
+
+[21:57:02] 
+  Waiting 3s before next college...
+[21:57:05] 
+[This run: 5/389]
+[21:57:05] 
+==================================================
+[21:57:05] COLLEGE: california pacific university
+[21:57:05] ==================================================
+[21:57:05]   Searching API: california pacific university
+[21:57:06]   Found title: California Pacific University
+[21:57:08]   API returned 0 usable image filename(s)
+[21:57:08]   ❌ No images found on page
+
+  Progress: [█████████████████████████░░░░░░░░░░░░░░░] 687/1076 (64%)  total — just finished: california pacific university
+
+[21:57:08] 
+  Waiting 3s before next college...
+[21:57:11] 
+[This run: 6/389]
+[21:57:11] 
+==================================================
+[21:57:11] COLLEGE: california state university, long beach
+[21:57:11] ==================================================
+[21:57:11]   Searching API: california state university, long beach
+[21:57:12]   Found title: California State University, Long Beach
+[21:57:14]   API returned 20 usable image filename(s)
+[21:57:14]   Saving to: C:\Users\Boni\Desktop\Projects\alting_img\logos\california state university, long beach
+[21:57:14]     [1/20] Brotman Hall.jpg
+[21:57:14]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Brotman%20Hall.jpg
+[21:57:27]     ✅ Screenshot saved (element): Brotman Hall.png
+[21:57:29]     Crop: 378x264 → 378x264 (padding=10px)
+[21:57:29]     Waiting 3s...
+[21:57:32]     [2/20] CSU-Longbeach seal.svg
+[21:57:32]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/CSU-Longbeach%20seal.svg
+[21:57:47]     ✅ Screenshot saved (full page): CSU-Longbeach seal.png
+[21:57:47]     Crop: 1920x1080 → 325x312 (padding=10px)
+[21:57:47]     Waiting 3s...
+[21:57:50]     [3/20] CSU system workmark.png
+[21:57:50]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/CSU%20system%20workmark.png
+[21:57:54]     ✅ Screenshot saved (element): CSU system workmark.png
+[21:57:54]     Crop: 256x256 → 256x256 (padding=10px)
+[21:57:54]     Waiting 3s...
+[21:57:57]     [4/20] California State University, Long Beach.svg
+[21:57:57]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/California%20State%20University%2C%20Long%20Beach.svg
+[21:58:11]     ✅ Screenshot saved (full page): California State University, Long Beach.png
+[21:58:11]     Crop: 1920x1080 → 677x88 (padding=10px)
+[21:58:11]     Waiting 3s...
+[21:58:14]     [5/20] Carpenter Performing Arts Center (Long Beach, California, March 2008).jpg
+[21:58:14]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Carpenter%20Performing%20Arts%20Center%20%28Long%20Beach%2C%20California%2C%20March%202008%29.jpg
+[21:58:20]     ✅ Screenshot saved (element): Carpenter Performing Arts Center (Long Beach, California, March 2008).png
+[21:58:20]     Crop: 1440x1080 → 1440x1080 (padding=10px)
+[21:58:20]     Waiting 3s...
+[21:58:23]     [6/20] Carpenters - Nixon - Office.png
+[21:58:23]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Carpenters%20-%20Nixon%20-%20Office.png
+[21:58:28]     ✅ Screenshot saved (element): Carpenters - Nixon - Office.png
+[21:58:28]     Crop: 824x1080 → 824x1080 (padding=10px)
+[21:58:28]     Waiting 3s...
+[21:58:31]     [7/20] Csulb-tower2.jpg
+[21:58:32]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Csulb-tower2.jpg
+[21:58:39]     ✅ Screenshot saved (element): Csulb-tower2.png
+[21:58:40]     Crop: 1440x1080 → 1440x1080 (padding=10px)
+[21:58:40]     Waiting 3s...
+[21:58:43]     [8/20] Csulb10-pano.jpg
+[21:58:43]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Csulb10-pano.jpg
+[21:58:52]     ✅ Screenshot saved (element): Csulb10-pano.png
+[21:58:52]     Crop: 1920x386 → 1920x386 (padding=10px)
+[21:58:52]     Waiting 3s...
+[21:58:55]     [9/20] Flag of Long Beach, California.png
+[21:58:55]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Flag%20of%20Long%20Beach%2C%20California.png
+[21:58:59]     ✅ Screenshot saved (element): Flag of Long Beach, California.png
+[21:58:59]     Crop: 342x216 → 342x216 (padding=10px)
+[21:58:59]     Waiting 3s...
+[21:59:02]     [10/20] HistoricPlacesNationalRegisterPlaque.JPG
+[21:59:02]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/HistoricPlacesNationalRegisterPlaque.JPG
+[21:59:11]     ✅ Screenshot saved (element): HistoricPlacesNationalRegisterPlaque.png
+[21:59:11]     Crop: 1370x1080 → 1370x1080 (padding=10px)
+[21:59:11]     Waiting 3s...
+[21:59:14]     [11/20] Ken Lindgren Aquatics Center (Long Beach State).jpg
+[21:59:14]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Ken%20Lindgren%20Aquatics%20Center%20%28Long%20Beach%20State%29.jpg
+[21:59:23]     ✅ Screenshot saved (element): Ken Lindgren Aquatics Center (Long Beach State).png
+[21:59:24]     Crop: 1920x1080 → 1920x1080 (padding=10px)
+[21:59:24]     Waiting 3s...
+[21:59:27]     [12/20] LA Skyline Mountains2.jpg
+[21:59:27]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/LA%20Skyline%20Mountains2.jpg
+[21:59:35]     ✅ Screenshot saved (element): LA Skyline Mountains2.png
+[21:59:36]     Crop: 1618x1080 → 1618x1080 (padding=10px)
+[21:59:36]     Waiting 3s...
+[21:59:39]     [13/20] Los Angeles-Orange County State College.jpg
+[21:59:39]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Los%20Angeles-Orange%20County%20State%20College.jpg
+[21:59:43]     ✅ Screenshot saved (element): Los Angeles-Orange County State College.png
+[21:59:43]     Crop: 412x242 → 412x242 (padding=10px)
+[21:59:43]     Waiting 3s...
+[21:59:46]     [14/20] Misty May-Treanor.jpg
+[21:59:46]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Misty%20May-Treanor.jpg
+[21:59:51]     ✅ Screenshot saved (element): Misty May-Treanor.png
+[21:59:51]     Crop: 135x102 → 135x102 (padding=10px)
+[21:59:51]     Waiting 3s...
+[21:59:55]     [15/20] Puvunga Indian Village Sites.jpg
+[21:59:55]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Puvunga%20Indian%20Village%20Sites.jpg
+[21:59:59]     ✅ Screenshot saved (element): Puvunga Indian Village Sites.png
+[21:59:59]     Crop: 135x102 → 135x102 (padding=10px)
+[21:59:59]     Waiting 3s...
+[22:00:02]     [16/20] RG Headshot.jpeg
+[22:00:02]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/RG%20Headshot.jpeg
+[22:00:07]     ✅ Screenshot saved (element): RG Headshot.png
+[22:00:07]     Crop: 135x102 → 135x102 (padding=10px)
+[22:00:07]     Waiting 3s...
+[22:00:10]     [17/20] Seal of Long Beach, California.png
+[22:00:10]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Seal%20of%20Long%20Beach%2C%20California.png
+[22:00:14]     ✅ Screenshot saved (element): Seal of Long Beach, California.png
+[22:00:14]     Crop: 135x102 → 135x102 (padding=10px)
+[22:00:14]     Waiting 3s...
+[22:00:17]     [18/20] Steven Spielberg by Gage Skidmore.jpg
+[22:00:17]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Steven%20Spielberg%20by%20Gage%20Skidmore.jpg
+[22:00:21]     ✅ Screenshot saved (element): Steven Spielberg by Gage Skidmore.png
+[22:00:21]     Crop: 135x102 → 135x102 (padding=10px)
+[22:00:21]     Waiting 3s...
+[22:00:24]     [19/20] Symbol category class.svg
+[22:00:24]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Symbol%20category%20class.svg
+[22:00:37]     ✅ Screenshot saved (full page): Symbol category class.png
+[22:00:37]     Crop: 1920x1080 → 187x191 (padding=10px)
+[22:00:37]     Waiting 3s...
+[22:00:40]     [20/20] Walter Pyramid.jpg
+[22:00:40]     Opening: https://en.wikipedia.org/wiki/Special:FilePath/Walter%20Pyramid.jpg
+[22:00:44]     ✅ Screenshot saved (element): Walter Pyramid.png
+[22:00:44]     Crop: 135x102 → 135x102 (padding=10px)
+[22:00:44] 
+  ✅ Saved 20/20 images → C:\Users\Boni\Desktop\Projects\alting_img\logos\california state university, long beach
+
+  Progress: [█████████████████████████░░░░░░░░░░░░░░░] 688/1076 (64%)  total — just finished: california state university, long beach
+
+[22:00:44] 
+  Waiting 3s before next college...
