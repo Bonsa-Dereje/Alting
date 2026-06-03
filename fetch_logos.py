@@ -28,7 +28,16 @@ SKIP_KEYWORDS = [
     "placeholder", "noimage", "missing"
 ]
 
-CROP_PADDING = 10  # pixels of padding around cropped logo
+CROP_PADDING = 10
+
+# ----------------------------
+# STATUS CONSTANTS
+# ----------------------------
+STATUS_SUCCESS     = "Success"
+STATUS_NO_WIKI     = "No Wikipedia Article"
+STATUS_NO_IMAGES   = "No Images on Page"
+STATUS_SAVE_FAILED = "Save Failed"
+STATUS_SKIPPED     = "Already Done"
 
 # ----------------------------
 # LOG FILE SETUP
@@ -41,13 +50,12 @@ def init_log_file():
     os.makedirs(LOGS_DIR, exist_ok=True)
     run_timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     _log_file_path = os.path.join(LOGS_DIR, f"run_{run_timestamp}.txt")
-    # Also maintain a rolling "latest" log for convenience
     _write_log_header(run_timestamp)
 
 def _write_log_header(timestamp: str):
     header = [
         "=" * 60,
-        f"  Logo Scraper Run — {timestamp}",
+        f"  Logo Scraper Run -- {timestamp}",
         "=" * 60,
         ""
     ]
@@ -56,11 +64,9 @@ def _write_log_header(timestamp: str):
         print(line, flush=True)
 
 def flush_log():
-    """Write all buffered log lines to disk."""
     if _log_file_path:
         with open(_log_file_path, "w", encoding="utf-8") as f:
             f.write("\n".join(_log_lines))
-        # Also overwrite logs/latest.txt
         latest_path = os.path.join(LOGS_DIR, "latest.txt")
         with open(latest_path, "w", encoding="utf-8") as f:
             f.write("\n".join(_log_lines))
@@ -74,7 +80,12 @@ def log(msg: str):
     line = f"[{ts}] {msg}"
     print(line, flush=True)
     _log_lines.append(line)
-    # Flush to disk after every line so logs survive crashes
+    flush_log()
+
+def log_raw(msg: str):
+    """Log a line without timestamp (used for table formatting)."""
+    print(msg, flush=True)
+    _log_lines.append(msg)
     flush_log()
 
 
@@ -84,11 +95,11 @@ def log(msg: str):
 def print_progress(done: int, total: int, label: str = ""):
     if total == 0:
         return
-    pct   = done / total
-    width = 40
+    pct    = done / total
+    width  = 40
     filled = int(width * pct)
-    bar   = "█" * filled + "░" * (width - filled)
-    line  = f"\n  Progress: [{bar}] {done}/{total} ({pct:.0%})  {label}\n"
+    bar    = "#" * filled + "-" * (width - filled)
+    line   = f"\n  Progress: [{bar}] {done}/{total} ({pct:.0%})  {label}\n"
     print(line, flush=True)
     _log_lines.append(line)
     flush_log()
@@ -98,11 +109,6 @@ def print_progress(done: int, total: int, label: str = ""):
 # RESUME: FIND ALREADY-DONE COLLEGES
 # ----------------------------
 def get_already_done(logos_dir: str) -> set[str]:
-    """
-    Returns a set of safe_name'd college names that already have a folder
-    in the logos directory (i.e., were processed in a previous run).
-    A folder is considered 'done' if it exists AND contains at least one .png file.
-    """
     done = set()
     if not os.path.isdir(logos_dir):
         return done
@@ -113,6 +119,120 @@ def get_already_done(logos_dir: str) -> set[str]:
             if pngs:
                 done.add(entry)
     return done
+
+
+# ----------------------------
+# TABLE SUMMARY BUILDER
+# ----------------------------
+def print_table_summary(run_results: list[dict], skipped_names: list[str]):
+    """
+    Prints and logs a formatted table of all colleges for this run,
+    plus counts and flagged sections at the bottom.
+    """
+    # Build skipped rows
+    all_rows = []
+    for name in skipped_names:
+        all_rows.append({
+            "name":         name,
+            "status":       STATUS_SKIPPED,
+            "wiki_title":   "--",
+            "images_found": "--",
+            "images_saved": "--",
+        })
+    all_rows.extend(run_results)
+
+    # Sort by status priority then name
+    status_order = {
+        STATUS_SKIPPED:     0,
+        STATUS_SUCCESS:     1,
+        STATUS_NO_IMAGES:   2,
+        STATUS_NO_WIKI:     3,
+        STATUS_SAVE_FAILED: 4,
+    }
+    all_rows.sort(key=lambda r: (status_order.get(r["status"], 9), r["name"].lower()))
+
+    # Dynamic column widths
+    col_name   = max(len("College"),          max(len(r["name"])              for r in all_rows)) + 2
+    col_status = max(len("Status"),           max(len(r["status"])            for r in all_rows)) + 2
+    col_wiki   = max(len("Wikipedia Title"),  max(len(str(r["wiki_title"]))   for r in all_rows)) + 2
+    col_found  = max(len("Imgs Found"),       max(len(str(r["images_found"])) for r in all_rows)) + 2
+    col_saved  = max(len("Imgs Saved"),       max(len(str(r["images_saved"])) for r in all_rows)) + 2
+
+    div = f"+{'-'*col_name}+{'-'*col_status}+{'-'*col_wiki}+{'-'*col_found}+{'-'*col_saved}+"
+    hdr = (
+        f"| {'College':<{col_name-2}} "
+        f"| {'Status':<{col_status-2}} "
+        f"| {'Wikipedia Title':<{col_wiki-2}} "
+        f"| {'Imgs Found':<{col_found-2}} "
+        f"| {'Imgs Saved':<{col_saved-2}} |"
+    )
+
+    log_raw("")
+    log_raw("=" * 70)
+    log_raw("  RUN SUMMARY TABLE")
+    log_raw("=" * 70)
+    log_raw(div)
+    log_raw(hdr)
+    log_raw(div)
+
+    for r in all_rows:
+        row = (
+            f"| {r['name']:<{col_name-2}} "
+            f"| {r['status']:<{col_status-2}} "
+            f"| {str(r['wiki_title']):<{col_wiki-2}} "
+            f"| {str(r['images_found']):<{col_found-2}} "
+            f"| {str(r['images_saved']):<{col_saved-2}} |"
+        )
+        log_raw(row)
+
+    log_raw(div)
+
+    # --- Counts ---
+    counts = {}
+    for r in all_rows:
+        counts[r["status"]] = counts.get(r["status"], 0) + 1
+
+    total = len(all_rows)
+    log_raw("")
+    log_raw("  COUNTS")
+    log_raw(f"  {'-'*40}")
+    log_raw(f"  {'Total colleges':<35}: {total}")
+    log_raw(f"  {'[' + STATUS_SKIPPED + ']':<35}: {counts.get(STATUS_SKIPPED, 0)}")
+    log_raw(f"  {'[' + STATUS_SUCCESS + ']':<35}: {counts.get(STATUS_SUCCESS, 0)}")
+    log_raw(f"  {'[' + STATUS_NO_IMAGES + ']':<35}: {counts.get(STATUS_NO_IMAGES, 0)}")
+    log_raw(f"  {'[' + STATUS_NO_WIKI + ']':<35}: {counts.get(STATUS_NO_WIKI, 0)}")
+    log_raw(f"  {'[' + STATUS_SAVE_FAILED + ']':<35}: {counts.get(STATUS_SAVE_FAILED, 0)}")
+    log_raw("")
+
+    # --- Flagged sections ---
+    no_wiki_list   = [r["name"] for r in all_rows if r["status"] == STATUS_NO_WIKI]
+    no_images_list = [r["name"] for r in all_rows if r["status"] == STATUS_NO_IMAGES]
+    failed_list    = [r["name"] for r in all_rows if r["status"] == STATUS_SAVE_FAILED]
+
+    if no_wiki_list or no_images_list or failed_list:
+        log_raw("  FLAGGED -- NEEDS ATTENTION")
+        log_raw(f"  {'-'*40}")
+
+    if no_wiki_list:
+        log_raw(f"\n  [No Wikipedia Article] ({len(no_wiki_list)}) -- search manually or check spelling:")
+        for name in no_wiki_list:
+            log_raw(f"    * {name}")
+
+    if no_images_list:
+        log_raw(f"\n  [No Images on Page] ({len(no_images_list)}) -- article exists but had no usable images:")
+        for name in no_images_list:
+            log_raw(f"    * {name}")
+
+    if failed_list:
+        log_raw(f"\n  [Save Failed] ({len(failed_list)}) -- images found but none could be saved:")
+        for name in failed_list:
+            log_raw(f"    * {name}")
+
+    log_raw("")
+    log_raw("=" * 70)
+    log_raw(f"  Log saved to: {_log_file_path}")
+    log_raw("=" * 70)
+    log_raw("")
 
 
 # ----------------------------
@@ -131,7 +251,7 @@ def safe_name(name: str) -> str:
 
 
 # ----------------------------
-# CROP WHITESPACE WITH PILLOW getbbox()
+# CROP WHITESPACE
 # ----------------------------
 def crop_whitespace(path: str, padding: int = CROP_PADDING):
     try:
@@ -159,14 +279,14 @@ def crop_whitespace(path: str, padding: int = CROP_PADDING):
 
         cropped = flat.crop((left, top, right, bottom))
         cropped.save(path)
-        log(f"    Crop: {width}x{height} → {right - left}x{bottom - top} (padding={padding}px)")
+        log(f"    Crop: {width}x{height} -> {right-left}x{bottom-top} (padding={padding}px)")
 
     except Exception as e:
         log(f"    Crop error: {e}")
 
 
 # ----------------------------
-# STEP 1: RESOLVE PAGE TITLE VIA SEARCH API
+# STEP 1: RESOLVE PAGE TITLE
 # ----------------------------
 def resolve_page_title(college_name: str) -> str | None:
     log(f"  Searching API: {college_name}")
@@ -190,7 +310,7 @@ def resolve_page_title(college_name: str) -> str | None:
 
 
 # ----------------------------
-# STEP 2: GET ALL IMAGE FILENAMES ON THE PAGE
+# STEP 2: GET IMAGE FILENAMES
 # ----------------------------
 def get_page_image_filenames(page_title: str) -> list[str]:
     filenames = []
@@ -228,7 +348,7 @@ def get_page_image_filenames(page_title: str) -> list[str]:
 
 
 # ----------------------------
-# STEP 3: SCREENSHOT + CROP EACH IMAGE
+# STEP 3: SCREENSHOT + CROP
 # ----------------------------
 def screenshot_images(filenames: list[str], out_dir: str, browser) -> int:
     saved = 0
@@ -254,23 +374,21 @@ def screenshot_images(filenames: list[str], out_dir: str, browser) -> int:
                 pass
 
             page.wait_for_timeout(1500)
-
             img_el = page.query_selector("img")
 
             if img_el:
                 img_el.screenshot(path=save_path)
-                log(f"    ✅ Screenshot saved (element): {os.path.basename(save_path)}")
+                log(f"    Saved (element): {os.path.basename(save_path)}")
             else:
                 page.screenshot(path=save_path, full_page=False)
-                log(f"    ✅ Screenshot saved (full page): {os.path.basename(save_path)}")
+                log(f"    Saved (full page): {os.path.basename(save_path)}")
 
             page.close()
-
             crop_whitespace(save_path)
             saved += 1
 
         except Exception as e:
-            log(f"    ❌ Screenshot failed: {e}")
+            log(f"    Screenshot failed: {e}")
             try:
                 page.close()
             except:
@@ -286,31 +404,51 @@ def screenshot_images(filenames: list[str], out_dir: str, browser) -> int:
 # ----------------------------
 # PROCESS ONE COLLEGE
 # ----------------------------
-def process_college(college_name: str, browser) -> bool:
+def process_college(college_name: str, browser) -> dict:
+    result = {
+        "name":         college_name,
+        "status":       STATUS_SAVE_FAILED,
+        "wiki_title":   "--",
+        "images_found": 0,
+        "images_saved": 0,
+    }
+
     log(f"\n{'='*50}")
     log(f"COLLEGE: {college_name}")
     log(f"{'='*50}")
 
     page_title = resolve_page_title(college_name)
     if not page_title:
-        log(f"  ❌ No Wikipedia article found")
-        return False
+        log(f"  FLAG: No Wikipedia article found for '{college_name}'")
+        result["status"] = STATUS_NO_WIKI
+        return result
 
+    result["wiki_title"] = page_title
     time.sleep(1)
 
     filenames = get_page_image_filenames(page_title)
+    result["images_found"] = len(filenames)
+
     if not filenames:
-        log(f"  ❌ No images found on page")
-        return False
+        log(f"  FLAG: Wikipedia article exists but has NO usable images for '{college_name}'")
+        result["status"] = STATUS_NO_IMAGES
+        return result
 
     out_dir = os.path.join(LOGOS_DIR, safe_name(college_name))
     os.makedirs(out_dir, exist_ok=True)
     log(f"  Saving to: {out_dir}")
 
     saved = screenshot_images(filenames, out_dir, browser)
+    result["images_saved"] = saved
 
-    log(f"\n  ✅ Saved {saved}/{len(filenames)} images → {out_dir}")
-    return saved > 0
+    if saved > 0:
+        result["status"] = STATUS_SUCCESS
+        log(f"\n  Saved {saved}/{len(filenames)} images -> {out_dir}")
+    else:
+        result["status"] = STATUS_SAVE_FAILED
+        log(f"\n  FLAG: Found {len(filenames)} images but failed to save any for '{college_name}'")
+
+    return result
 
 
 # ----------------------------
@@ -323,8 +461,8 @@ def main():
     base_dir   = os.path.join(PROJECT_ROOT, name_param)
 
     if not os.path.isdir(base_dir):
-        log(f"❌ Directory not found: {base_dir}")
-        log(f"   Expected: {base_dir}/<CollegeName>/")
+        log(f"Directory not found: {base_dir}")
+        log(f"Expected: {base_dir}/<CollegeName>/")
         sys.exit(1)
 
     all_college_names = sorted([
@@ -333,42 +471,41 @@ def main():
     ])
 
     if not all_college_names:
-        log(f"❌ No subfolders found in: {base_dir}")
+        log(f"No subfolders found in: {base_dir}")
         sys.exit(1)
 
     total_colleges = len(all_college_names)
 
     # --- RESUME DETECTION ---
     os.makedirs(LOGOS_DIR, exist_ok=True)
-    already_done_safe_names = get_already_done(LOGOS_DIR)
+    already_done_safe = get_already_done(LOGOS_DIR)
 
-    # Match colleges to their safe_name equivalents
-    skipped   = [n for n in all_college_names if safe_name(n) in already_done_safe_names]
-    remaining = [n for n in all_college_names if safe_name(n) not in already_done_safe_names]
+    skipped   = [n for n in all_college_names if safe_name(n) in already_done_safe]
+    remaining = [n for n in all_college_names if safe_name(n) not in already_done_safe]
 
-    log(f"📋 Total colleges in '{name_param}' folder : {total_colleges}")
-    log(f"✅ Already completed (logos exist)         : {len(skipped)}")
-    log(f"🔄 Remaining to process                    : {len(remaining)}")
-    log(f"📁 Logos output root                       : {LOGOS_DIR}")
-    log(f"📝 Log file                                : {_log_file_path}")
+    log(f"Total colleges in '{name_param}' folder : {total_colleges}")
+    log(f"Already completed (logos exist)         : {len(skipped)}")
+    log(f"Remaining to process                    : {len(remaining)}")
+    log(f"Logos output root                       : {LOGOS_DIR}")
+    log(f"Log file                                : {_log_file_path}")
 
     if skipped:
         log(f"\n--- Skipping already-done colleges ---")
         for name in skipped:
-            log(f"  ⏭  {name}")
+            log(f"  [skip] {name}")
 
-    # Show overall progress bar (already done vs total)
     print_progress(len(skipped), total_colleges, "overall (resume point)")
 
     if not remaining:
-        log("\n🎉 All colleges already processed. Nothing to do!")
+        log("\nAll colleges already processed. Nothing to do!")
+        print_table_summary([], skipped)
         flush_log()
         return
 
     log(f"\n--- Starting processing for {len(remaining)} college(s) ---\n")
 
-    results       = {"ok": 0, "fail": 0}
-    completed_so_far = len(skipped)  # how many are done at the start of this run
+    run_results      = []
+    completed_so_far = len(skipped)
 
     with sync_playwright() as p:
         browser = p.chromium.launch(
@@ -378,17 +515,16 @@ def main():
 
         for i, name in enumerate(remaining, 1):
             log(f"\n[This run: {i}/{len(remaining)}]")
-            success = process_college(name, browser)
-            results["ok" if success else "fail"] += 1
+            result = process_college(name, browser)
+            run_results.append(result)
 
-            if success:
+            if result["status"] == STATUS_SUCCESS:
                 completed_so_far += 1
 
-            # Show progress relative to the full original list
             print_progress(
                 completed_so_far,
                 total_colleges,
-                f"total — just finished: {name}"
+                f"total -- just finished: {name}"
             )
 
             if i < len(remaining):
@@ -397,18 +533,7 @@ def main():
 
         browser.close()
 
-    log("\n" + "=" * 50)
-    log("DONE — Run Summary")
-    log("=" * 50)
-    log(f"  📋 Total colleges      : {total_colleges}")
-    log(f"  ⏭  Skipped (done prev) : {len(skipped)}")
-    log(f"  ✅ Succeeded this run  : {results['ok']}")
-    log(f"  ❌ Failed  this run    : {results['fail']}")
-    log(f"  📁 Output              : {LOGOS_DIR}")
-    log(f"  📝 Log saved to        : {_log_file_path}")
-    log("=" * 50)
-
-    print_progress(completed_so_far, total_colleges, "final overall progress")
+    print_table_summary(run_results, skipped)
     flush_log()
 
 
