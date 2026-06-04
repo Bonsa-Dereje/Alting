@@ -1,0 +1,1586 @@
+[13:50:21] Reference : C:\Users\Boni\Desktop\Projects\alting_img\referenceImg\referenceImg.png
+[13:50:21] Logos root: C:\Users\Boni\Desktop\Projects\alting_img\logos
+[13:50:22] Reference loaded: 135x102
+[13:50:50] Folders: 1002  Images: 14854
+[13:50:56] abilene christian university/Abilene Christian University June 2019 18 (McGlothlin Campus Center, Tower of Light, and Onstead-Packer Biblical Studies Building).png  orb=0.016  hist=0.958  match=False  err=None
+[13:50:57] abilene christian university/Abilene Christian University seal.png  orb=0.000  hist=0.442  match=True  err=None
+[13:50:57] abilene christian university/Abilene Christian University wordmark hz logo.png  orb=0.000  hist=0.447  match=True  err=None
+[13:50:57] abilene christian university/AbileneChristian.png  orb=0.000  hist=0.956  match=False  err=None
+[13:50:57] abilene christian university/ACU Jacobs Dream artwork.png  orb=0.000  hist=0.916  match=False  err=None
+[13:50:57] abilene christian university/ACU Wildcats wordmark.png  orb=0.016  hist=0.509  match=True  err=None
+[13:50:57] abilene christian university/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:50:57] abilene christian university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:50:58] adelphi university/Adelphi University Graduation 2017.png  orb=0.000  hist=0.922  match=False  err=None
+[13:50:58] adelphi university/Adelphi University Quad.png  orb=0.000  hist=0.966  match=False  err=None
+[13:50:58] adelphi university/Adelphi University Seal.png  orb=0.000  hist=0.712  match=False  err=None
+[13:50:58] adelphi university/Adelphi University wordmark.png  orb=0.066  hist=0.514  match=True  err=None
+[13:50:59] adelphi university/Levermore Hall.png  orb=0.016  hist=0.939  match=False  err=None
+[13:50:59] adelphi university/Nexus Levermore.png  orb=0.049  hist=0.953  match=False  err=None
+[13:51:00] agnes scott college/Agnes Scott College - Across the quad.png  orb=0.049  hist=0.959  match=False  err=None
+[13:51:00] agnes scott college/Agnes Scott College - Buttrick Hall.png  orb=0.016  hist=0.947  match=False  err=None
+[13:51:00] agnes scott college/Agnes Scott College - McCain Library.png  orb=0.000  hist=0.930  match=False  err=None
+[13:51:01] agnes scott college/Agnes Scott College Mission Statement Sign.png  orb=0.000  hist=0.958  match=False  err=None
+[13:51:01] agnes scott college/Agnes Scott College seal.png  orb=0.016  hist=0.204  match=True  err=None
+[13:51:01] agnes scott college/Agnes Scott College wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:01] agnes scott college/Bradley-Observatory-04.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:01] agnes scott college/Flag of Georgia (U.S. state).png  orb=0.000  hist=0.763  match=False  err=None
+[13:51:02] agnes scott college/Flag of the State of Georgia.png  orb=0.000  hist=0.763  match=False  err=None
+[13:51:02] agnes scott college/Inman Hall - Agnes Scott College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] agnes scott college/Robert Frost Statue - Agnes Scott College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] air force institute of technology/AFIT Graduation.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] air force institute of technology/Air Force Institute of Technology.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] air force institute of technology/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:51:02] air force institute of technology/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:02] alabama a&m university/AAMU Carnegie Library Dec10.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] alabama a&m university/AAMU Marching Maroon and White Band logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] alabama a&m university/AAMU Residence Hall & Wellness Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] alabama a&m university/Alabama A&M Bulldogs logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] alabama a&m university/Alabama A&M University Seal.png  orb=0.148  hist=0.955  match=False  err=None
+[13:51:02] alabama a&m university/Alternative Alabama A&M logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] alabama a&m university/Buchanan Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] alabama a&m university/Don Calloway.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] alabama a&m university/Flag of the United States.png  orb=0.000  hist=0.664  match=False  err=None
+[13:51:02] alabama a&m university/Frank Kearse 2015.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] alabama a&m university/Jearl Miles-Clark Sydney 2000.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:02] alabama a&m university/John Stallworth - 2019 01.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:03] alabama a&m university/Location Map USA Alabama Huntsville.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:03] alabama a&m university/Mandela Barnes Headshot.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:03] alabama a&m university/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:03] alabama a&m university/Red pog.png  orb=0.000  hist=0.619  match=False  err=None
+[13:51:03] alabama a&m university/Rev. Joseph Lowery.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:03] alabama a&m university/Robert Mathis.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:03] alabama a&m university/Ruben Studdard 2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:03] alabama a&m university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:03] alabama a&m university/USA Alabama location map.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:03] alabama a&m university/Usa edcp location map.png  orb=0.066  hist=0.911  match=False  err=None
+[13:51:03] alabama a&m university/Vivian Malone registering.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:03] alabama a&m university/William Hooper Councill.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:04] alabama state university/Alabama State University seal.png  orb=0.000  hist=0.326  match=True  err=None
+[13:51:04] alabama state university/Alabama State University wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:04] alabama state university/ASU Bibb Graves Hall June 09 02.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:04] alabama state university/EMU v Alabama State 096.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:04] alabama state university/SWAC Outdoor Track Field 5-6-23 (167).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:04] alaska pacific university/Alaska Pacific University logo.png  orb=0.000  hist=0.924  match=False  err=None
+[13:51:04] alaska pacific university/EAST FRONT - Alaska Methodist University, Campus Center, University Drive, Anchorage, Anchorage, AK HABS AK,2-ANCH,12-1.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:04] alaska pacific university/Flag of Alaska.png  orb=0.000  hist=0.941  match=False  err=None
+[13:51:04] alaska pacific university/Frederick McGinnis.png  orb=0.016  hist=0.829  match=False  err=None
+[13:51:05] albertson college of idaho/Blatchley Hall, College of Idaho.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:05] albertson college of idaho/Centennial Amphitheater, College of Idaho.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:05] albertson college of idaho/College idaho seal.png  orb=0.016  hist=0.626  match=False  err=None
+[13:51:05] albertson college of idaho/Cruzen-Murray Library, College of Idaho (2).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:05] albertson college of idaho/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:05] albertson college of idaho/Flag of Idaho.png  orb=0.000  hist=0.914  match=False  err=None
+[13:51:05] albertson college of idaho/Idaho college logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:05] albertson college of idaho/Idaho yotes wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:05] albertson college of idaho/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:05] albertson college of idaho/Sterry Hall, College of Idaho.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:05] albertson college of idaho/Strahorn Hall, College of Idaho.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:05] albion college/Albiion college full logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:06] albion college/Albion bgd logo from NCAA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:06] albion college/Albion college seal.png  orb=0.000  hist=0.669  match=False  err=None
+[13:51:06] albion college/Albion College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:06] albion college/Honors Outside.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:06] alderson-broaddus college/Alderson Broaddus University seal.png  orb=0.066  hist=0.497  match=True  err=None
+[13:51:06] alderson-broaddus college/Alderson Broaddus University wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:06] alderson-broaddus college/Alderson-Broaddus Early Campus.png  orb=0.000  hist=0.927  match=False  err=None
+[13:51:06] alderson-broaddus college/The Burbick Hall administration building on the Shearer Quadrangle at Alderson Broaddus University in Phillippi, West Virginia LCCN2015631680.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:06] alfred university/Alfred University Campus April 2006.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:07] alfred university/Alfred University Powell Campus Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:07] alfred university/Alfredunilogo.png  orb=0.066  hist=0.967  match=False  err=None
+[13:51:07] alfred university/AlfredUniversitylogo.png  orb=0.000  hist=0.877  match=False  err=None
+[13:51:07] alfred university/AlumniHall2004.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:07] alfred university/Hot Dog Day 2007 1.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:07] alfred university/Kanakadea Hall at Alfred University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:07] alfred university/Miller Performing Arts Center at Alfred University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:07] alfred university/Pumpking Alfred 2019.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:07] alfred university/SUNY-admin-tower.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:07] alfred university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:07] allegheny college/Allegheny College Meadville 1909 Pennsylvania Historic Campus.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:07] allegheny college/Allegheny college seal.png  orb=0.066  hist=0.122  match=True  err=None
+[13:51:07] allegheny college/Allegheny gators wmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:08] allegheny college/Allegheny vs. Baldwin Wallace Lacrosse - 49599429626.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:08] allegheny college/Alleghenycollegelogo.png  orb=0.000  hist=0.906  match=False  err=None
+[13:51:08] allegheny college/Bentley Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:08] allegheny college/Brooks side.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:08] allegheny college/Doane Hall of Chemistry and Envi Sci.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:08] allegheny college/Ford Chapel outside.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:08] allegheny college/IdaTarbell-Purdy.LOC.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:08] allegheny college/Oddfellows building.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:08] allegheny college/Ravine hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:08] allegheny college/War mem.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:08] allegheny college/William McKinley BAH-p255.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:08] allegheny college/Wise center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:08] allentown college of saint francis de sales/046CupolaSPietro.png  orb=0.000  hist=0.941  match=False  err=None
+[13:51:09] allentown college of saint francis de sales/DeSales univ seal.png  orb=0.000  hist=0.520  match=True  err=None
+[13:51:09] allentown college of saint francis de sales/DeSales University Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:09] allentown college of saint francis de sales/DeSales University logo.png  orb=0.033  hist=0.470  match=True  err=None
+[13:51:09] allentown college of saint francis de sales/Gambet Center for Business and Healthcare at DeSales University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:09] allentown college of saint francis de sales/Hurd Science Center at DeSales University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:09] allentown college of saint francis de sales/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:09] allentown college of saint francis de sales/Roman Catholic Diocese of Allentown.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:09] allentown college of saint francis de sales/Trading Room in Gambet Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:09] allentown college of saint francis de sales/Trexler Library at DeSales University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:09] alma college/Alma College Seal.png  orb=0.033  hist=0.570  match=False  err=None
+[13:51:10] alma college/Alma logo from NCAA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:10] alma college/Baldwin Wallace Yellow Jackets vs. Alma Scots (44587146251) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:10] alma college/Gary Peters, official portrait, 114th Congress.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:10] alma college/Greg Hatcher Learning Commons.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:10] alma college/Stacked 2 Maroon.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:10] alverno college/046CupolaSPietro.png  orb=0.000  hist=0.941  match=False  err=None
+[13:51:10] alverno college/Alverno college logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:10] alverno college/Alverno college seal.png  orb=0.000  hist=0.593  match=False  err=None
+[13:51:10] alverno college/Roman Catholic Archdiocese of Milwaukee.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:10] ambassador university/2008-1226-Pasadena-001-AmbassadorCollege-pan.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:10] ambassador university/Ambassador College (logo).png  orb=0.000  hist=0.755  match=False  err=None
+[13:51:10] ambassador university/Ambassador College (seal).png  orb=0.000  hist=0.867  match=False  err=None
+[13:51:10] ambassador university/AUseal.png  orb=0.000  hist=0.755  match=False  err=None
+[13:51:10] ambassador university/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:10] american graduate school of international management/2021 Arizona State University, Tempe Campus, Old Main.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american graduate school of international management/Flag of Arizona.png  orb=0.000  hist=0.925  match=False  err=None
+[13:51:11] american graduate school of international management/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:11] american graduate school of international management/Thunderbird School of Global Management Logo.png  orb=0.115  hist=0.473  match=True  err=None
+[13:51:11] american graduate school of international management/Thunderbird School of Global Management Seal.png  orb=0.033  hist=0.517  match=True  err=None
+[13:51:11] american international college/American International College logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american international college/American International College Seal.png  orb=0.016  hist=0.627  match=False  err=None
+[13:51:11] american international college/American International College, Springfield, Mass (78032).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american international college/USAFA vs. AIC Hockey (240309-F-XS730-1006).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american university/American University Glover Gate.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american university/American University in 1916.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american university/American University logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american university/American University Seal.png  orb=0.033  hist=0.277  match=True  err=None
+[13:51:11] american university/American University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american university/AmericanUniversity.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american university/AU Flag.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american university/AU McKineyHall ACC.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american university/CapitolHallTenley.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american university/Eric Freidheim Quadrangle.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american university/Flag of the United States.png  orb=0.000  hist=0.664  match=False  err=None
+[13:51:11] american university/Increase Neutral.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american university/LibraryRevamp.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:11] american university/Olympic size swimming pool located in Bender.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:12] american university/President Kennedy American University Commencement Address June 10, 1963.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:12] american university/Reeves Field and Greenberg Track.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:12] american university/School.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:12] american university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:12] american university/Tenleytown aerial 2019.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:12] amherst college/Alexander Meiklejohn.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:12] amherst college/Amherst College buildings - IMG 6423.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:12] amherst college/Amherst College Class of 1850 daguerreotypes.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:12] amherst college/Amherst College College Row.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:12] amherst college/Amherst College Johnson Chapel winter.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:12] amherst college/Amherst College logo.png  orb=0.000  hist=0.487  match=True  err=None
+[13:51:12] amherst college/Amherst College Main Quad.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:12] amherst college/Amherst College Seal.png  orb=0.016  hist=0.506  match=True  err=None
+[13:51:12] amherst college/Amherst-Cornell Hockey Game on Beebe Lake, Ithaca (January 14, 1922) NYSA A3045-78 10436.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:12] amherst college/Anthony Marx.png  orb=0.016  hist=0.927  match=False  err=None
+[13:51:13] amherst college/Biddy Martin cropped.png  orb=0.016  hist=0.862  match=False  err=None
+[13:51:13] amherst college/Calvin H Plimpton.png  orb=0.016  hist=0.919  match=False  err=None
+[13:51:13] amherst college/Decrease Neutral.png  orb=0.000  hist=0.560  match=False  err=None
+[13:51:13] amherst college/Fayerweather Hall, Amherst College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:13] amherst college/Frost Library, Amherst College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:13] amherst college/George Harris Amherst.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:13] amherst college/Heman Humphrey.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:13] amherst college/Julius Hawley Seelye.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:13] amherst college/Kirby amherst.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:13] amherst college/Merrill Edwards Gates circa 1920.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:13] amherst college/Prof. Geo. D. Olds LCCN2014716248.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:13] amherst college/PSM V47 D592 Edward Hitchcock.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:13] amherst college/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:14] amherst college/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:14] amherst college/Wiki letter w cropped.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:14] amherst college/William Augustus Stearns.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:14] amherst college/Zephaniah Swift Moore.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:14] andrews university/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:51:14] andrews university/Andrews University logo.png  orb=0.000  hist=0.251  match=True  err=None
+[13:51:14] andrews university/Andrews University Welcome Center.png  orb=0.000  hist=0.779  match=False  err=None
+[13:51:14] andrews university/Andrews University.png  orb=0.000  hist=0.947  match=False  err=None
+[13:51:14] andrews university/Blue pog.png  orb=0.000  hist=0.619  match=False  err=None
+[13:51:14] andrews university/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:14] andrews university/Flag of Michigan.png  orb=0.000  hist=0.878  match=False  err=None
+[13:51:15] andrews university/James and Ellen White (1864) (cropped).png  orb=0.000  hist=0.829  match=False  err=None
+[13:51:15] andrews university/North America laea location map.png  orb=0.115  hist=0.732  match=False  err=None
+[13:51:15] andrews university/P christianity.png  orb=0.000  hist=0.620  match=False  err=None
+[13:51:16] andrews university/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:16] andrews university/Red pog.png  orb=0.000  hist=0.619  match=False  err=None
+[13:51:16] angelo state university/Angelo State University seal.png  orb=0.016  hist=0.680  match=False  err=None
+[13:51:16] angelo state university/Angelo State University September 2019 03 (Porter Henderson Library).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:16] angelo state university/Angelostate univ logo.png  orb=0.098  hist=0.947  match=False  err=None
+[13:51:16] angelo state university/ASUAlumni.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:16] angelo state university/ASUCampusgreen.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:16] angelo state university/ASUEntrance.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:16] angelo state university/ASUhand.png  orb=0.000  hist=0.890  match=False  err=None
+[13:51:16] angelo state university/Asuhardemanfront.png  orb=0.033  hist=0.893  match=False  err=None
+[13:51:16] angelo state university/ASUOLDMain22.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:17] angelo state university/Asuplanetarium.png  orb=0.000  hist=0.922  match=False  err=None
+[13:51:17] angelo state university/ASURockwall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:17] angelo state university/Asurotc.png  orb=0.000  hist=0.939  match=False  err=None
+[13:51:17] angelo state university/ASUstadium.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:17] angelo state university/Asustudentcenter.png  orb=0.016  hist=0.906  match=False  err=None
+[13:51:17] angelo state university/Center for Human Performance.png  orb=0.000  hist=0.864  match=False  err=None
+[13:51:17] angelo state university/Dominic, mascot of Angelo State University in San Angelo.png  orb=0.000  hist=0.977  match=False  err=None
+[13:51:17] angelo state university/Flag of Texas.png  orb=0.016  hist=0.680  match=False  err=None
+[13:51:17] angelo state university/TheASULakeHouse.png  orb=0.033  hist=0.945  match=False  err=None
+[13:51:18] antioch college/Ac-red-main-2line-horz-01.png  orb=0.066  hist=0.969  match=False  err=None
+[13:51:18] antioch college/Antioch campus grounds.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:18] antioch college/Antioch College Baseball team of 1869.png  orb=0.000  hist=0.998  match=False  err=None
+[13:51:18] antioch college/Antioch College MainBuilding.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:18] antioch college/Antioch College seal.png  orb=0.033  hist=0.942  match=False  err=None
+[13:51:18] antioch college/Antioch College solar sheep.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:18] antioch college/Antioch Farm.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:19] antioch college/Antioch Hall, Antioch College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:19] antioch college/Birch Hall 1.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:19] antioch college/CorettaKingCenter.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:19] antioch college/Horacemann.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:19] antioch college/School.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:19] antioch college/WYSO.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:19] antioch college/Yellow springs.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:19] antioch new england/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:51:19] antioch new england/Antioch University, Keene NH.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:19] antioch new england/Flag of New Hampshire.png  orb=0.000  hist=0.874  match=False  err=None
+[13:51:19] antioch new england/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:20] antioch new england/Text document with red question mark.png  orb=0.000  hist=0.504  match=True  err=None
+[13:51:20] antioch university-los angeles/Antioch University official logo 2026.png  orb=0.000  hist=0.973  match=False  err=None
+[13:51:20] antioch university-los angeles/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:20] antioch university-seattle/Antioch University official logo 2026.png  orb=0.000  hist=0.973  match=False  err=None
+[13:51:20] antioch university-seattle/Flag map of Washington.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:20] antioch university-seattle/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:20] appalachian state university/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:51:20] appalachian state university/App State campus police car.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:20] appalachian state university/Appalachian School, Boone 001 (21955780189).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:20] appalachian state university/Appalachian State Mountaineers logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:20] appalachian state university/Appalachian State University - 8623347372.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:21] appalachian state university/Appalachian State University - 8623348220.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:21] appalachian state university/Appalachian State University - 8623348962.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:21] appalachian state university/Appalachian State University logo 2.png  orb=0.066  hist=0.388  match=True  err=None
+[13:51:21] appalachian state university/Appalachian State University logo.png  orb=0.049  hist=0.866  match=False  err=None
+[13:51:21] appalachian state university/Appalachian State University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:21] appalachian state university/AppalCART bus stop.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:21] appalachian state university/AppSideline.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:21] appalachian state university/ASU from Howard's Knob.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:21] appalachian state university/Carol Grotnes Belk Library & Information Commons 05.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:21] appalachian state university/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:21] appalachian state university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:21] appalachian state university/Univ north carolina original seal.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:22] aquinas college/046CupolaSPietro.png  orb=0.000  hist=0.941  match=False  err=None
+[13:51:22] aquinas college/Anthony O'Brien.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:22] aquinas college/Aquinas Campus 1949.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:22] aquinas college/Aquinas college perth fascade.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:22] aquinas college/Aquinas college perth hughes dining hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:22] aquinas college/CBC Perth Main Building 1910.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:22] aquinas college/Geoff Robins Picture AC 1937.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:22] aquinas college/Logo of Aquinas College, Perth.png  orb=0.000  hist=0.460  match=True  err=None
+[13:51:22] aquinas college/Mount Henry Peninsula 1.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:23] aquinas college/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:23] aquinas college/School.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:23] arizona state university/20090117 James Harden makes contact with Alfred Aboya inside.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:23] arizona state university/2021 Arizona State University, Tempe Campus, Old Main.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:23] arizona state university/A-Mountain Sunset.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:23] arizona state university/Al Michaels (37443740985).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:23] arizona state university/Ambox current red Americas.png  orb=0.000  hist=0.673  match=False  err=None
+[13:51:23] arizona state university/Arizona State University Bridge Tempe Campus.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:23] arizona state university/Arizona State University logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:23] arizona state university/Arizona State University Old Main circa 1890.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/Arizona State University seal.png  orb=0.000  hist=0.531  match=True  err=None
+[13:51:24] arizona state university/ASU Downtown - SoJ SWC - 2008-12-29.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/ASU Main - Barrett02 - 2009-08-28.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/ASU Victory Bell in 1956.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/ASU-SolarArray.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/Asubiodesign.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/Asuhayden.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/Asupalms.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/Asuwmain.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/Barbara McC Barrett.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/Barry Bonds 2006-05-08 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/BatteryPregameCadence.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/Carl Hayden.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:24] arizona state university/Christine Devine on RealTVfilms.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:25] arizona state university/Corporal Patrick Tillman.png  orb=0.000  hist=0.953  match=False  err=None
+[13:51:25] arizona state university/DavidKilcullen.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:25] arizona state university/Donald Johanson (1).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:25] arizona state university/Dr. Laurie Leshin.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:25] arizona state university/Flag of Arizona.png  orb=0.000  hist=0.925  match=False  err=None
+[13:51:25] arizona state university/FLW Gammage Auditorium ASU PHX AZ 20186.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:25] arizona state university/Harold D. Richardson.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:25] arizona state university/Harry Newburn.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:25] arizona state university/Jemma Purfield 2023.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:25] arizona state university/Jimmy Kimmel June 2022.png  orb=0.016  hist=0.932  match=False  err=None
+[13:51:25] arizona state university/Katie Hobbs (54110017787) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:25] arizona state university/Lantern Walk.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:25] arizona state university/Lattie F. Coor by Gage Skidmore 2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:26] arizona state university/Léon Marchand, 2023 Pac-12 Championships, 400 yard individual medley preliminaries - 3 March 2023 (cropped).png  orb=0.000  hist=1.000  match=False  err=unreadable
+[13:51:26] arizona state university/Michael Crow (52069581469) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:26] arizona state university/Nobel Prize 2009-Press Conference KVA-30.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:26] arizona state university/Phil Mickelson 15 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:26] arizona state university/Picacho and Peralta Halls, ASU Poly - West - 2009-02-25.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:26] arizona state university/Pres. Theodore Roosevelt at Old Main of Arizona State University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:26] arizona state university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:26] arizona state university/Tempe-Grady Gammage Memorial Auditorium-1950 crop.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:26] arizona state university/USC vs ASU 2011.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:26] arizona state university/Whitewashing _A_ Mountain, Tempe Butte on Arizona State University Campus.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:26] arizona state university east/2021 Arizona State University, Tempe Campus, Old Main.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:27] arizona state university east/Asu fletcher lib.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:27] arizona state university east/ASU West Valley Campus Master RGB Digital 1 Horiz RGB Digital MaroonGold 600ppi.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:27] arizona state university east/Asuwmain.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:27] arizona state university east/Flag of Arizona.png  orb=0.000  hist=0.925  match=False  err=None
+[13:51:27] arizona state university east/Solar array asu.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:27] arizona state university east/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:27] arizona state university west/2021 Arizona State University, Tempe Campus, Old Main.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:27] arizona state university west/Asu fletcher lib.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:27] arizona state university west/ASU West Valley Campus Master RGB Digital 1 Horiz RGB Digital MaroonGold 600ppi.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:28] arizona state university west/Asuwmain.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:28] arizona state university west/Flag of Arizona.png  orb=0.000  hist=0.925  match=False  err=None
+[13:51:28] arizona state university west/Solar array asu.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:28] arizona state university west/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:28] arizona western college/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:51:28] arizona western college/Arizona Western College Logo New.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:28] arizona western college/Arizona Western College Seal.png  orb=0.033  hist=0.556  match=False  err=None
+[13:51:28] arizona western college/Flag of Arizona.png  orb=0.000  hist=0.925  match=False  err=None
+[13:51:28] arizona western college/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:28] arkansas tech university/Arkansas Tech pitcher Bryson Morris Feb 2014.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:28] arkansas tech university/Arkansas Tech University 2020 logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:28] arkansas tech university/Arkansas Tech University Athletics logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:28] arkansas tech university/Arkansas Tech University seal.png  orb=0.000  hist=0.503  match=True  err=None
+[13:51:28] arkansas tech university/ArkansasTechUniversity2008.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:28] arkansas tech university/ArkTechUniv-logo.png  orb=0.000  hist=0.503  match=True  err=None
+[13:51:28] arkansas tech university/Flag of Arkansas.png  orb=0.049  hist=0.765  match=False  err=None
+[13:51:28] arkansas tech university/Tech logo 1982.png  orb=0.049  hist=0.880  match=False  err=None
+[13:51:28] arkansas tech university/Thone Stadium at Arkansas Tech University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:29] armstrong state college/Armstrong State University logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:29] armstrong state college/Armstrong State University, Hinesville.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:29] armstrong state college/History wiki.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:29] armstrong state college/Housing windward wiki.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:29] ashland university/Ashland eagles wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:29] ashland university/Ashland University College of Business and Economics.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:29] ashland university/Ashland University Entrance.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:29] ashland university/Ashland University logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:29] ashland university/Ashland University seal.png  orb=0.016  hist=0.955  match=False  err=None
+[13:51:29] ashland university/Ashland University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:29] ashland university/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:29] athens state college/Athens State seal.png  orb=0.000  hist=0.795  match=False  err=None
+[13:51:29] athens state college/Athens State University logo.png  orb=0.000  hist=0.546  match=True  err=None
+[13:51:29] athens state college/Founders Hall Athens State Univ.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:29] athens state college/HistoricPlacesNationalRegisterPlaque.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:30] athens state college/Red pog.png  orb=0.000  hist=0.619  match=False  err=None
+[13:51:30] athens state college/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:30] athens state college/USA Alabama location map.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:30] athens state college/Usa edcp location map.png  orb=0.066  hist=0.911  match=False  err=None
+[13:51:30] auburn university/1883 Old Main Building South College Street Auburn Alabama.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:30] auburn university/1890s Samford Hall Auburn Alabama.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:30] auburn university/AmbroseRowdyGaines.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:30] auburn university/AU Camp War Eagle 2021.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:30] auburn university/Aubie-01.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:30] auburn university/Auburn cadets.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:30] auburn university/Auburn Tigers logo.png  orb=0.016  hist=0.695  match=False  err=None
+[13:51:30] auburn university/Auburn University seal.png  orb=0.033  hist=0.637  match=False  err=None
+[13:51:30] auburn university/AuburnTigers.png  orb=0.016  hist=0.695  match=False  err=None
+[13:51:30] auburn university/AuburnUniversity-SamfordHall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:30] auburn university/Cater Hall Auburn University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:30] auburn university/Flag of Alabama.png  orb=0.000  hist=0.546  match=True  err=None
+[13:51:31] auburn university/Flag of the United States.png  orb=0.000  hist=0.664  match=False  err=None
+[13:51:31] auburn university/GoldenEagle-Nova.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:31] auburn university/Hargis Hall, built in 1888 and named after Estes H. Hargis. Located on the main campus at Auburn University in Auburn, Alabama LCCN2010639187.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:31] auburn university/Jordan hare stadium.png  orb=0.033  hist=0.929  match=False  err=None
+[13:51:31] auburn university/Ross Chemistry Laboratory on the Auburn University campus, Alabama LCCN2010639196.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:31] auburn university/Wikidata-logo.png  orb=0.000  hist=0.682  match=False  err=None
+[13:51:31] auburn university/Wikisource-logo.png  orb=0.066  hist=0.732  match=False  err=None
+[13:51:31] auburn university/Wikispecies-logo.png  orb=0.115  hist=0.576  match=False  err=None
+[13:51:31] auburn university - montgomery/Auburn univ montgomery logo horiz.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:31] auburn university - montgomery/Auburn univ montgomery seal.png  orb=0.000  hist=0.705  match=False  err=None
+[13:51:31] auburn university - montgomery/Auburn University Montgomery.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:31] auburn university - montgomery/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:32] auburn university - montgomery/Semi-protection-shackle.png  orb=0.033  hist=0.677  match=False  err=None
+[13:51:32] augsburg college/Augsburg College Edor Nelson Field.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augsburg college/Augsburg College Sign.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augsburg college/Augsburg Old Main.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augsburg college/Augsburg University seal.png  orb=0.033  hist=0.564  match=False  err=None
+[13:51:32] augsburg college/Augsburg University wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augsburg college/Ausb auggies script.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augsburg college/Devean George Feb 24 2008 crop.png  orb=0.016  hist=0.901  match=False  err=None
+[13:51:32] augsburg college/Flag of the United States.png  orb=0.000  hist=0.664  match=False  err=None
+[13:51:32] augsburg college/Hagfors 2018.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augsburg college/Hillary Clinton Feb 3 2008.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augsburg college/Lindell Library (Augsburg College).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augsburg college/Nobel Peace Prize Flags at Augsburg.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augsburg college/Oren Gateway Augsburg College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augsburg college/Otis Dozovic 2018.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augsburg college/Urness Tower, Augsburg College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augustana college/Augustana College seal.png  orb=0.033  hist=0.505  match=True  err=None
+[13:51:32] augustana college/Augustana College wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:32] augustana college/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:33] augustana college/Flag of Illinois.png  orb=0.049  hist=0.481  match=True  err=None
+[13:51:33] augustana college/Old Main Augustana.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:33] augustana college/P christianity.png  orb=0.000  hist=0.620  match=False  err=None
+[13:51:33] augustana college/Weyerhaeuser House RI IL.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:33] aurora university/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:51:33] aurora university/Aurora College Complex.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:33] aurora university/Aurora spartans logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:33] aurora university/Aurora univ logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:33] aurora university/Aurora univ seal.png  orb=0.016  hist=0.790  match=False  err=None
+[13:51:33] aurora university/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:33] aurora university/Red pog.png  orb=0.000  hist=0.619  match=False  err=None
+[13:51:33] aurora university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:33] aurora university/Unbalanced scales.png  orb=0.098  hist=0.136  match=True  err=None
+[13:51:33] aurora university/Usa edcp location map.png  orb=0.066  hist=0.911  match=False  err=None
+[13:51:34] aurora university/USA Illinois location map.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/Abell Library - Austin College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/AdminAC.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/Austin college tx logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/Austin roos logo.png  orb=0.016  hist=0.981  match=False  err=None
+[13:51:34] austin college/Campus Exteriors - Fall 2024 KK-16 (1).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/Clyce Residence Hall - Austin College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/Collins Alumni Center - Austin College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/Dean Residence Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:34] austin college/Forster Art Studio Complex - Austin College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/Idea Center and Jonsson Fountain.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/Lyndall Finley Wortham Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/North Flats - Austin College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/Old Main.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:34] austin college/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:35] austin college/Wright Campus Center - Austin College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:35] austin college/Wynne Chapel - Austin College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:35] austin peay state university/Austin Peay Browning Building.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:35] austin peay state university/Austin Peay State University seal.png  orb=0.016  hist=0.260  match=True  err=None
+[13:51:35] austin peay state university/Austin Peay State University wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:35] austin peay state university/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:35] austin peay state university/Flag of Tennessee.png  orb=0.033  hist=0.865  match=False  err=None
+[13:51:35] austin peay state university/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:35] averett college/Averett athletics monogram.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:35] averett college/Averett college virginia postcard.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:35] averett college/Averett stacked logo.png  orb=0.082  hist=0.884  match=False  err=None
+[13:51:35] averett college/Averett univ seal.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:35] azusa pacific university/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:51:35] azusa pacific university/Apu athletic logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:35] azusa pacific university/Apu-logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:35] azusa pacific university/Apu-seal.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:35] azusa pacific university/LA Skyline Mountains2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] azusa pacific university/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:36] babson college/2022 - Backstage SZ9 9241 (52474626856).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/Akio Toyoda cropped 1 Mark Templin and Akio Toyoda 20110818 2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/Aly Raisman in Rio 2016 (2).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/Arthur Blank 2016.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/Arthur M. Blank Center, Babson College - IMG 0388.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/Babson beavers wmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/Babson College seal.png  orb=0.016  hist=0.373  match=True  err=None
+[13:51:36] babson college/Gov Craig Benson on 9-11-04.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/Gustavo Cisneros by Timothy Greenfield-Sanders.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/Logo-Babson-College-Horizontal-RGB (2).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/Ruthiedavis-about-v1.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/Stephen Gaghan (cropped).png  orb=0.016  hist=0.915  match=False  err=None
+[13:51:36] babson college/The Babson Institute on Washington Street.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/The Babson World Globe.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/The original Babson Institute on Abbott Road in Wellesley, Massachusetts.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] babson college/Tomasso Hall, Babson College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] baker university/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:51:36] baker university/Baker campus flag kansas by Ian Ballinger.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] baker university/Baker Offense.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:36] baker university/Baker Pep Squad.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baker university/Baker University crest.png  orb=0.000  hist=0.826  match=False  err=None
+[13:51:37] baker university/Baker University wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baker university/Baker's Campus during Spring Break in Kansas by Ian Ballinger.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baker university/Case Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baker university/Clarice L. Osborne Memorial Chapel in Baldwin City Kansas at Baker University photo by Ian Ballinger.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baker university/Flag of Kansas.png  orb=0.016  hist=0.886  match=False  err=None
+[13:51:37] baker university/Memorial Hall Baker Kansas by Ian Ballinger.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baker university/Parmenter Hall at Baker in Kansas by Ian Ballinger.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baker university/The Collins Library at Baker University Kansas by Ian Ballinger.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baldwin-wallace college/Berea-First Congregational Church Conservatory of Music Annex (OHPTC).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baldwin-wallace college/BW south campus historic district sign.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baldwin-wallace college/BWC NRHP Southareahistoricdistrict.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baldwin-wallace college/Chapel BWC.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baldwin-wallace college/Diestsch hall 2 Baldwin Wallace University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baldwin-wallace college/Kohler BWC.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baldwin-wallace college/Kulas Hall Baldwin Wallace University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baldwin-wallace college/Marting Hall BWC.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baldwin-wallace college/Merner-Pfeifferhall Baldwin Wallace University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baldwin-wallace college/SAC Baldwin Wallace University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:37] baldwin-wallace college/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:38] ball state university/Ball Brothers 1.png  orb=0.000  hist=0.697  match=False  err=None
+[13:51:38] ball state university/Ball State University CAP INDY.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:38] ball state university/Ball State University logo.png  orb=0.033  hist=0.307  match=True  err=None
+[13:51:38] ball state university/Ball-state-university-bell-tower.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:38] ball state university/Benificence.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:38] ball state university/Cardinal Filmworks (6277355418).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:38] ball state university/DavidLettermanAtBSU.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:38] ball state university/FineArtBuildingRapierce.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:38] ball state university/MusicInstructionBuildingBSU.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:38] ball state university/Scheumann Stadium 2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:38] ball state university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:38] baptist bible college/Baptism at Northolt Park Baptist Church (cropped) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:38] baptist bible college/Flag of Canada.png  orb=0.033  hist=0.680  match=False  err=None
+[13:51:38] baptist bible college/P christianity.png  orb=0.000  hist=0.620  match=False  err=None
+[13:51:38] baptist bible college/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:39] bard college/1867 Map of Red Hook.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Adam Yauch crop.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Alexander Soros on March 9 2012.png  orb=0.000  hist=0.854  match=False  err=None
+[13:51:39] bard college/Alumni Houses.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Bard athletics wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Bard College - IMG 7991.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Bard College - IMG 8005.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Bard College Logo.png  orb=0.016  hist=0.974  match=False  err=None
+[13:51:39] bard college/Bard College Seal.png  orb=0.016  hist=0.541  match=True  err=None
+[13:51:39] bard college/Blithewood Garden on Bard College campus.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Chevy Chase (1990).png  orb=0.000  hist=0.978  match=False  err=None
+[13:51:39] bard college/Chinua Achebe, 1966 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Christopher Guest 2016.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Cruger Dorm Bard College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Ezra Miller 2017.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Fisher Center at Bard.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/FisherCenterInterior.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Flag of New York.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/Former UTS.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:39] bard college/GoreVidalVanVechten1.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Hannah Arendt auf dem 1. Kulturkritikerkongress, Barbara Niggl Radloff, FM-2019-1-5-9-16 (cropped).png  orb=0.000  hist=0.890  match=False  err=None
+[13:51:40] bard college/Hudson river from bear mountain bridge.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/John Bard, 1893 crop.png  orb=0.000  hist=0.988  match=False  err=None
+[13:51:40] bard college/Jonah Hill-4939 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Kyle-cassidy-neil-gaiman-April-2013.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Lana Wachowski-2787.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Map of New York highlighting Dutchess County.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Masha Gessen 01.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Montgomery Place 2008.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/North front of Blithewood.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Philip Roth - 1973.png  orb=0.000  hist=0.759  match=False  err=None
+[13:51:40] bard college/Raphael Bob-Waksberg 2025.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Reem-Kayden Center for Science and Computation.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Resnick Village Dorms Bard College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Roy Lichtenstein.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Simpson, Mona MBFI.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/South front of Blithewood.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Steely Dan 1977.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Stone Row Dorm.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Tewksbury Hall Dorm.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/The Ravines.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:40] bard college/Toni Morrison.png  orb=0.016  hist=0.984  match=False  err=None
+[13:51:40] bard college/Ward Manor Dorm.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] barry university/046CupolaSPietro.png  orb=0.000  hist=0.941  match=False  err=None
+[13:51:41] barry university/Barry Student Union.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] barry university/Barry university florida logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] barry university/Barry University Library.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] barry university/Barry university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] barry university/Flag of Florida.png  orb=0.000  hist=0.622  match=False  err=None
+[13:51:41] barry university/Roman Catholic Archdiocese of Miami.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] bastyr university/Ambox current red Asia Australia.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] bastyr university/Bastyr U 01.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] bastyr university/Bastyr University Logo.png  orb=0.000  hist=0.682  match=False  err=None
+[13:51:41] bastyr university/Bastyr University Student Housing.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] bates college/1906 Garnet Gateway.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] bates college/1912 Bates College baseball team.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] bates college/Bates College Concert Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] bates college/Bates College wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:41] bates college/Bates Student 1877.png  orb=0.115  hist=0.139  match=True  err=None
+[13:51:42] bates college/BatesCollegeMuseum2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Benjamin Mays Portrait 1921.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Dana Chemistry Hall Bates college.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Decrease Neutral.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Entrance to Coram Library.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Entrance to Hathorn Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Flag of the United States.png  orb=0.000  hist=0.664  match=False  err=None
+[13:51:42] bates college/Frank Sandford.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/GeorgeSHammond.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Greenery bates.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Hathorn Hall (extended).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Hedge Hall Bates College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/IvyBates College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Lane Hall2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Melcher.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Mirror, 1921 (1921) (14598023988).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/New England pine flag.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Portrait of Edmund Muskie, looking up.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Robert Kinney official photo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Roger Williams Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Seal Bates College.png  orb=0.049  hist=0.525  match=True  err=None
+[13:51:42] bates college/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:42] bates college/The Commons, Bates College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/V12-kennedy-910-D-0051.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/View from Hathorn Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:42] bates college/Wikidata-logo.png  orb=0.000  hist=0.682  match=False  err=None
+[13:51:43] bates college/Wikiquote-logo.png  orb=0.033  hist=0.538  match=True  err=None
+[13:51:43] baylor college of medicine/Baylor College of Medicine Logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor college of medicine/Baylor College of Medicine, Houston, Texas.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor college of medicine/BenTaubHospitalHoustonTX.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor college of medicine/Blue pog.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor college of medicine/DeBakeyVACenterHouston.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor college of medicine/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:43] baylor college of medicine/Flag of Houston, Texas.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor college of medicine/Flag of Texas.png  orb=0.016  hist=0.680  match=False  err=None
+[13:51:43] baylor college of medicine/Houston Medical Center Map.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor college of medicine/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:43] baylor college of medicine/Seal of Houston, Texas.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor college of medicine/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:43] baylor college of medicine/TexasChildrensHoustonTX.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor university/2012 Homecoming Show - Baylor University Golden Wave Band.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor university/All-University Sing.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor university/Ann Richards.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor university/Baylor AFROTC.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor university/Baylor BSB 2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor university/Baylor BSB.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor university/Baylor Judge Statue.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor university/Baylor Pat Neff 2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor university/Baylor President's Concert 1.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor university/Baylor Science Building (panoramic picture) - Baylor University, Waco, Texas.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor university/Baylor SLC Pool.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:43] baylor university/Baylor SUB.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Baylor University 1892 front.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Baylor University June 2016 63 (Sheila and Walter Umphrey Law Center).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Baylor University logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Baylor University seal.png  orb=0.000  hist=0.524  match=True  err=None
+[13:51:44] baylor university/Baylor University's McLane Stadium.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Baylorsign brotherspg.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Big 12 logo in Baylor colors.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Bill daniel student center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Bill Daniels Student Center, Baylor University (2006).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Brittney Griner accepting Wade Trophy 2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Bu patneff.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Burleson.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Crowder.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Flag of Texas.png  orb=0.016  hist=0.680  match=False  err=None
+[13:51:44] baylor university/GKeller.png  orb=0.000  hist=0.920  match=False  err=None
+[13:51:44] baylor university/Immortal 10.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Jeff Dunham and Achmed.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Judgebaylorfixed.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Mark Hurd (cropped2).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Mayborn Museum.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/McLane Stadium facingsouth7.16.14.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Michael Johnson Sydney2000.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:44] baylor university/Old Main and Pat Neff Hall, Baylor University (2004).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/Old Main, Baylor University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/P christianity.png  orb=0.000  hist=0.620  match=False  err=None
+[13:51:45] baylor university/P parthenon.png  orb=0.082  hist=0.490  match=True  err=None
+[13:51:45] baylor university/PatNeffflowers.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/R.E.B. Baylor.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/Rg3 redskins.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/Robert Fulghum.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/School.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:45] baylor university/That Good Ol' Baylor Line.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/Theline.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/Tidwell Bible Building - Baylor University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/Tidwell Bible Building.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/Trey Gowdy official congressional photo (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/Trey Wingo cropped NFL Live ESPNWeekend2010-026.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/Truett Seminary at Baylor University (2006).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:45] baylor university/Willie UK2K7 2.png  orb=0.000  hist=0.969  match=False  err=None
+[13:51:45] beaver college/Arcadia athletics mark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] beaver college/Arcadia univ logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] beaver college/Arcadia univ seal.png  orb=0.000  hist=0.616  match=False  err=None
+[13:51:46] beaver college/Beth Sholom.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] beaver college/Map of Pennsylvania highlighting Montgomery County.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] beaver college/Melrose RR Station 02.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] beaver college/Wall House.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] beaver college/Wycote homes.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] belmont university/Belmont Tower and Carillon 2014 Nashville Tennessee.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] belmont university/Belmont University Full Color Logo.png  orb=0.049  hist=0.971  match=False  err=None
+[13:51:46] belmont university/Belmont University Seal Full Color 2022.png  orb=0.000  hist=0.683  match=False  err=None
+[13:51:46] belmont university/Nashville's First Radio Station.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] belmont university/WTN EVula 084.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] belmont university/WTN EVula 097.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] beloit college/Beloit logo from NCAA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] beloit college/Beloit Logo.png  orb=0.033  hist=0.969  match=False  err=None
+[13:51:46] beloit college/Beloit seal.png  orb=0.016  hist=0.354  match=True  err=None
+[13:51:46] beloit college/Eaton Chapel.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] beloit college/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:46] beloit college/JOHNSON 20131025 790 (2)resize.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:46] beloit college/JOHNSON 20150422 469resize.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/American Indian Resource Center-Bemidji State University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Baseball field Grandstand-Bemidji State University-01.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Bemidji state univ logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Bemidji State University seal.png  orb=0.000  hist=0.111  match=True  err=None
+[13:51:47] bemidji state university/Bemidji State University-Campus.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Bemidjistateuniversity.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Chet Anderson Stadium-Bemidji State University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Deputy Hall - 1919, Bemidji State University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Deputy Hall-Bemidji State University-04.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Flag of the United States.png  orb=0.000  hist=0.664  match=False  err=None
+[13:51:47] bemidji state university/Harry F. Bangsberg Fine Arts Complex-Bemidji State University-01.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Memorial Hall-Bemidji State University-02.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Message sign 1a-Bemidji State University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Physical Education Complex-Bemidji State University-03.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Pine Hall-Bemidji State University-01.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Tamarack Hall-Bemidji State University-01.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] bemidji state university/Upper Hobson Union--Beaux Arts Ballroom-Bemidji State University-02.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] benedictine college/046CupolaSPietro.png  orb=0.000  hist=0.941  match=False  err=None
+[13:51:47] benedictine college/Aerial BenedictineCollegePreparatory.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] benedictine college/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:51:47] benedictine college/Bell Tower at Benedictine High School (Richmond, Virginia).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] benedictine college/Benedictine College Preparatory.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:47] benedictine college/Benedictine West.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:48] benedictine college/Diocese of richmond.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:48] benedictine college/Entrance at Benedictine West.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:48] benedictine college/Mary Mother of the Church Abbey Cemetery.png  orb=0.016  hist=0.972  match=False  err=None
+[13:51:48] bennington college/AlanArkinTIFFSept2012.png  orb=0.016  hist=0.941  match=False  err=None
+[13:51:49] bennington college/Bennington College Commons Building Floor Plan.png  orb=0.000  hist=0.997  match=False  err=None
+[13:51:49] bennington college/Bennington college jennings music building 20041121.png  orb=0.000  hist=0.680  match=False  err=None
+[13:51:49] bennington college/Bennington College logo.png  orb=0.033  hist=0.451  match=True  err=None
+[13:51:50] bennington college/Betty Ford.png  orb=0.000  hist=0.999  match=False  err=None
+[13:51:50] bennington college/Bill and Joan Hinton 1993 R01 013.png  orb=0.033  hist=0.937  match=False  err=None
+[13:51:50] bennington college/Bruce Berman 2011.png  orb=0.000  hist=0.897  match=False  err=None
+[13:51:50] bennington college/Carol Channing colour Allan Warren.png  orb=0.000  hist=0.940  match=False  err=None
+[13:51:50] bennington college/Donna Tartt.png  orb=0.033  hist=0.986  match=False  err=None
+[13:51:51] bennington college/Dworkin on After Dark.png  orb=0.000  hist=0.975  match=False  err=None
+[13:51:51] bennington college/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:51] bennington college/Ellis.png  orb=0.000  hist=0.967  match=False  err=None
+[13:51:51] bennington college/Flag of Vermont.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:51] bennington college/Holland Taylor.png  orb=0.000  hist=0.952  match=False  err=None
+[13:51:51] bennington college/Jonathan Lethem 2015.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bennington college/Judith Butler (2011) cropped.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bennington college/Justin Theroux at the 2008 Tribeca Film Festival.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bennington college/Katharine-holabird-140127089.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bennington college/Kiran Desai 2015.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bennington college/Martha Graham 1948.png  orb=0.016  hist=0.854  match=False  err=None
+[13:51:52] bennington college/Melissa Rosenberg posed.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bennington college/Peter Dinklage by Gage Skidmore.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bennington college/Richard Deacon in 1962.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bennington college/Robert Devore Leigh.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bennington college/Tim Daly - Monte-Carlo Television Festival.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bentley college/Bentley Institutional Seal Dark Grey (1).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bentley college/Bentley Library - Bentley University - DSC00327.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bentley college/Bentley Wordmark Stacked.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bentley college/Dana Gym 015-web.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] bentley college/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:52] bentley college/LaCava - Bentley University - DSC00310.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] berea college/20140310 CampusShots CAC (4) (13090607645).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] berea college/Berea College 06Quad-3 (20739403886).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] berea college/Berea college full logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:52] berea college/BereaCollegeAd1900.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:53] berea college/DraperHallBerea.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:53] berea college/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:53] berea college/Flag of Kentucky.png  orb=0.066  hist=0.865  match=False  err=None
+[13:51:53] berea college/Flag of the United States.png  orb=0.000  hist=0.664  match=False  err=None
+[13:51:53] berea college/P christianity.png  orb=0.000  hist=0.620  match=False  err=None
+[13:51:53] berklee college of music/1140 Boylston Street - Berklee College of Music (54954547675).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:53] berklee college of music/Avatar-studios.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:53] berklee college of music/Berklee College of Music (54954487634).png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:53] berklee college of music/Berklee College of Music logo and wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:53] berklee college of music/Berklee COM 2024.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:53] berklee college of music/Bostonconservatory.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:53] berklee college of music/Ciudad de las ciencias noche.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:53] berklee college of music/Official Seal of the Berklee College of Music, Boston, MA, USA.png  orb=0.066  hist=0.120  match=True  err=None
+[13:51:54] berklee college of music/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:51:54] bethany college/Bethany College WV logo.png  orb=0.049  hist=0.516  match=True  err=None
+[13:51:54] bethany college/Bethany college wv seal.png  orb=0.000  hist=0.705  match=False  err=None
+[13:51:54] bethany college/Bethany wv athletics wmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:54] bethany college/BethanyColl-BethanyWVA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:54] bethany college/NorthernPanhandle.png  orb=0.098  hist=0.577  match=False  err=None
+[13:51:54] bethany college/Old Main at Bethany College, northern end.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:55] bethel college/Bethel (Kansas) College logo.png  orb=0.000  hist=0.499  match=True  err=None
+[13:51:55] bethel college/Bethel-administration.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:55] bethel college/Bethel-krehbiel.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:55] bethel college/Bethel-voth.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:55] bethel college/HistoricPlacesNationalRegisterPlaque.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:55] bethel college/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:56] bethel college and seminary/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:51:56] bethel college and seminary/Bethel univ minn logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:56] bethel college and seminary/Bethel univ minn seal.png  orb=0.000  hist=0.465  match=True  err=None
+[13:51:56] bethel college and seminary/Bethel-mn logo from NCAA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:56] bethel college and seminary/BethelCommons.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:56] bethel college and seminary/BethelWestEnd.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:56] bethel college and seminary/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:51:56] bethel college and seminary/Flag of Minnesota.png  orb=0.000  hist=0.888  match=False  err=None
+[13:51:57] bethel college and seminary/P christianity.png  orb=0.000  hist=0.620  match=False  err=None
+[13:51:57] bethel college and seminary/ScandiaBaptist.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:57] bethel college and seminary/School.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:57] biola university/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:51:57] biola university/Biola Logo.png  orb=0.098  hist=0.889  match=False  err=None
+[13:51:57] biola university/Biola Seal.png  orb=0.082  hist=0.971  match=False  err=None
+[13:51:58] biola university/Biola University Lecture Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:58] biola university/Biola-1912-1916.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:58] biola university/Flag of California.png  orb=0.098  hist=0.544  match=True  err=None
+[13:51:58] biola university/Jesus wall, Biola University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:58] birmingham-southern college/Bill Battle Coliseum.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:58] birmingham-southern college/BSC logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:58] birmingham-southern college/BSC seal.png  orb=0.000  hist=0.062  match=True  err=None
+[13:51:58] birmingham-southern college/Flag of Alabama.png  orb=0.000  hist=0.546  match=True  err=None
+[13:51:58] birmingham-southern college/Gingko Tree at Birmingham-Southern College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:58] birmingham-southern college/HistoricPlacesNationalRegisterPlaque.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:58] birmingham-southern college/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:51:58] birmingham-southern college/Urban Enviornmental Park, Birmingham-Southern College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:59] black hills state university/Black Hills State University logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:51:59] black hills state university/Black Hills State University seal.png  orb=0.033  hist=0.471  match=True  err=None
+[13:51:59] bloomsburg university of pennsylvania/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:51:59] bloomsburg university of pennsylvania/Bloomsburg University logo.png  orb=0.082  hist=0.941  match=False  err=None
+[13:51:59] bloomsburg university of pennsylvania/Bloomsburg University seal.png  orb=0.033  hist=0.733  match=False  err=None
+[13:52:00] bloomsburg university of pennsylvania/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:52:00] bluffton college/Bluffton beavers wmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:00] bluffton college/Bluffton University Fall (59193226).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:00] bluffton college/Bluffton University logo.png  orb=0.000  hist=0.443  match=True  err=None
+[13:52:00] bluffton college/Bluffton University seal.png  orb=0.033  hist=0.096  match=True  err=None
+[13:52:00] bluffton college/Flag of Ohio.png  orb=0.000  hist=0.608  match=False  err=None
+[13:52:00] bluffton college/HPIM1151 (99721297).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:00] bob jones university/BJUSeminary.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:00] bob jones university/Bob Jones University Bruin Mascot.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:01] bob jones university/Bob Jones University Crest.png  orb=0.000  hist=0.974  match=False  err=None
+[13:52:01] bob jones university/Bob Jones University Fountains.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:01] bob jones university/Bob Jones University logo.png  orb=0.033  hist=0.496  match=True  err=None
+[13:52:01] bob jones university/Bob Jones, Sr.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:01] bob jones university/DavisFieldHouse.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:01] bob jones university/Flag of the United States.png  orb=0.000  hist=0.664  match=False  err=None
+[13:52:01] bob jones university/JerusalemChamberBJU.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:01] bob jones university/Ron Strom.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:01] bob jones university/ScienceBuildingBJU.png  orb=0.016  hist=0.909  match=False  err=None
+[13:52:01] bob jones university/Wikidata-logo.png  orb=0.000  hist=0.682  match=False  err=None
+[13:52:02] boise state university/Administration Building seen from Friendship Bridge.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:02] boise state university/Boise State University logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:03] boise state university/Boise State University seal.png  orb=0.000  hist=0.168  match=True  err=None
+[13:52:03] boise state university/BSUwestEntrance2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:03] boise state university/BSUwide.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:03] boise state university/Center for the Visual Arts Boise State University wiki.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:03] boise state university/Flag of Idaho.png  orb=0.000  hist=0.914  match=False  err=None
+[13:52:04] boise state university/InteractiveLearningCenter.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:04] boise state university/LibraryBSU2018.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:04] boise state university/MainCampusBSU2018.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:04] boise state university/Stueckle Sky Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:04] boston college/046CupolaSPietro.png  orb=0.000  hist=0.941  match=False  err=None
+[13:52:04] boston college/Alumni Stadium Boston College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:04] boston college/Ambassador Scott Brown.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:05] boston college/Amy Poehler (8894155873) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:05] boston college/BC Campus Green.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:05] boston college/Boson College sign.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:05] boston college/Boston College campus aerial from above (Quintin Soloviev).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:05] boston college/Boston College Campus Green.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:06] boston college/Boston College Logotype.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:06] boston college/Boston College seal.png  orb=0.000  hist=0.725  match=False  err=None
+[13:52:06] boston college/Boston Eagles footb 1893.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:06] boston college/Burns Library Boston College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:06] boston college/Cellucci paul.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:07] boston college/Chris ODonnell Max Payne 2008.png  orb=0.082  hist=0.818  match=False  err=None
+[13:52:07] boston college/Clough School Boston College 2026.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:07] boston college/Conte Forum Boston College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:07] boston college/Dannel Malloy 2016.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:08] boston college/EdMcMahon05.png  orb=0.016  hist=0.955  match=False  err=None
+[13:52:09] boston college/Edward Markey, official portrait, 114th Congress.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:09] boston college/Elisabeth Hasselbeck in Donna Karan, 2010.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:09] boston college/Flag of the United States.png  orb=0.000  hist=0.664  match=False  err=None
+[13:52:09] boston college/Gargan Hall, Bapst Library, Boston College 1.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:09] boston college/Gasson Hall in Autumn.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:09] boston college/Gasson Hall in Spring.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:09] boston college/Gasson Hall in Summer.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:09] boston college/Gasson in Winter.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:09] boston college/Ice Hockey Conte Forum.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:09] boston college/Joeseph E. Brennan.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:09] boston college/John Kerry official Secretary of State portrait.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:09] boston college/Leonard Nimoy by Gage Skidmore.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:10] boston college/Marty Walsh.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:10] boston college/Mmheckler.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:10] boston college/Moniz official portrait standing.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:10] boston college/OldBClithograph.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:10] boston college/Roman Catholic Archdiocese of Boston.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:10] boston college/St. Ignatius of Loyola Statue.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:10] boston college/Stokes Hall Amphitheater.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:10] boston college/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:52:11] boston graduate school of psychoanalysis/Font Awesome 5 solid university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:12] boston graduate school of psychoanalysis/Freud's couch, London, 2004 (2).png  orb=0.016  hist=0.972  match=False  err=None
+[13:52:12] boston graduate school of psychoanalysis/Psi2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:13] boston university/43 Harrington Gardens - BU London.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:14] boston university/688 Boylston St.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:14] boston university/Aerial Boston University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:16] boston university/Alexander Graham Bell.png  orb=0.000  hist=0.836  match=False  err=None
+[13:52:17] boston university/Ambox current red Americas.png  orb=0.000  hist=0.673  match=False  err=None
+[13:52:17] boston university/BACK PAGE BU Exposure 1978-03-00.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:17] boston university/Boston at sunset.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:18] boston university/Boston University (8609103615).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:18] boston university/Boston University College of Arts and Sciences.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:19] boston university/Boston University seal.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:19] boston university/Boston University Talbot Building 01.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:19] boston university/Boston University wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:19] boston university/BU beach.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:19] boston university/BU Boathouse.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:20] boston university/BU Castle April 2013.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:20] boston university/BU Center for Computing and Data Sciences from BU Bridge June 2025.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:20] boston university/BU Data Sciences Building.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:20] boston university/BUGWU and Res Life Strike.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:20] boston university/Charles River BU Sailing Pavilion.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:20] boston university/CharlesRiver Boston Sunset.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:20] boston university/Helen magill.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:21] boston university/Hotel Sheraton on Boston's beautiful Charles River Esplanade, away from the noise yet near the main traffic routes, 91 Bay State Road, Boston (61118).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:21] boston university/Inside Agganis Arena.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:21] boston university/Kilachand Honors College - Boston University - DSC03072.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:21] boston university/Marsh Chapel and Buildings.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:21] boston university/Marsh Chapel Back.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:24] boston university/Marsh Chapel.png  orb=0.000  hist=0.952  match=False  err=None
+[13:52:24] boston university/Myles Standish Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:24] boston university/Silber Administrative Center - Boston University - DSC03070.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:24] boston university/Student Village II at Boston University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:24] boston university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:52:24] boston university/Type 4 streetcar inbound at Granby Street, circa 1940s.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:25] boston university/Warren Towers.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:25] boston university/Wikisource-logo.png  orb=0.066  hist=0.732  match=False  err=None
+[13:52:25] boston university/WTB BU residence.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:25] bowdoin college/1875 Bowdoin Orient.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:25] bowdoin college/Bowdoin College 1845.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:25] bowdoin college/Bowdoin college blacklogo.png  orb=0.049  hist=0.831  match=False  err=None
+[13:52:25] bowdoin college/Bowdoin College heating plant.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:25] bowdoin college/Bowdoin College Quad.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:25] bowdoin college/Bowdoin Medical school.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:25] bowdoin college/Bowdoin-chapel-winter.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Bowdoin-watsonarena.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Campus view(tower).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/CJ Fuller.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/En-US-Bowdoin.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Formal Seal of Bowdoin College, Brunswick, ME, USA.png  orb=0.000  hist=0.119  match=True  err=None
+[13:52:26] bowdoin college/Governor Lawrence B Lindsey 140501.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Henry Wadsworth Longfellow, photographed by Julia Margaret Cameron in 1868.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Hon. William P. Fessenden, Maine - NARA - 529980.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Hubbard Grandstand, Bowdoin College, Brunswick, ME.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Hubbard Hall (2026).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Joshua Chamberlain - Brady-Handy.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Kanbar Auditorium, Studzinski Recital Hall, Bowdoin College - IMG 9745.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Mathew Brady - Franklin Pierce - alternate crop.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Nathaniel Hawthorne by Brady, 1860-64.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Oliver Otis Howard.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Pat Meehan, Official Portrait, 112th Congress.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Paul Adelstein 2008.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:26] bowdoin college/Re publica 2015 - Tag 1 (17195424118) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:27] bowdoin college/Robert Peary self-portrait, 1909.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:27] bowdoin college/Searles Science Building - Bowdoin College - IMG 7833.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:27] bowdoin college/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:52:27] bowdoin college/Unbalanced scales.png  orb=0.098  hist=0.136  match=True  err=None
+[13:52:27] bowdoin college/Wiki letter w cropped.png  orb=0.000  hist=0.414  match=True  err=None
+[13:52:27] bowdoin college/Wikiquote-logo.png  orb=0.033  hist=0.538  match=True  err=None
+[13:52:27] bowdoin college/Wikisource-logo.png  orb=0.066  hist=0.732  match=False  err=None
+[13:52:27] bowdoin college/William Cohen, official portrait (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:27] bowdoin college/Zohran Mamdani 05.25.25 (b) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:27] bowie state university/Ambox current red Asia Australia.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:27] bowie state university/Bowie State University Gateway.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:27] bowie state university/Bowie State University seal.png  orb=0.016  hist=0.788  match=False  err=None
+[13:52:27] bowie state university/Bowie State University.png  orb=0.066  hist=0.397  match=True  err=None
+[13:52:28] bowie state university/Bowie-state-university-science-building.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:28] bowie state university/Bowie-state-university-torch.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:28] bowie state university/BSU Martin Luther King Jr. Communications Art Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:28] bowie state university/ChristaMcAuliffe.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:28] bowie state university/Flag of Maryland.png  orb=0.000  hist=0.599  match=False  err=None
+[13:52:28] bowie state university/Flag of Prince George's County, Maryland (1963–present).png  orb=0.000  hist=1.000  match=False  err=unreadable
+[13:52:28] bowie state university/Flag of Prince George's County, Maryland.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:28] bowie state university/Flag of the United States.png  orb=0.000  hist=0.664  match=False  err=None
+[13:52:28] bowie state university/Isaac Redman.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:28] bowie state university/Joanne C. Benson (2007).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:28] bowie state university/Jovan Adepo FENCES Interview.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:28] bowie state university/Myles Frost (53220204266) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:28] bowie state university/Seal of Prince George's County, Maryland.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:28] bowling green state university/BGsnowJan2009.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:28] bowling green state university/BGSU Firelands 2 071 (4411064343).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:29] bowling green state university/BGSU Telescope.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:29] bowling green state university/BGSU View from Admin Building.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:29] bowling green state university/BGSUaerial1930.png  orb=0.000  hist=0.761  match=False  err=None
+[13:52:29] bowling green state university/Bgsustudentunion.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:29] bowling green state university/BGvMIhky.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:29] bowling green state university/Bowling Green State University seal.png  orb=0.000  hist=0.526  match=True  err=None
+[13:52:29] bowling green state university/Bowling Green State University wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:29] bowling green state university/BowlingGreenNormalCollege1915.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:29] bowling green state university/BowlingGreenNormalSchool1910.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:29] bowling green state university/Falcon Marching Band.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:29] bowling green state university/FalconHeightsBGSU.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:29] bowling green state university/FriedaFalcon.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:29] bowling green state university/Jerome Library.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:30] bowling green state university/Math-Sciences Building (BGSU).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:30] bowling green state university/Mosley Hall in the Fall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:30] bowling green state university/NavyMarinesatBGSU1945.png  orb=0.000  hist=0.837  match=False  err=None
+[13:52:30] bowling green state university/Orange bus.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:30] bowling green state university/Panhel-photo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:30] bowling green state university/Russ Chandler Stadium Jason Link (12854154303).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:30] bowling green state university/Social Philosophy and Policy Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:30] bowling green state university/StrohCenterinterior.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:30] bowling green state university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:52:30] bowling green state university/Symbol support vote.png  orb=0.078  hist=0.699  match=False  err=None
+[13:52:30] bowling green state university/TheOaksBGSU.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:31] bowling green state university/WBGU-TV Brain Set.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:31] bradley university/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:52:31] bradley university/Bradley U Alumni Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:31] bradley university/Bradley U Bradley Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:31] bradley university/Bradley U Campus Aerial.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:31] bradley university/Bradley U Renaissance Coliseum.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:31] bradley university/Bradley U Westlake Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:31] bradley university/Bradley University logo rgb Left.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:31] bradley university/Bradley University Seal Black.png  orb=0.000  hist=0.591  match=False  err=None
+[13:52:31] bradley university/Markin Family Student Recreation Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:31] bradley university/Westlake Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:31] brandeis university/Adam Cheyer, 2008.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Angela Davis crop.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Brandeis University Admissions Bldg.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Brandeis University Admissions Night.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Brandeis University aerial 2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Brandeis University Libraries.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Brandeis University Panorama.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Brandeis University seal.png  orb=0.033  hist=0.531  match=True  err=None
+[13:52:32] brandeis university/Brandeis University Shapiro Campus Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Brandeis University sign.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Brandeis-University-Word-Mark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Brandeis-Usen Castle.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Brandeis-womens-studies-research-center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Carl J Shapiro Science Center, Brandeis University, Waltham MA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/ChapelPond.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Christie Hefner.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Coat of arms of Middlesex University, Massachusetts.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/David I. Kertzer historian.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Debra Messing at the 2009 Tribeca Film Festival.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:32] brandeis university/Drew Weissman Life Science medalist.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:52:33] brandeis university/Edward Witten.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/Eve Marder.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/Flag of the United States.png  orb=0.000  hist=0.664  match=False  err=None
+[13:52:33] brandeis university/Landsman Research Facility, Brandeis University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/Leslie Lamport.png  orb=0.000  hist=0.888  match=False  err=None
+[13:52:33] brandeis university/Louis Brandeis statue by Robert Berks.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/Margo Jefferson 2015.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/MiddlsexUniversityMASeal.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/Mitch Albom's book signing 2010-09-02.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/Rabb Graduate Center, Brandeis University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/Robert Zimmer By Eric Guo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/Roderick MacKinnon, M.D..png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/Rose Art Museum, Brandeis University, Waltham MA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/School.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:33] brandeis university/ShapiroCC.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:34] brandeis university/Sidney blumenthal 2006.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:34] brandeis university/Slosberg Music Center, Brandeis University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:34] brandeis university/Thomas Friedman 2005 (5).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:34] brandeis university/Uhlenbeck Karen 1982 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:34] brandeis university/Vbalki.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:34] brandeis university/Volen Center for Complex Systems, Brandeis University, Waltham MA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:34] brenau university/Brenau College advertisement, 1906.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:34] brenau university/BRENAU COLLEGE DISTRICT, GAINESVILLE, HALL COUNTY, GA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:34] brenau university/Brenau University logo.png  orb=0.033  hist=0.855  match=False  err=None
+[13:52:34] brenau university/Flag of Georgia (U.S. state).png  orb=0.000  hist=0.763  match=False  err=None
+[13:52:34] brenau university/Flag of the State of Georgia.png  orb=0.000  hist=0.763  match=False  err=None
+[13:52:34] brenau university/Invitation for Buzzie Bennett from the Phi Mu chapter at Brenau College, Gainesville, Georgia, 1955 August 26 - DPLA - f79e3b03263ea84a744dbe61ea15b1c9h087.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:34] brenau university/Northeast Georgia History Center, Brenau University, Gainesville, GA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:35] brenau university/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:52:35] brenau university/Red pog.png  orb=0.000  hist=0.619  match=False  err=None
+[13:52:35] brenau university/Usa edcp location map.png  orb=0.066  hist=0.911  match=False  err=None
+[13:52:35] brenau university/USA Georgia location map.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:35] briar cliff college/046CupolaSPietro.png  orb=0.000  hist=0.941  match=False  err=None
+[13:52:35] briar cliff college/Briar Cliff University dedication, 1930.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:35] briar cliff college/Ecclesiastical Province of Dubuque 2.png  orb=0.049  hist=0.763  match=False  err=None
+[13:52:35] briar cliff college/Flag of Iowa.png  orb=0.131  hist=0.660  match=False  err=None
+[13:52:36] briar cliff college/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:52:36] briar cliff college/Roman Catholic Diocese of Sioux City.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:36] bridgewater college/Bridgewater College - panoramio - Idawriter.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:36] bridgewater college/Bridgewater college logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:36] bridgewater college/Bridgewater college seal.png  orb=0.000  hist=0.695  match=False  err=None
+[13:52:36] bridgewater college/Bridgewater College, Bridgewater, Va. LCCN2013646978.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:36] bridgewater college/Red pog.png  orb=0.000  hist=0.619  match=False  err=None
+[13:52:36] bridgewater college/Shenandoah Valley.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:36] bridgewater college/Unbalanced scales.png  orb=0.098  hist=0.136  match=True  err=None
+[13:52:36] bridgewater college/Usa edcp location map.png  orb=0.066  hist=0.911  match=False  err=None
+[13:52:36] bridgewater college/USA Virginia location map.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:37] brigham young university/Aaron Eckhart (29830286295) (May2021 crop).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:37] brigham young university/Brigham Young Academy.png  orb=0.000  hist=0.963  match=False  err=None
+[13:52:37] brigham young university/Brigham Young University medallion.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:37] brigham young university/BYA Football Champions 1896.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:37] brigham young university/BYU Bell Tower with Provo Temple.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:37] brigham young university/BYU BYUB.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:37] brigham young university/BYU Campus North.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:37] brigham young university/BYU Concert Choir with Poppies.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:37] brigham young university/BYU Header.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:37] brigham young university/BYU mountain view.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/BYUclarillon.png  orb=0.033  hist=0.882  match=False  err=None
+[13:52:38] brigham young university/Charles William Carter - Brigham Young - Google Art Project (3x4 cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/Christus statue temple square salt lake city.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/ESC Eyring Science Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/Flag of Utah.png  orb=0.115  hist=0.713  match=False  err=None
+[13:52:38] brigham young university/ForeignLanguageHousing.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/Global thinking.png  orb=0.033  hist=0.637  match=False  err=None
+[13:52:38] brigham young university/Gordon B. Hinckley Alumni and Visitors Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/Harold B. Lee Library.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/Ken Jennings (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/MaeserBuilding.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/Mark Rober 2020 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/Mitt Romney by Gage Skidmore 6 cropped 2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/MOA North entrance.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/P christianity.png  orb=0.000  hist=0.620  match=False  err=None
+[13:52:38] brigham young university/Smoot Building.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/Stephanie Meyer (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/Steve Young (6837509849) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:52:38] brigham young university/Symbol portal class.png  orb=0.016  hist=0.699  match=False  err=None
+[13:52:38] brigham young university/Thomas Monson (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:38] brigham young university/TNRB Tanner Building.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:39] brigham young university hawaii/BYU Hawaii (14080027043).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:39] brigham young university hawaii/BYU-Hawaii Medallion Logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:39] brigham young university hawaii/BYU-Hawaii sub logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:39] brigham young university hawaii/BYUH mahalo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:39] brigham young university hawaii/Flag of Hawaii.png  orb=0.066  hist=0.691  match=False  err=None
+[13:52:39] brigham young university hawaii/Global thinking.png  orb=0.033  hist=0.637  match=False  err=None
+[13:52:39] brigham young university hawaii/JohnSKKauweIII.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:39] brigham young university hawaii/LDS Laie Hawaii Temple front view.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:40] brigham young university hawaii/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:52:40] brigham young university hawaii/Symbol portal class.png  orb=0.016  hist=0.699  match=False  err=None
+[13:52:40] brigham young university hawaii/Wiki letter w cropped.png  orb=0.000  hist=0.414  match=True  err=None
+[13:52:40] brown university/121 South Main St and Providence River.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:40] brown university/Alpert Medical School, Providence, Rhode Island.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:40] brown university/Brian Moynihan FT CNBC Nightcap.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:40] brown university/Brown Stadium Providence Rhode Island wide view.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:40] brown university/Brown University 1792 engraving.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:40] brown university/Brown University Engineering Research Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:40] brown university/Brown University Ezra Stiles Charter.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:40] brown university/Brown University logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Brown University Pembroke campus.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Brown university robinson hall 2009a crop and straighten.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Brown University Wilbour Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Brown University's Marston Boathouse.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Brown's Open Curriculum 50 years picnic.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Brown's University Hall in 2007.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Charles Evans Hughes cph.3b15401.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Christina paxson.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Computing Laboratory, Brown University (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Das östliche Eingangstor der Brown University.png  orb=0.000  hist=1.000  match=False  err=unreadable
+[13:52:41] brown university/Daveed Diggs Worldcon 75, Helsinki.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Decrease Neutral.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/DrRuthJSimmons.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:52:41] brown university/Emma Watson, 2012.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Entrance to the John Carter Brown Library (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Ezra Stiles.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Fall view over Brown 2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Francis Wayland by George Peter Alexander Healy (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:41] brown university/Granoff Center (Brown).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/James Manning head by Cosmo Alexander.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Janet Yellen official Federal Reserve portrait.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Jesse Tyler Ferguson, Jason Winer, Horace Newcomb and Julie Bowen, May 2010 (1) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/John D. Rockefeller Jr. cph.3a03736 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/John Hay Library (Brown).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/John Hay, bw photo portrait, 1897.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/John Kennedy Jr 1997 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/John Krasinski and Josh Wood (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/JonathanMaxcy.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Ladd Observatory2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Laura Linney 2016 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Liber Brunensis (1910)-Cammarian-Club-without-names.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/List Art Center, Brown University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Maggie Hassan, official portrait, 115th Congress.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Main Green at Brown University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Manning Hall, Brown University, Providence, Rhode Island - 20091108 straighten.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Marcus Aurelius statue and Lyman Hall at Brown University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Meehan Auditorium Brown University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/MSNBC host Chris Hayes (8024131849) (cropped, closeup).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Nelson Fitness Center (Brown).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Nicholas Brown Jr by Chester Harding 1836.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Pembroke Hall at Brown University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Quiet Green - Brown University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Rhode Island Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:42] brown university/Samuel King - Ezra Stiles (1727 -1795), B.A. 1746, M.A. 1749 - 1955.3.1 - Yale University Art Gallery.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] brown university/Sarah Doyle Womens Center Brown University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] brown university/Shield of Brown University.png  orb=0.016  hist=0.543  match=True  err=None
+[13:52:43] brown university/Southworth and Hawes - Horace Mann (Zeno Fotografie) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] brown university/Stephen Robert Hall, Brown University (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] brown university/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:52:43] brown university/Ted Turner.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] brown university/The 1879 Brown University Baseball Team.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] brown university/TraceeEllisRossbyErikMelvin (1).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] brown university/Watson Institute (Brown) 6.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] brown university/William Ellery (H. B. Hall).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] bryant college/Academic Innovation Center, Bryant University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] bryant college/Bello Center and Library, Bryant University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] bryant college/Blackoutcourtshot.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] bryant college/Bryant Bulldogs wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] bryant college/Bryant founder of Bryant and Stratton.png  orb=0.000  hist=0.417  match=True  err=None
+[13:52:43] bryant college/Bryant University logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:43] bryant college/Bryant University seal.png  orb=0.000  hist=0.214  match=True  err=None
+[13:52:43] bryant college/Butler Exchange, c 1920.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryant college/Chace Athletic Center, Bryant University, Smithfield RI.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryant college/Interfaith Center, Bryant University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryant college/Kofflerbuilding.png  orb=0.016  hist=0.876  match=False  err=None
+[13:52:44] bryant college/Sign for Bryant University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryant college/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:52:44] bryn mawr college/BMCMayDay.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryn mawr college/Bryn mawr athletics mark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryn mawr college/Bryn Mawr College logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryn mawr college/Bryn Mawr Seal.png  orb=0.016  hist=0.394  match=True  err=None
+[13:52:44] bryn mawr college/Bryn Mawr Sunset.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryn mawr college/Decrease Neutral.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryn mawr college/Entrance Bryn Mawr.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryn mawr college/Erdman Bryn Mawr.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryn mawr college/Logo of the United States National Park Service.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryn mawr college/Map of USA PA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:44] bryn mawr college/Pembroke Hall at Bryn Mawr.png  orb=0.016  hist=0.861  match=False  err=None
+[13:52:44] bryn mawr college/Red pog.png  orb=0.000  hist=0.619  match=False  err=None
+[13:52:45] bryn mawr college/Rhoads Hall Bryn Mawr.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:45] bryn mawr college/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:52:45] bryn mawr college/Symbol portal class.png  orb=0.016  hist=0.699  match=False  err=None
+[13:52:45] bryn mawr college/Thomas Great Hall at Bryn Mawr College.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:45] bryn mawr college/Usa edcp location map.png  orb=0.066  hist=0.911  match=False  err=None
+[13:52:45] bryn mawr college/USA Pennsylvania location map.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:45] bucknell university/Academic East Bucknell University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:45] bucknell university/Bertrand Winter.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:45] bucknell university/Bucknell University 2012 1.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:46] bucknell university/Bucknell University logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:46] bucknell university/Bucknell University seal.png  orb=0.049  hist=0.548  match=True  err=None
+[13:52:46] bucknell university/Bucknell University, 1870s.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:46] bucknell university/Bucknell-Campus-Painting.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:46] bucknell university/Coleman Hall February.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:46] bucknell university/Humanities Center Exterior 2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:46] bucknell university/Mike Muscala.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:46] bucknell university/Rooke Chapel chaplain's office building.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:46] bucknell university/Rooke-Chapel.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:46] bucknell university/Vaughan Literature Building 2024.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:46] buena vista university/09-arch-commencement.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:46] buena vista university/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:52:46] buena vista university/Buena vista univ seal.png  orb=0.016  hist=0.775  match=False  err=None
+[13:52:46] buena vista university/Buena Vista University logo.png  orb=0.033  hist=0.821  match=False  err=None
+[13:52:46] buena vista university/BVU-campus-aerial.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:46] buena vista university/Bvucampusfromlake.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:47] buena vista university/Flag of Iowa.png  orb=0.131  hist=0.660  match=False  err=None
+[13:52:47] butler university/Aerial view of the Butler University campus in Indianapolis, Indiana.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:47] butler university/Allen R. Benton.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:47] butler university/Bobby Fong, Ursinus College President.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:47] butler university/BonaThompson Memorial Library.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:47] butler university/Brad Stevens talking with AJ Graves.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:47] butler university/Butler University logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:47] butler university/Butler University seal.png  orb=0.049  hist=0.519  match=True  err=None
+[13:52:47] butler university/Butler Winter 2015 03.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:47] butler university/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:52:47] butler university/Flag of Indiana.png  orb=0.000  hist=0.918  match=False  err=None
+[13:52:47] butler university/Hinklefieldhouse5.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:47] butler university/Indiana foot-ball - DPLA - 1097cce73595ec059f0d0a66aa96a555 (page 208).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:47] butler university/James Danko 2024.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:47] butler university/Jordan Hall 4.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:48] california coast university/California Coast University (logo).png  orb=0.033  hist=0.503  match=True  err=None
+[13:52:48] california coast university/Ccu logo.png  orb=0.033  hist=0.503  match=True  err=None
+[13:52:48] california coast university/Flag of California.png  orb=0.098  hist=0.544  match=True  err=None
+[13:52:48] california coast university/Flag of Los Angeles County, California.png  orb=0.066  hist=0.853  match=False  err=None
+[13:52:48] california coast university/Panorama of California Coast University building.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:48] california coast university/School.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:48] california institute of technology/Adam D'Angelo - The Grove 2022.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Andrea Ghez (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Annenberg center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Arms Laboratory.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Beckman auditorium, Caltech.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Beckman Institute Reflection.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Benoit Mandelbrot mg 1804b.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Bridge Laboratory 1921.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Broad center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Cahill Center for Astronomy and Astrophysics ( Caltech).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Caltech aerial 1922.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Caltech aerial 1944.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Caltech Athletics wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Caltech chemical laboratory 1923.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Caltech Entrance.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Caltech from the air.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:49] california institute of technology/Caltech Logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/Caltech regalia.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/Carolyn Porco 01.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/Christy Robert A2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/David Baltimore Caltech by c michel in 2021.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/Decrease Neutral.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/Detroit Photographic Company (0048) - Throop Polytechnic Institute, Pasadena, California.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/Flag of California.png  orb=0.098  hist=0.544  match=True  err=None
+[13:52:50] california institute of technology/Fleming cannon firing.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/France A. Córdova official photo.png  orb=0.000  hist=1.000  match=False  err=unreadable
+[13:52:50] california institute of technology/Gordon Fullerton 1989.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/Gordon Moore.png  orb=0.000  hist=0.943  match=False  err=None
+[13:52:50] california institute of technology/Harold Brown 1970.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/Harrison H. Schmitt.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/James A. B. Scherer 1920.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/John McCarthy Stanford.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/Kerckhoff Laboratory of the Biological Sciences.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/Kip Thorne at Caltech.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:50] california institute of technology/KnuthAtOpenContentAlliance.png  orb=0.000  hist=0.982  match=False  err=None
+[13:52:51] california institute of technology/Lee A. DuBridge 1950.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:51] california institute of technology/Mark S. Wrighton.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:51] california institute of technology/Marvin Goldberger 1978.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:51] california institute of technology/Millikan.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:51] california institute of technology/Norman Bridge Lab Interior.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:51] california institute of technology/Oppenheimer at Caltech.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:51] california institute of technology/Provost Telescope Vatican Observatory Cropped.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:51] california institute of technology/Richard C. Tolman and Albert Einstein at California Institute of Technology.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:51] california institute of technology/Robert A. Millikan Memorial Library at Caltech.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:51] california institute of technology/Robert F. Bacher.png  orb=0.033  hist=0.697  match=False  err=None
+[13:52:52] california institute of technology/Robertbehnkenv2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:52] california institute of technology/SchlingerLabChemE.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:52] california institute of technology/Seal of the California Institute of Technology.png  orb=0.016  hist=0.647  match=False  err=None
+[13:52:52] california institute of technology/Stephen Wolfram PR.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:52] california institute of technology/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:52:52] california institute of technology/Thomas Everhart 1987.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:52] california institute of technology/Thomas F. Rosenbaum (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:52] california institute of technology/Throop Hall at Caltech, in Pasadena (00035486).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:52] california institute of technology/Tsien Hsue-shen.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:52] california institute of technology/Wikiquote-logo.png  orb=0.033  hist=0.538  match=True  err=None
+[13:52:52] california institute of technology/William Shockley, Stanford University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:53] california lutheran university/Aebleskiver at Cal Lutheran Scandanavian Festival.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:53] california lutheran university/Ahmanson science center california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:53] california lutheran university/All Nations Plaza CalLutheran.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:53] california lutheran university/Alumni hall california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:53] california lutheran university/Athletics facilities cal lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:53] california lutheran university/Barbara collins arboretum clu university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:53] california lutheran university/Cal lutheran basketball team.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:53] california lutheran university/Cal lutheran choir.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:53] california lutheran university/Cal Lutheran Kingsmen football team at William Rolland Stadium, California Lutheran University (CLU).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:53] california lutheran university/Cal lutheran theater department.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:53] california lutheran university/Cal lutheran university oxnard center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:53] california lutheran university/California lutheran univ seal.png  orb=0.049  hist=0.667  match=False  err=None
+[13:52:53] california lutheran university/California lutheran university clu.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/California lutheran university hillside letters.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/California lutheran university los angeles rams.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/Callutheran volleyball field.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/Centrum Cafe in California Lutheran University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/Class at callutheran.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/CLU Cafeteria.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/CLU Main Street.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/CLU Rolland Stadium.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/CLU Soland Humanties Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/CLU SWENSON CENTER.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/CLUTV california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/Dallas cowboys cal lutheran.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/Dallas cowboys california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:52:54] california lutheran university/George sparky anderson field.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:54] california lutheran university/Gilbert sports and fitness center clu.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Guy Erwin 09 2016.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Jacks corner ullman commons.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Jamba juice california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Jason Dolley 2010.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Kclu broadcast center clu.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Kingsmen creek cal lutheran.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Kingsmen memorial field 2010 california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Kingsmen park callutheran.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Kwan fong gallery of art and culture.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Luedtke bridge olsen road clu thousand oaks.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Luther Luedtke 2009-11.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Lutheran college washington semester.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Mathews Learning Alcove Amphitheater.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Mount clef ridge cross.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Mount-Clef-Ridge-Wildwood-Thousand-Oaks-Mountclef.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Pearson library california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Pederson home water tower landmark california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Peters hall california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Poulson tennis center cal lutheran.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Preus brandt forum california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Regals way california lutheran university clu.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:55] california lutheran university/Regals way california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california lutheran university/Rudy edmund living laboratory.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california lutheran university/Samuelson Aquatics Center in California Lutheran University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california lutheran university/Samuelson Chapel california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california lutheran university/Scandinavian center california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california lutheran university/Spies Bornemann Center for Education Technology.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california lutheran university/Student union california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california lutheran university/Swimming pool grace hall california lutheran.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california lutheran university/Thompson Pederson Recreation Area.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california lutheran university/William rolland gallery of fine arts california lutheran university.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california lutheran university/Woken walk cal lutheran clu thousand oaks.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california maritime academy/Cal Maritime Blue and Gold Corps of Cadets.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california maritime academy/CMA ASCMA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california maritime academy/CMA Best Shipmate.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california maritime academy/CMA Cadet of the Month.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california maritime academy/CMA Cadet Uniform.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california maritime academy/CMA Community Emergency Response Team.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california maritime academy/CMA Community Service.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california maritime academy/CMA Corps Officer.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california maritime academy/CMA Cruise Award.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:56] california maritime academy/CMA Dean's List.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA Distinguished Cadet Award.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA Drill Team.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA Gold Medal Leadership Award.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA Golden Bear Award.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA Good Conduct.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA International Experience Award.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA Meritorious Service Award.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA Most Helpful Upper-class.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA President's List.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA Resident Assistant.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA Section Leader.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA Service Blue Uniform.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CMA Varsity Letter.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/CSU system workmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/Dept of the Navy Meritorious Civilian Service Medal.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/Presidential Unit Citation (Philippines).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/SF From Marin Highlands3.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:52:57] california maritime academy/U.S. Coast Guard Meritorious Public Service Medal.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/US Merchant Marine Cap Insignia.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:57] california maritime academy/USN Midshipman Insignia.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:58] california national university/Flag of California.png  orb=0.098  hist=0.544  match=True  err=None
+[13:52:58] california national university/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:52:58] california polytechnic state university, san luis obispo/360-SLO-Calpoly.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:58] california polytechnic state university, san luis obispo/Abel-Maldonado.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:58] california polytechnic state university, san luis obispo/Alex G. Spanos Stadium2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:58] california polytechnic state university, san luis obispo/AlYankovicByKristineSlipson.png  orb=0.000  hist=0.802  match=False  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Burt Rutan Oct 3 2004 photo D Ramey Logan.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Cal Poly Logo 2019.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Cal Poly Recreation Center (San Luis Obispo).png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Cal Poly's New Poly Canyon Village.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Cal-Poly-Dexter-Lawn.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Cal-Poly-performing-arts-center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Calpoly agsci bldg.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/CalPoly Seal.png  orb=0.000  hist=0.532  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/ChaseHall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/CSU system workmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Devin Nunes by Gage Skidmore.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Doug LaMalfa 113th Congress official photo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Gibson-rl.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Jespersen Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/John Madden in 2007.png  orb=0.016  hist=0.926  match=False  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Kniphofia Christmas Cheer.png  orb=1.000  hist=0.000  match=True  err=None
+[13:52:59] california polytechnic state university, san luis obispo/Lawn - Leaning Pine Arboretum - DSC05832.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:00] california polytechnic state university, san luis obispo/Map of California highlighting San Luis Obispo County.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:00] california polytechnic state university, san luis obispo/Melaleuca linariifolia - Leaning Pine Arboretum - DSC05482.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:00] california polytechnic state university, san luis obispo/Orfalea College of Business.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:00] california polytechnic state university, san luis obispo/Ozzie Smith 1983.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:00] california polytechnic state university, san luis obispo/Pano from the gallery. Performing Arts Center. San Luis Obispo..png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:00] california polytechnic state university, san luis obispo/Red pog.png  orb=0.000  hist=0.619  match=False  err=None
+[13:53:00] california polytechnic state university, san luis obispo/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:53:00] california polytechnic state university, san luis obispo/The California Polytechnic School.png  orb=0.016  hist=0.978  match=False  err=None
+[13:53:00] california polytechnic state university, san luis obispo/USA California location map.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:00] california polytechnic state university, san luis obispo/Usa edcp location map.png  orb=0.066  hist=0.911  match=False  err=None
+[13:53:00] california polytechnic state university, san luis obispo/ZodFarzad Nazem.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:01] california school of professional psychology/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:53:01] california state polytechnic university, pomona/Aliso Hall Pomona August 2011 001.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:01] california state polytechnic university, pomona/Blue sphere.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:01] california state polytechnic university, pomona/Bronco Student Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:01] california state polytechnic university, pomona/Cal Poly Bronco Recreation and Intramural Complex (BRIC).png  orb=0.016  hist=0.920  match=False  err=None
+[13:53:01] california state polytechnic university, pomona/Cal Poly Library Entrance.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:01] california state polytechnic university, pomona/Cal Poly Main Quad (Pomona, CA).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Cal Poly Pomona South Campus.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Cal Poly Pomona Winter.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Cal Poly Seal.png  orb=0.033  hist=0.421  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/California Polytechnic (Pomona) university seal.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Calpoly pomona univ logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/CalPoly Stables.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/CLA Walk.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Coach Jim Zorn.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/CSU system workmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Dr DisRespect Cropped.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Float flowers.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Forest Whitaker by Gage Skidmore.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Green sphere.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/HLS Headshot.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Iggy & the Stooges @ Brussels Summer Festival 2012 (8371448222).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Jack Dangermond in 2012.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Kim rhode 2007.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/LA Skyline Mountains2.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Larry Wilmore by Gage Skidmore.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Student suites at Cal Poly Pomona.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:02] california state polytechnic university, pomona/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:53:02] california state polytechnic university, pomona/The University of California W.K. Kellogg Institute-Pomona.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:03] california state polytechnic university, pomona/U.S. - Los Angeles Metropolitan Area location map.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:03] california state polytechnic university, pomona/University Seal of Cal Poly in Pomona, CA (mid-1980s-2017).png  orb=0.000  hist=0.734  match=False  err=None
+[13:53:03] california state polytechnic university, pomona/Voorev.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:03] california state polytechnic university, pomona/W.K. Kellogg with Antez (1929).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:03] california state polytechnic university, pomona/WikiBornsteinJUL2010.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:03] california state university system/2008-0817-SJSU-MLKlib.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:03] california state university system/Barry Munitz.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:03] california state university system/Buell G. Gallagher, 1959.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:03] california state university system/Cal Poly Business School.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:03] california state university system/Cal Poly Pomona campus 1.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:03] california state university system/Cal Poly Pomona South Campus.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:03] california state university system/Cal State San Marcos library (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:03] california state university system/Cal State San Marcos.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/Cal State University, Los Angeles.png  orb=0.033  hist=0.932  match=False  err=None
+[13:53:04] california state university system/Cal-Poly-performing-arts-center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/California State Normal School, San Jose LCCN2003681544.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/California State University logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/California State University system headquarters.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/California State University, Fullerton seal.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/California-maritime-academy-training-ship-golden-bear (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/CalPoly72.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/Carpenter Performing Arts Center (Long Beach, California, March 2008).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/Cesar Chavez Student Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/Charles B. Reed at lobbying day.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/Chico State, Kendall Hall, in March 2020 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/Core Campus Perspective, CSUEB.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/Crenshaw Imperial Building.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/CSU Fresno Nima 08.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/CSU Fullerton.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/CSU Historical Enrollment 1970-2023.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/CSU Monterey Bay Library.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:04] california state university system/CSU San Bernardino 1970.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/CSU system workmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/CSU Total Enrollment 2001-2011.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/CSUCI-camarillo state hospital bell tower-schafphoto (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Csuofficeofthechancellor (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/CSUSB Bell Tower.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/CSUSB Entrance.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/CSUSB PalmDesertCampus.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/CSUSbookstore (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/DesertStudiesCenterMainBuildingMarch2010 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Glenn Dumke.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Golden bear (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Great Seal of the State of California Colored.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Henry Madden Library (cropped2).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Hepner Hall, San Diego State University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Homecoming in the 1940's at Cal State LA.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Humanities and Social Sciences May 2010 Commencement (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Humboldt State University Founders Hall (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Humboldt State University Founders Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Jolly Giant Commons, July 2022.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Joseph I. Castro at Penn State STEM workshop.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Julia morgan house.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Kendall Hall as seen from Laxson Auditorium-01006.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Leo F. Cain Library (cropped2).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Library CSUB (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/Manzanitas Hall.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/MLO-1-npaci.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:05] california state university system/New-sci-innov-bldg.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:06] california state university system/Pfau Library (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:06] california state university system/Question book-new.png  orb=0.066  hist=0.650  match=False  err=None
+[13:53:06] california state university system/Red pog.png  orb=0.000  hist=0.619  match=False  err=None
+[13:53:06] california state university system/Relief map of California.png  orb=0.016  hist=0.996  match=False  err=None
+[13:53:06] california state university system/RFK at CSUN (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:06] california state university system/Sac State Library Quad.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:06] california state university system/Sacramento State Aquatic Center.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:06] california state university system/SanDiegoStUniv EntranceBanner.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:06] california state university system/Seal of the California State University.png  orb=0.098  hist=0.125  match=True  err=None
+[13:53:06] california state university system/SFSU Library Nov 28, 2023.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:06] california state university system/SSU Rec Center 4627.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:06] california state university system/StateNormalSchool1915 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:06] california state university system/SWPC-RFK-C006-008.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:06] california state university system/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:53:07] california state university system/The American system of agricultural education (1904) (17973269710) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:07] california state university system/Timothy p white.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:07] california state university system/Tower Hall - Morris Dailey Auditorium - San Jose State University.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:07] california state university system/Trinity Hall bell tower - California State University, Chico - DSC03144 (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:07] california state university system/TS Golden Bear.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:07] california state university system/USA-San Jose State University-Tower Hall-6.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:07] california state university system/View of the Sacramento State College campus site, 1947.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:07] california state university system/W.K. Kellogg old stables at Cal Poly Pomona.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:07] california state university system/Walter Pyramid.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:07] california state university, bakersfield/CSU Bakersfield logo.png  orb=0.049  hist=0.574  match=False  err=None
+[13:53:07] california state university, bakersfield/CSU Bakersfield seal.png  orb=0.033  hist=0.606  match=False  err=None
+[13:53:07] california state university, bakersfield/CSU system workmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:08] california state university, bakersfield/Library CSUB.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:08] california state university, bakersfield/Scott Wilk.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:08] california state university, bakersfield/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:53:08] california state university, chico/C7749.png  orb=0.000  hist=0.979  match=False  err=None
+[13:53:08] california state university, chico/Caifornia stat univ chico seal.png  orb=0.016  hist=0.592  match=False  err=None
+[13:53:08] california state university, chico/Chico State Campus – New Science Building-00751.png  orb=0.000  hist=1.000  match=False  err=unreadable
+[13:53:08] california state university, chico/Chico State, Arts & Humanities Building, in March 2020.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:08] california state university, chico/Chico-State-Single-Line-Wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:08] california state university, chico/CSU system workmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:08] california state university, chico/Flag of California.png  orb=0.098  hist=0.544  match=True  err=None
+[13:53:08] california state university, chico/Kendall Hall as seen from Laxson Auditorium-01006.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:08] california state university, chico/Kendall Hall, Chico State (2023)-L1003366.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:08] california state university, chico/Laxson Auditorium - California State University, Chico - DSC03133.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:08] california state university, chico/Robert-franklin-pennell (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:09] california state university, chico/Symbol category class.png  orb=0.000  hist=0.699  match=False  err=None
+[13:53:09] california state university, chico/Trinity Hall as seen from George Petersen Rose Garden.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:09] california state university, dominguez hills/Ambox important.png  orb=0.000  hist=0.566  match=False  err=None
+[13:53:09] california state university, dominguez hills/Antonio Alfaro (51201948965) (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:09] california state university, dominguez hills/Ben Swann (9908766706).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:09] california state university, dominguez hills/Cal State Dominguez Hills Toros wordmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:09] california state university, dominguez hills/Csu dh logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:09] california state university, dominguez hills/CSU Dominguez Hills seal.png  orb=0.016  hist=0.113  match=True  err=None
+[13:53:09] california state university, dominguez hills/CSU system workmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:09] california state university, dominguez hills/CSUDH Library 2018.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:09] california state university, dominguez hills/DSC 0262-X5 Leo F. Cain Library.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:09] california state university, dominguez hills/Edit-clear.png  orb=0.000  hist=0.469  match=True  err=None
+[13:53:10] california state university, dominguez hills/JEFF COOPWOOD.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:10] california state university, dominguez hills/Joe Buscaino 2011.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:10] california state university, dominguez hills/Karen-Bass-2012.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:10] california state university, dominguez hills/Kevin Pillar September 30, 2015.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:10] california state university, dominguez hills/LA Skyline Mountains2.png  orb=0.000  hist=0.955  match=False  err=None
+[13:53:10] california state university, dominguez hills/Lela Rochon 1998.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:10] california state university, dominguez hills/LSU-new.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:10] california state university, dominguez hills/Manuel Domínguez of California.png  orb=0.000  hist=1.000  match=False  err=unreadable
+[13:53:10] california state university, dominguez hills/New-sci-innov-bldg.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:10] california state university, dominguez hills/Welch-hall-new.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:10] california state university, dominguez hills/Yaelmarkovichsmallheadshot.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:11] california state university, fresno/2009-0725-CA-FresnoCC-OAB (cropped).png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:11] california state university, fresno/2009-0725-CA-SaveMartCenter.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:11] california state university, fresno/Aaron Judge.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:11] california state university, fresno/Ashley Swearengin.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:11] california state university, fresno/California State University, Fresno logo.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:11] california state university, fresno/California State University, Fresno seal.png  orb=0.066  hist=0.617  match=False  err=None
+[13:53:11] california state university, fresno/Cruz-Bustamante.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:11] california state university, fresno/CSU Fresno Nima 08.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:11] california state university, fresno/CSU system workmark.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:11] california state university, fresno/CSUF foggy.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:11] california state university, fresno/Davante Adams.png  orb=1.000  hist=0.000  match=True  err=None
+[13:53:11] california state university, fresno/David Carr at 49ers training camp 2010-08-09 1.png  orb=1.000  hist=0.000  match=True  err=None
