@@ -1,0 +1,1134 @@
+[15:59:54] Colleges dir : C:\Users\Boni\Desktop\Projects\alting_img\colleges
+[15:59:54] Logos dir    : C:\Users\Boni\Desktop\Projects\alting_img\logos
+[16:00:01] Colleges found: 1076
+[16:00:39] abilene christian university  pngs=8  status=OK
+[16:00:39] adelphi university  pngs=6  status=OK
+[16:00:39] agnes scott college  pngs=11  status=OK
+[16:00:39] air force institute of technology  pngs=4  status=OK
+[16:00:39] alabama a&m university  pngs=24  status=OK
+[16:00:39] alabama state university  pngs=5  status=OK
+[16:00:39] alaska pacific university  pngs=4  status=OK
+[16:00:39] albertson college of idaho  pngs=11  status=OK
+[16:00:39] albion college  pngs=5  status=OK
+[16:00:39] alderson-broaddus college  pngs=4  status=OK
+[16:00:39] alfred university  pngs=11  status=OK
+[16:00:39] allegheny college  pngs=15  status=OK
+[16:00:39] allentown college of saint francis de sales  pngs=10  status=OK
+[16:00:39] alma college  pngs=6  status=OK
+[16:00:39] alverno college  pngs=4  status=OK
+[16:00:39] ambassador university  pngs=5  status=OK
+[16:00:39] american graduate school of international management  pngs=5  status=OK
+[16:00:39] american international college  pngs=4  status=OK
+[16:00:39] american university  pngs=19  status=OK
+[16:00:39] amherst college  pngs=27  status=OK
+[16:00:39] andrews university  pngs=12  status=OK
+[16:00:39] angelo state university  pngs=18  status=OK
+[16:00:39] antioch college  pngs=14  status=OK
+[16:00:39] antioch new england  pngs=5  status=OK
+[16:00:39] antioch university-los angeles  pngs=2  status=Sparse
+[16:00:39] antioch university-seattle  pngs=3  status=OK
+[16:00:39] appalachian state university  pngs=17  status=OK
+[16:00:39] aquinas college  pngs=11  status=OK
+[16:00:39] arizona state university  pngs=45  status=OK
+[16:00:39] arizona state university east  pngs=7  status=OK
+[16:00:39] arizona state university west  pngs=7  status=OK
+[16:00:39] arizona western college  pngs=5  status=OK
+[16:00:39] arkansas tech university  pngs=9  status=OK
+[16:00:39] armstrong state college  pngs=4  status=OK
+[16:00:39] ashland university  pngs=7  status=OK
+[16:00:39] athens state college  pngs=8  status=OK
+[16:00:39] auburn university  pngs=20  status=OK
+[16:00:39] auburn university - montgomery  pngs=5  status=OK
+[16:00:39] augsburg college  pngs=15  status=OK
+[16:00:39] augustana college  pngs=7  status=OK
+[16:00:39] aurora university  pngs=11  status=OK
+[16:00:39] austin college  pngs=17  status=OK
+[16:00:39] austin peay state university  pngs=6  status=OK
+[16:00:39] averett college  pngs=4  status=OK
+[16:00:39] azusa pacific university  pngs=6  status=OK
+[16:00:39] babson college  pngs=16  status=OK
+[16:00:39] baker university  pngs=13  status=OK
+[16:00:39] baldwin-wallace college  pngs=11  status=OK
+[16:00:39] ball state university  pngs=11  status=OK
+[16:00:39] baptist bible college  pngs=4  status=OK
+[16:00:39] bard college  pngs=43  status=OK
+[16:00:39] barry university  pngs=7  status=OK
+[16:00:39] bastyr university  pngs=4  status=OK
+[16:00:39] bates college  pngs=32  status=OK
+[16:00:39] baylor college of medicine  pngs=13  status=OK
+[16:00:39] baylor university  pngs=52  status=OK
+[16:00:39] beaver college  pngs=8  status=OK
+[16:00:39] belmont university  pngs=6  status=OK
+[16:00:39] beloit college  pngs=7  status=OK
+[16:00:39] bemidji state university  pngs=17  status=OK
+[16:00:39] benedictine college  pngs=9  status=OK
+[16:00:39] bennington college  pngs=25  status=OK
+[16:00:39] bentley college  pngs=6  status=OK
+[16:00:39] berea college  pngs=9  status=OK
+[16:00:39] berklee college of music  pngs=9  status=OK
+[16:00:39] bethany college  pngs=6  status=OK
+[16:00:39] bethel college  pngs=6  status=OK
+[16:00:39] bethel college and seminary  pngs=11  status=OK
+[16:00:39] biola university  pngs=7  status=OK
+[16:00:39] birmingham-southern college  pngs=8  status=OK
+[16:00:39] black hills state university  pngs=2  status=Sparse
+[16:00:39] bloomsburg university of pennsylvania  pngs=4  status=OK
+[16:00:39] bluffton college  pngs=6  status=OK
+[16:00:39] bob jones university  pngs=12  status=OK
+[16:00:39] boise state university  pngs=11  status=OK
+[16:00:39] boston college  pngs=38  status=OK
+[16:00:39] boston graduate school of psychoanalysis  pngs=3  status=OK
+[16:00:39] boston university  pngs=35  status=OK
+[16:00:39] bowdoin college  pngs=34  status=OK
+[16:00:39] bowie state university  pngs=17  status=OK
+[16:00:39] bowling green state university  pngs=27  status=OK
+[16:00:39] bradley university  pngs=10  status=OK
+[16:00:39] brandeis university  pngs=42  status=OK
+[16:00:39] brenau university  pngs=11  status=OK
+[16:00:39] briar cliff college  pngs=6  status=OK
+[16:00:39] bridgewater college  pngs=9  status=OK
+[16:00:39] brigham young university  pngs=32  status=OK
+[16:00:39] brigham young university hawaii  pngs=11  status=OK
+[16:00:39] brown university  pngs=63  status=OK
+[16:00:39] bryant college  pngs=13  status=OK
+[16:00:39] bryn mawr college  pngs=18  status=OK
+[16:00:39] bucknell university  pngs=13  status=OK
+[16:00:39] buena vista university  pngs=7  status=OK
+[16:00:39] butler university  pngs=14  status=OK
+[16:00:39] california coast university  pngs=6  status=OK
+[16:00:39] california institute of technology  pngs=56  status=OK
+[16:00:39] california lutheran university  pngs=61  status=OK
+[16:00:39] california maritime academy  pngs=31  status=OK
+[16:00:39] california national university  pngs=2  status=Sparse
+[16:00:39] california polytechnic state university, san luis obispo  pngs=32  status=OK
+[16:00:39] california school of professional psychology  pngs=1  status=Sparse
+[16:00:39] california state polytechnic university, pomona  pngs=33  status=OK
+[16:00:39] california state university system  pngs=77  status=OK
+[16:00:39] california state university, bakersfield  pngs=6  status=OK
+[16:00:39] california state university, chico  pngs=13  status=OK
+[16:00:39] california state university, dominguez hills  pngs=21  status=OK
+[16:00:39] california state university, fresno  pngs=31  status=OK
+[16:00:39] california state university, fullerton  pngs=20  status=OK
+[16:00:39] california state university, hayward  pngs=10  status=OK
+[16:00:39] california state university, long beach  pngs=20  status=OK
+[16:00:39] california state university, los angeles  pngs=35  status=OK
+[16:00:39] california state university, monterey bay  pngs=7  status=OK
+[16:00:39] california state university, northridge  pngs=27  status=OK
+[16:00:39] california state university, sacramento  pngs=21  status=OK
+[16:00:39] california state university, san bernardino  pngs=21  status=OK
+[16:00:39] california state university, san jose  pngs=35  status=OK
+[16:00:39] california state university, san marcos  pngs=12  status=OK
+[16:00:39] california state university, stanislaus  pngs=9  status=OK
+[16:00:39] california university of pennsylvania  pngs=7  status=OK
+[16:00:39] calvin college  pngs=11  status=OK
+[16:00:39] cameron university  pngs=2  status=Sparse
+[16:00:39] campbell university  pngs=10  status=OK
+[16:00:39] campbellsville college  pngs=6  status=OK
+[16:00:39] canisius college  pngs=10  status=OK
+[16:00:39] carleton college  pngs=12  status=OK
+[16:00:39] carnegie mellon university  pngs=26  status=OK
+[16:00:40] carroll college  pngs=11  status=OK
+[16:00:40] carson-newman college  pngs=5  status=OK
+[16:00:40] carthage college  pngs=5  status=OK
+[16:00:40] case western reserve university  pngs=26  status=OK
+[16:00:40] cedarville college  pngs=7  status=OK
+[16:00:40] centenary college of louisiana  pngs=13  status=OK
+[16:00:40] central college  pngs=7  status=OK
+[16:00:40] central connecticut state university  pngs=8  status=OK
+[16:00:40] central methodist college  pngs=8  status=OK
+[16:00:40] central michigan university  pngs=14  status=OK
+[16:00:40] central missouri state university  pngs=5  status=OK
+[16:00:40] central washington university  pngs=6  status=OK
+[16:00:40] centre college  pngs=23  status=OK
+[16:00:40] chadron state college  pngs=3  status=OK
+[16:00:40] champlain college  pngs=9  status=OK
+[16:00:40] chapman university  pngs=9  status=OK
+[16:00:40] chatham college  pngs=6  status=OK
+[16:00:40] chesapeake college  pngs=3  status=OK
+[16:00:40] cheyney university  pngs=12  status=OK
+[16:00:40] christian brothers university  pngs=6  status=OK
+[16:00:40] christopher newport university  pngs=9  status=OK
+[16:00:40] city university  pngs=22  status=OK
+[16:00:40] city university of new york  pngs=22  status=OK
+[16:00:40] claremont graduate school  pngs=6  status=OK
+[16:00:40] claremont mckenna college  pngs=14  status=OK
+[16:00:40] clarion university of pennsylvania  pngs=3  status=OK
+[16:00:40] clark university  pngs=18  status=OK
+[16:00:40] clarke college  pngs=8  status=OK
+[16:00:40] clarkson university  pngs=7  status=OK
+[16:00:40] clayton state college  pngs=6  status=OK
+[16:00:40] clemson university  pngs=26  status=OK
+[16:00:40] cleveland state university  pngs=11  status=OK
+[16:00:40] clinch valley college  pngs=5  status=OK
+[16:00:40] coastal carolina university  pngs=14  status=OK
+[16:00:40] coe college  pngs=6  status=OK
+[16:00:40] coker college  pngs=6  status=OK
+[16:00:40] colby college  pngs=30  status=OK
+[16:00:40] colgate university  pngs=12  status=OK
+[16:00:40] college of charleston  pngs=12  status=OK
+[16:00:40] college of eastern utah  pngs=1  status=Sparse
+[16:00:40] college of saint benedict  pngs=11  status=OK
+[16:00:40] college of saint catherine  pngs=11  status=OK
+[16:00:40] college of saint rose  pngs=8  status=OK
+[16:00:40] college of st. francis  pngs=1  status=Sparse
+[16:00:40] college of st. scholastica  pngs=9  status=OK
+[16:00:40] college of the atlantic  pngs=3  status=OK
+[16:00:40] college of the holy cross  pngs=44  status=OK
+[16:00:40] college of william and mary  pngs=35  status=OK
+[16:00:40] colorado christian university  pngs=5  status=OK
+[16:00:40] colorado college  pngs=10  status=OK
+[16:00:40] colorado school of mines  pngs=22  status=OK
+[16:00:40] colorado state university  pngs=17  status=OK
+[16:00:40] columbia college chicago  pngs=13  status=OK
+[16:00:40] columbia southern university  pngs=2  status=Sparse
+[16:00:40] columbia union college  pngs=15  status=OK
+[16:00:40] columbia university  pngs=65  status=OK
+[16:00:40] concordia college-ann arbor  pngs=3  status=OK
+[16:00:40] concordia college-moorhead  pngs=6  status=OK
+[16:00:40] connecticut college  pngs=13  status=OK
+[16:00:40] coppin state college  pngs=12  status=OK
+[16:00:40] cornell college  pngs=7  status=OK
+[16:00:40] cornell university  pngs=53  status=OK
+[16:00:40] creighton university  pngs=8  status=OK
+[16:00:40] curry college  pngs=4  status=OK
+[16:00:40] daemen college  pngs=4  status=OK
+[16:00:40] dakota state university  pngs=7  status=OK
+[16:00:40] dakota wesleyan university  pngs=9  status=OK
+[16:00:40] dallas baptist university  pngs=5  status=OK
+[16:00:40] dana college  pngs=4  status=OK
+[16:00:40] daniel webster college  pngs=3  status=OK
+[16:00:40] dartmouth college  pngs=54  status=OK
+[16:00:40] davidson college  pngs=7  status=OK
+[16:00:40] davis & elkins college  pngs=8  status=OK
+[16:00:40] delaware state university  pngs=8  status=OK
+[16:00:40] delta state university  pngs=5  status=OK
+[16:00:40] denison university  pngs=28  status=OK
+[16:00:40] depaul university  pngs=15  status=OK
+[16:00:40] depauw university  pngs=11  status=OK
+[16:00:40] devry institute of technology  pngs=6  status=OK
+[16:00:40] dickinson college  pngs=22  status=OK
+[16:00:40] dickinson state university  pngs=1  status=Sparse
+[16:00:40] dillard university  pngs=5  status=OK
+[16:00:40] dominican college  pngs=5  status=OK
+[16:00:40] dordt college  pngs=7  status=OK
+[16:00:40] dowling college  pngs=3  status=OK
+[16:00:40] drake university  pngs=10  status=OK
+[16:00:40] drew university  pngs=12  status=OK
+[16:00:40] drexel university  pngs=25  status=OK
+[16:00:40] drury college  pngs=3  status=OK
+[16:00:40] duke university  pngs=49  status=OK
+[16:00:40] duquesne university  pngs=15  status=OK
+[16:00:40] earlham college  pngs=8  status=OK
+[16:00:40] east carolina university  pngs=9  status=OK
+[16:00:40] east central university  pngs=6  status=OK
+[16:00:40] east tennessee state university  pngs=8  status=OK
+[16:00:40] east texas state university  pngs=20  status=OK
+[16:00:40] eastern connecticut state university  pngs=5  status=OK
+[16:00:40] eastern illinois university  pngs=8  status=OK
+[16:00:40] eastern kentucky university  pngs=21  status=OK
+[16:00:40] eastern mennonite university  pngs=8  status=OK
+[16:00:40] eastern michigan university  pngs=19  status=OK
+[16:00:40] eastern nazarene college  pngs=19  status=OK
+[16:00:40] eastern new mexico university  pngs=8  status=OK
+[16:00:40] eastern oregon state college  pngs=6  status=OK
+[16:00:40] eastern washington university  pngs=10  status=OK
+[16:00:40] edgewood college  pngs=9  status=OK
+[16:00:40] edinboro university of pennsylvania  pngs=8  status=OK
+[16:00:40] elizabeth city state university  pngs=5  status=OK
+[16:00:40] elizabethtown college  pngs=6  status=OK
+[16:00:40] elmhurst college  pngs=7  status=OK
+[16:00:40] elon college  pngs=4  status=OK
+[16:00:40] embry-riddle aeronautical university, arizona  pngs=10  status=OK
+[16:00:40] embry-riddle aeronautical university, florida  pngs=7  status=OK
+[16:00:40] emerson college  pngs=34  status=OK
+[16:00:40] emmanuel college  pngs=9  status=OK
+[16:00:40] emmaus bible college  pngs=2  status=Sparse
+[16:00:40] emory & henry college  pngs=16  status=OK
+[16:00:40] emory university  pngs=30  status=OK
+[16:00:40] emporia state university  pngs=12  status=OK
+[16:00:40] evergreen state college  pngs=5  status=OK
+[16:00:40] fairfield university  pngs=23  status=OK
+[16:00:40] fairleigh dickinson university  pngs=17  status=OK
+[16:00:40] fairmont state college  pngs=4  status=OK
+[16:00:40] fayetteville state university  pngs=5  status=OK
+[16:00:40] ferris state university  pngs=11  status=OK
+[16:00:40] fielding institute  pngs=2  status=Sparse
+[16:00:40] fisk university  pngs=12  status=OK
+[16:00:40] fitchburg state college  pngs=11  status=OK
+[16:00:40] florida agricultural and mechanical university  pngs=17  status=OK
+[16:00:40] florida atlantic university  pngs=16  status=OK
+[16:00:40] florida gulf coast university  pngs=15  status=OK
+[16:00:40] florida institute of technology  pngs=24  status=OK
+[16:00:40] florida international university  pngs=58  status=OK
+[16:00:40] florida state university  pngs=42  status=OK
+[16:00:40] fontbonne college  pngs=7  status=OK
+[16:00:40] fordham university  pngs=48  status=OK
+[16:00:40] fort hays state university  pngs=12  status=OK
+[16:00:40] fort lewis college  pngs=5  status=OK
+[16:00:40] franklin and marshall college  pngs=13  status=OK
+[16:00:40] franklin pierce law center  pngs=14  status=OK
+[16:00:40] franklin university  pngs=4  status=OK
+[16:00:40] fresno pacific university  pngs=13  status=OK
+[16:00:40] friends university  pngs=6  status=OK
+[16:00:40] frostburg state university  pngs=12  status=OK
+[16:00:40] fuller theological seminary  pngs=3  status=OK
+[16:00:40] furman university  pngs=14  status=OK
+[16:00:40] gallaudet university  pngs=24  status=OK
+[16:00:40] gannon university  pngs=6  status=OK
+[16:00:40] geneva college  pngs=13  status=OK
+[16:00:40] george fox college  pngs=7  status=OK
+[16:00:40] george mason university  pngs=55  status=OK
+[16:00:40] george washington university  pngs=68  status=OK
+[16:00:40] georgetown university  pngs=39  status=OK
+[16:00:40] georgia college  pngs=12  status=OK
+[16:00:40] georgia institute of technology  pngs=36  status=OK
+[16:00:40] georgia southern university  pngs=15  status=OK
+[16:00:40] georgia southwestern college  pngs=6  status=OK
+[16:00:40] georgia state university  pngs=16  status=OK
+[16:00:40] georgian court college  pngs=13  status=OK
+[16:00:40] gettysburg college  pngs=42  status=OK
+[16:00:40] gmi engineering and management institute  pngs=9  status=OK
+[16:00:40] golden gate university  pngs=11  status=OK
+[16:00:40] goldey-beacom college  pngs=4  status=OK
+[16:00:40] gonzaga university  pngs=13  status=OK
+[16:00:40] goshen college  pngs=8  status=OK
+[16:00:40] goucher college  pngs=23  status=OK
+[16:00:40] governors state university  pngs=5  status=OK
+[16:00:40] grace college  pngs=2  status=Sparse
+[16:00:40] graceland college  pngs=8  status=OK
+[16:00:40] grand valley state university  pngs=19  status=OK
+[16:00:40] grinnell college  pngs=13  status=OK
+[16:00:40] guilford college  pngs=9  status=OK
+[16:00:40] gustavus adolphus college  pngs=13  status=OK
+[16:00:40] gutenberg college h  pngs=2  status=Sparse
+[16:00:40] hamilton college  pngs=20  status=OK
+[16:00:40] hamline university  pngs=15  status=OK
+[16:00:40] hampden-sydney college  pngs=19  status=OK
+[16:00:40] hampshire college  pngs=17  status=OK
+[16:00:40] hampton university  pngs=18  status=OK
+[16:00:40] hanover college  pngs=10  status=OK
+[16:00:40] harding university  pngs=11  status=OK
+[16:00:40] hartwick college  pngs=7  status=OK
+[16:00:40] harvard university  pngs=50  status=OK
+[16:00:40] harvey mudd college  pngs=12  status=OK
+[16:00:40] haskell indian nations university  pngs=19  status=OK
+[16:00:40] hastings college  pngs=1  status=Sparse
+[16:00:40] haverford college in pennsylvania  pngs=5  status=OK
+[16:00:40] hawaii pacific university  pngs=5  status=OK
+[16:00:40] heidelberg college  pngs=7  status=OK
+[16:00:40] hendrix college  pngs=8  status=OK
+[16:00:40] hesston college  pngs=3  status=OK
+[16:00:40] high point university  pngs=9  status=OK
+[16:00:40] hillsdale college  pngs=25  status=OK
+[16:00:40] hiram college  pngs=15  status=OK
+[16:00:40] hobart and william smith colleges  pngs=17  status=OK
+[16:00:40] hofstra university  pngs=29  status=OK
+[16:00:40] hollins college  pngs=13  status=OK
+[16:00:40] holy cross college  pngs=5  status=OK
+[16:00:40] hood college  pngs=11  status=OK
+[16:00:40] hope college  pngs=9  status=OK
+[16:00:40] howard university  pngs=43  status=OK
+[16:00:40] humboldt state university  pngs=6  status=OK
+[16:00:40] hunter college  pngs=17  status=OK
+[16:00:40] huntingdon college  pngs=7  status=OK
+[16:00:40] ici university  pngs=1  status=Sparse
+[16:00:40] idaho state university  pngs=10  status=OK
+[16:00:40] illinois benedictine college  pngs=10  status=OK
+[16:00:40] illinois institute of technology  pngs=14  status=OK
+[16:00:40] illinois state university  pngs=11  status=OK
+[16:00:40] incarnate word college  pngs=8  status=OK
+[16:00:40] indiana institute of technology  pngs=6  status=OK
+[16:00:40] indiana state university  pngs=11  status=OK
+[16:00:40] indiana university at bloomington  pngs=29  status=OK
+[16:00:40] indiana university at south bend  pngs=8  status=OK
+[16:00:40] indiana university of pennsylvania  pngs=11  status=OK
+[16:00:40] indiana university system  pngs=11  status=OK
+[16:00:40] inter american university of puerto rico metropolitan campus  pngs=2  status=Sparse
+[16:00:40] iona college  pngs=3  status=OK
+[16:00:40] iowa state university  pngs=23  status=OK
+[16:00:40] ithaca college  pngs=7  status=OK
+[16:00:40] jackson state university  pngs=16  status=OK
+[16:00:40] jacksonville state university  pngs=8  status=OK
+[16:00:40] jacksonville university  pngs=9  status=OK
+[16:00:40] james madison university  pngs=17  status=OK
+[16:00:40] jamestown college  pngs=3  status=OK
+[16:00:40] john brown university  pngs=6  status=OK
+[16:00:40] john f. kennedy university  pngs=2  status=Sparse
+[16:00:40] johns hopkins university  pngs=34  status=OK
+[16:00:40] johnson & wales university  pngs=9  status=OK
+[16:00:40] johnson bible college  pngs=3  status=OK
+[16:00:40] johnson c. smith university  pngs=9  status=OK
+[16:00:40] jones college  pngs=1  status=Sparse
+[16:00:40] judson college  pngs=3  status=OK
+[16:00:40] juniata college  pngs=10  status=OK
+[16:00:40] kalamazoo college  pngs=10  status=OK
+[16:00:40] kansas state university  pngs=13  status=OK
+[16:00:40] kansas wesleyan university  pngs=7  status=OK
+[16:00:40] kean college  pngs=23  status=OK
+[16:00:40] keene state college  pngs=10  status=OK
+[16:00:40] kent state university  pngs=21  status=OK
+[16:00:40] kenyon college  pngs=26  status=OK
+[16:00:40] king's college  pngs=76  status=OK
+[16:00:40] kutztown university of pennsylvania  pngs=9  status=OK
+[16:00:40] la sierra university  pngs=12  status=OK
+[16:00:40] lafayette college  pngs=14  status=OK
+[16:00:40] lagrange college  pngs=6  status=OK
+[16:00:40] lake forest college  pngs=9  status=OK
+[16:00:40] lake superior state university  pngs=15  status=OK
+[16:00:40] lamar university  pngs=16  status=OK
+[16:00:40] langston university  pngs=5  status=OK
+[16:00:40] lasalle university  pngs=27  status=OK
+[16:00:40] lawrence technological university  pngs=8  status=OK
+[16:00:40] lawrence university  pngs=10  status=OK
+[16:00:40] le moyne college  pngs=4  status=OK
+[16:00:40] lebanon valley college  pngs=7  status=OK
+[16:00:40] lehigh univervsity  pngs=13  status=OK
+[16:00:40] lenoir-rhyne college  pngs=4  status=OK
+[16:00:40] letourneau university  pngs=11  status=OK
+[16:00:40] lewis & clark college  pngs=12  status=OK
+[16:00:40] lewis university  pngs=6  status=OK
+[16:00:40] lewis-clark state college  pngs=8  status=OK
+[16:00:40] liberty university  pngs=36  status=OK
+[16:00:40] linfield college  pngs=16  status=OK
+[16:00:40] lock haven university of pennsylvania  pngs=3  status=OK
+[16:00:40] loma linda university  pngs=13  status=OK
+[16:00:40] long island university  pngs=5  status=OK
+[16:00:40] longwood college  pngs=6  status=OK
+[16:00:40] loras college  pngs=18  status=OK
+[16:00:40] louisiana college  pngs=12  status=OK
+[16:00:40] louisiana state university  pngs=34  status=OK
+[16:00:40] louisiana state university at alexandria  pngs=6  status=OK
+[16:00:40] louisiana state university at shreveport  pngs=10  status=OK
+[16:00:40] louisiana tech university  pngs=30  status=OK
+[16:00:40] loyola college  pngs=15  status=OK
+[16:00:40] loyola marymount university  pngs=10  status=OK
+[16:00:40] loyola university chicago  pngs=14  status=OK
+[16:00:40] luther college  pngs=10  status=OK
+[16:00:40] luther seminary  pngs=9  status=OK
+[16:00:40] lycoming college  pngs=3  status=OK
+[16:00:40] lynchburg college  pngs=4  status=OK
+[16:00:40] lyndon state college  pngs=6  status=OK
+[16:00:40] lyon college  pngs=6  status=OK
+[16:00:40] macalester college  pngs=18  status=OK
+[16:00:40] maine maritime academy  pngs=4  status=OK
+[16:00:40] malone college  pngs=3  status=OK
+[16:00:40] manhattan college  pngs=32  status=OK
+[16:00:40] mankato state university  pngs=23  status=OK
+[16:00:40] mansfield university of pennsylvania  pngs=5  status=OK
+[16:00:40] marietta college  pngs=8  status=OK
+[16:00:40] marist college  pngs=6  status=OK
+[16:00:40] marlboro college  pngs=5  status=OK
+[16:00:40] marquette university  pngs=17  status=OK
+[16:00:40] marshall university  pngs=26  status=OK
+[16:00:40] mary baldwin college  pngs=16  status=OK
+[16:00:40] mary washington college  pngs=9  status=OK
+[16:00:40] marymount college  pngs=4  status=OK
+[16:00:40] marymount university  pngs=8  status=OK
+[16:00:40] massachusetts institute of technology  pngs=44  status=OK
+[16:00:40] mcmurry university  pngs=2  status=Sparse
+[16:00:40] mcneese state university  pngs=29  status=OK
+[16:00:40] medical college of georgia  pngs=6  status=OK
+[16:00:40] medical college of wisconsin  pngs=4  status=OK
+[16:00:40] mercer university  pngs=28  status=OK
+[16:00:40] mercyhurst college  pngs=7  status=OK
+[16:00:40] meredith college  pngs=10  status=OK
+[16:00:40] messiah college  pngs=12  status=OK
+[16:00:40] metropolitan state college of denver  pngs=8  status=OK
+[16:00:40] metropolitan state university  pngs=8  status=OK
+[16:00:40] miami university of ohio  pngs=26  status=OK
+[16:00:40] michigan state university  pngs=34  status=OK
+[16:00:40] michigan technological university  pngs=16  status=OK
+[16:00:40] mid-america nazarene college  pngs=3  status=OK
+[16:00:40] middle georgia college  pngs=6  status=OK
+[16:00:40] middle tennessee state university  pngs=10  status=OK
+[16:00:40] middlebury college  pngs=31  status=OK
+[16:00:40] midwestern state university  pngs=12  status=OK
+[16:00:40] millersville university of pennsylvania  pngs=17  status=OK
+[16:00:40] milligan college  pngs=1  status=Sparse
+[16:00:40] millikin university  pngs=6  status=OK
+[16:00:40] millsaps college  pngs=6  status=OK
+[16:00:40] milwaukee school of engineering  pngs=14  status=OK
+[16:00:40] minneapolis college of art and design  pngs=4  status=OK
+[16:00:40] minot state university  pngs=8  status=OK
+[16:00:40] mississippi college  pngs=2  status=Sparse
+[16:00:40] mississippi state university  pngs=15  status=OK
+[16:00:40] mississippi university for women  pngs=8  status=OK
+[16:00:40] missouri southern state college  pngs=4  status=OK
+[16:00:40] missouri western state college  pngs=4  status=OK
+[16:00:40] molloy college  pngs=3  status=OK
+[16:00:40] monmouth college  pngs=15  status=OK
+[16:00:40] monmouth university  pngs=17  status=OK
+[16:00:40] montana state university-billings  pngs=9  status=OK
+[16:00:40] montana state university-bozeman  pngs=21  status=OK
+[16:00:40] montana state university-northern  pngs=5  status=OK
+[16:00:40] montana tech  pngs=6  status=OK
+[16:00:40] montclair state university  pngs=21  status=OK
+[16:00:40] montreat college  pngs=1  status=Sparse
+[16:00:40] moorhead state university  pngs=9  status=OK
+[16:00:40] moravian college  pngs=4  status=OK
+[16:00:40] morehouse college  pngs=29  status=OK
+[16:00:40] morgan state university  pngs=12  status=OK
+[16:00:40] mount holyoke college  pngs=33  status=OK
+[16:00:40] mount saint joseph college  pngs=6  status=OK
+[16:00:40] mount saint mary college  pngs=5  status=OK
+[16:00:40] mount senario college  pngs=2  status=Sparse
+[16:00:40] mount union college  pngs=7  status=OK
+[16:00:40] murray state university  pngs=12  status=OK
+[16:00:40] muskingum college  pngs=10  status=OK
+[16:00:40] national defense university  pngs=31  status=OK
+[16:00:40] national technological university  pngs=9  status=OK
+[16:00:40] national university  pngs=3  status=OK
+[16:00:40] national-louis university  pngs=3  status=OK
+[16:00:40] naval postgraduate school  pngs=10  status=OK
+[16:00:40] nazareth college  pngs=4  status=OK
+[16:00:40] new college of california  pngs=2  status=Sparse
+[16:00:40] new england institute of technology  pngs=5  status=OK
+[16:00:40] new hampshire college  pngs=6  status=OK
+[16:00:40] new jersey institute of technology  pngs=16  status=OK
+[16:00:40] new mexico highlands university  pngs=6  status=OK
+[16:00:40] new mexico institute of mining & technology  pngs=9  status=OK
+[16:00:40] new mexico state university  pngs=21  status=OK
+[16:00:40] new york institute of technology  pngs=25  status=OK
+[16:00:40] new york university  pngs=30  status=OK
+[16:00:40] newberry college  pngs=4  status=OK
+[16:00:40] niagara university  pngs=12  status=OK
+[16:00:40] nicholls state university  pngs=4  status=OK
+[16:00:40] norfolk state university  pngs=11  status=OK
+[16:00:40] north adams state college  pngs=6  status=OK
+[16:00:40] north carolina a&t state university  pngs=15  status=OK
+[16:00:40] north carolina central university  pngs=17  status=OK
+[16:00:40] north carolina state university  pngs=26  status=OK
+[16:00:40] north carolina wesleyan college  pngs=6  status=OK
+[16:00:40] north central bible college  pngs=6  status=OK
+[16:00:40] north dakota state university  pngs=15  status=OK
+[16:00:40] north park college and theological seminary  pngs=8  status=OK
+[16:00:40] northeastern illinois university  pngs=6  status=OK
+[16:00:40] northeastern state university  pngs=6  status=OK
+[16:00:40] northeastern university  pngs=28  status=OK
+[16:00:40] northern arizona university  pngs=13  status=OK
+[16:00:40] northern illinois university  pngs=14  status=OK
+[16:00:40] northern kentucky university  pngs=11  status=OK
+[16:00:40] northern michigan university  pngs=7  status=OK
+[16:00:40] northern state university  pngs=3  status=OK
+[16:00:41] northwest missouri state university  pngs=17  status=OK
+[16:00:41] northwest nazarene college  pngs=3  status=OK
+[16:00:41] northwestern college of iowa  pngs=7  status=OK
+[16:00:41] northwestern state university  pngs=9  status=OK
+[16:00:41] northwestern university  pngs=31  status=OK
+[16:00:41] norwich university  pngs=11  status=OK
+[16:00:41] nova southeastern university  pngs=38  status=OK
+[16:00:41] oakland university  pngs=10  status=OK
+[16:00:41] oberlin college  pngs=22  status=OK
+[16:00:41] occidental college  pngs=18  status=OK
+[16:00:41] ohio northern university  pngs=12  status=OK
+[16:00:41] ohio state university, columbus  pngs=53  status=OK
+[16:00:41] ohio state university, marion  pngs=7  status=OK
+[16:00:41] ohio wesleyan university  pngs=20  status=OK
+[16:00:41] oklahoma baptist university  pngs=12  status=OK
+[16:00:41] oklahoma city university  pngs=7  status=OK
+[16:00:41] oklahoma state university  pngs=14  status=OK
+[16:00:41] old dominion university  pngs=11  status=OK
+[16:00:41] olivet nazarene university  pngs=2  status=Sparse
+[16:00:41] oral roberts university  pngs=16  status=OK
+[16:00:41] oregon graduate institute of science and technology  pngs=5  status=OK
+[16:00:41] oregon health sciences university  pngs=6  status=OK
+[16:00:41] oregon institute of technology  pngs=12  status=OK
+[16:00:41] oregon state university  pngs=36  status=OK
+[16:00:41] otterbein college  pngs=6  status=OK
+[16:00:41] our lady of the lake university  pngs=13  status=OK
+[16:00:41] pace university  pngs=13  status=OK
+[16:00:41] pacific lutheran university  pngs=12  status=OK
+[16:00:41] pacific union college  pngs=13  status=OK
+[16:00:41] pacific university  pngs=7  status=OK
+[16:00:41] palm beach atlantic college  pngs=4  status=OK
+[16:00:41] peace college  pngs=6  status=OK
+[16:00:41] pembroke state university  pngs=14  status=OK
+[16:00:41] pennsylvania state system of higher education  pngs=2  status=Sparse
+[16:00:41] pennsylvania state university  pngs=34  status=OK
+[16:00:41] pensacola christian college  pngs=10  status=OK
+[16:00:41] pepperdine university  pngs=17  status=OK
+[16:00:41] peru state college  pngs=4  status=OK
+[16:00:41] philadelphia college of textiles and science  pngs=14  status=OK
+[16:00:41] phillips university  pngs=4  status=OK
+[16:00:41] pittsburg state university  pngs=6  status=OK
+[16:00:41] pitzer college  pngs=6  status=OK
+[16:00:41] plymouth state college  pngs=8  status=OK
+[16:00:41] point loma nazarene college  pngs=5  status=OK
+[16:00:41] polytechnic university of new york  pngs=16  status=OK
+[16:00:41] polytechnic university of puerto rico  pngs=1  status=Sparse
+[16:00:41] pomona college  pngs=47  status=OK
+[16:00:41] portland state university  pngs=33  status=OK
+[16:00:41] prairie view a&m university  pngs=12  status=OK
+[16:00:41] pratt institute  pngs=23  status=OK
+[16:00:41] presbyterian college  pngs=8  status=OK
+[16:00:41] princeton university  pngs=47  status=OK
+[16:00:41] providence college  pngs=12  status=OK
+[16:00:41] purdue university  pngs=4  status=OK
+[16:00:41] purdue university north central  pngs=5  status=OK
+[16:00:41] quincy university  pngs=7  status=OK
+[16:00:41] quinnipiac college  pngs=8  status=OK
+[16:00:41] radford university  pngs=5  status=OK
+[16:00:41] ramapo college  pngs=14  status=OK
+[16:00:41] randolph-macon college  pngs=12  status=OK
+[16:00:41] randolph-macon woman's college  pngs=6  status=OK
+[16:00:41] reed college  pngs=24  status=OK
+[16:00:41] regent university  pngs=5  status=OK
+[16:00:41] regis university  pngs=10  status=OK
+[16:00:41] rensselaer polytechnic institute  pngs=27  status=OK
+[16:00:41] rhode island college  pngs=16  status=OK
+[16:00:41] rhodes college  pngs=21  status=OK
+[16:00:41] rice university  pngs=40  status=OK
+[16:00:41] richard stockton college of new jersey  pngs=14  status=OK
+[16:00:41] rider university  pngs=14  status=OK
+[16:00:41] ripon college  pngs=10  status=OK
+[16:00:41] rivier college  pngs=6  status=OK
+[16:00:41] roanoke college  pngs=12  status=OK
+[16:00:41] rochester institute of technology  pngs=30  status=OK
+[16:00:41] rockford college  pngs=6  status=OK
+[16:00:41] rockhurst college  pngs=31  status=OK
+[16:00:41] rocky mountain college  pngs=3  status=OK
+[16:00:41] roger williams university  pngs=8  status=OK
+[16:00:41] rollins college  pngs=11  status=OK
+[16:00:41] rosary college  pngs=8  status=OK
+[16:00:41] rose-hulman institute of technology  pngs=14  status=OK
+[16:00:41] rowan college  pngs=10  status=OK
+[16:00:41] rutgers university  pngs=38  status=OK
+[16:00:41] rutgers university, camden  pngs=11  status=OK
+[16:00:41] rutgers university, newark  pngs=8  status=OK
+[16:00:41] sacred heart university  pngs=7  status=OK
+[16:00:41] saginaw valley state university  pngs=7  status=OK
+[16:00:41] saint anselm college  pngs=24  status=OK
+[16:00:41] saint cloud state university  pngs=5  status=OK
+[16:00:41] saint edward's university  pngs=15  status=OK
+[16:00:41] saint francis college  pngs=1  status=Sparse
+[16:00:41] saint joseph's college  pngs=3  status=OK
+[16:00:41] saint joseph's university  pngs=32  status=OK
+[16:00:41] saint louis university  pngs=15  status=OK
+[16:00:41] saint mary's college  pngs=33  status=OK
+[16:00:41] saint mary's college of california  pngs=33  status=OK
+[16:00:41] saint mary's university of minnesota  pngs=10  status=OK
+[16:00:41] saint michael's college  pngs=10  status=OK
+[16:00:41] saint olaf college  pngs=7  status=OK
+[16:00:41] saint vincent college  pngs=10  status=OK
+[16:00:41] saint xavier university  pngs=6  status=OK
+[16:00:41] salisbury state university  pngs=12  status=OK
+[16:00:41] salish kootenai college  pngs=4  status=OK
+[16:00:41] sam houston state university  pngs=9  status=OK
+[16:00:41] samford university  pngs=5  status=OK
+[16:00:41] san diego state university  pngs=21  status=OK
+[16:00:41] san francisco state university  pngs=62  status=OK
+[16:00:41] san jose state university  pngs=36  status=OK
+[16:00:41] santa clara university  pngs=42  status=OK
+[16:00:41] sarah lawrence college  pngs=37  status=OK
+[16:00:41] school of the art institute of chicago  pngs=14  status=OK
+[16:00:41] seattle pacific university  pngs=13  status=OK
+[16:00:41] seattle university  pngs=27  status=OK
+[16:00:41] seton hall university  pngs=20  status=OK
+[16:00:41] sewanee, university of the south  pngs=9  status=OK
+[16:00:41] shawnee state university  pngs=6  status=OK
+[16:00:41] shenandoah university  pngs=11  status=OK
+[16:00:41] shippensburg university of pennsylvania  pngs=16  status=OK
+[16:00:41] shorter college  pngs=1  status=Sparse
+[16:00:41] simmons college  pngs=4  status=OK
+[16:00:41] simon's rock college  pngs=10  status=OK
+[16:00:41] simpson college  pngs=7  status=OK
+[16:00:41] skidmore college  pngs=6  status=OK
+[16:00:41] slippery rock university of pennsylvania  pngs=4  status=OK
+[16:00:41] smith college  pngs=37  status=OK
+[16:00:41] sonoma state university  pngs=11  status=OK
+[16:00:41] south dakota school of mines and technology  pngs=9  status=OK
+[16:00:41] south dakota state university  pngs=15  status=OK
+[16:00:41] south texas college of law  pngs=5  status=OK
+[16:00:41] southampton college  pngs=2  status=Sparse
+[16:00:41] southeast missouri state university  pngs=6  status=OK
+[16:00:41] southeastern louisiana university  pngs=9  status=OK
+[16:00:41] southern college  pngs=4  status=OK
+[16:00:41] southern college of technology  pngs=5  status=OK
+[16:00:41] southern connecticut state university  pngs=7  status=OK
+[16:00:41] southern illinois university  pngs=29  status=OK
+[16:00:41] southern illinois university-carbondale  pngs=29  status=OK
+[16:00:41] southern illinois university-edwardsville  pngs=9  status=OK
+[16:00:41] southern methodist university  pngs=15  status=OK
+[16:00:41] southern nazarene university  pngs=7  status=OK
+[16:00:41] southern oregon state college  pngs=4  status=OK
+[16:00:41] southern university  pngs=10  status=OK
+[16:00:41] southern utah university  pngs=15  status=OK
+[16:00:41] southwest baptist university  pngs=4  status=OK
+[16:00:41] southwest missouri state university  pngs=16  status=OK
+[16:00:41] southwest state university  pngs=5  status=OK
+[16:00:41] southwest texas state university  pngs=20  status=OK
+[16:00:41] southwestern adventist college  pngs=8  status=OK
+[16:00:41] southwestern university  pngs=7  status=OK
+[16:00:41] spelman college  pngs=7  status=OK
+[16:00:41] spring arbor college  pngs=3  status=OK
+[16:00:41] spring hill college  pngs=15  status=OK
+[16:00:41] st. ambrose university  pngs=12  status=OK
+[16:00:41] st. andrews presbyterian college  pngs=5  status=OK
+[16:00:41] st. bonaventure university  pngs=12  status=OK
+[16:00:41] st. john's college-annapolis  pngs=11  status=OK
+[16:00:41] st. john's college-santa fe  pngs=11  status=OK
+[16:00:41] st. joseph college  pngs=3  status=OK
+[16:00:41] st. joseph's college  pngs=4  status=OK
+[16:00:41] st. lawrence university  pngs=15  status=OK
+[16:00:41] st. louis college of pharmacy  pngs=1  status=Sparse
+[16:00:41] st. martin's college  pngs=6  status=OK
+[16:00:41] st. thomas university  pngs=5  status=OK
+[16:00:41] stanford university  pngs=46  status=OK
+[16:00:41] state university of new york at albany  pngs=18  status=OK
+[16:00:41] state university of new york at binghamton  pngs=22  status=OK
+[16:00:41] state university of new york at buffalo  pngs=26  status=OK
+[16:00:41] state university of new york at farmingdale  pngs=7  status=OK
+[16:00:41] state university of new york at fredonia  pngs=12  status=OK
+[16:00:41] state university of new york at oswego  pngs=12  status=OK
+[16:00:41] state university of new york at plattsburgh  pngs=10  status=OK
+[16:00:41] state university of new york at stony brook  pngs=35  status=OK
+[16:00:41] state university of new york college at brockport  pngs=7  status=OK
+[16:00:41] state university of new york college at buffalo  pngs=16  status=OK
+[16:00:41] state university of new york college at cortland  pngs=5  status=OK
+[16:00:41] state university of new york college at geneseo  pngs=10  status=OK
+[16:00:41] state university of new york college at oneonta  pngs=15  status=OK
+[16:00:41] state university of new york college at potsdam  pngs=7  status=OK
+[16:00:41] state university of new york college of environmental science and forestry  pngs=23  status=OK
+[16:00:41] state university of new york college of technology at alfred  pngs=12  status=OK
+[16:00:41] state university of new york system  pngs=31  status=OK
+[16:00:41] stephen f. austin state university  pngs=15  status=OK
+[16:00:41] stephens college  pngs=13  status=OK
+[16:00:41] stetson university  pngs=6  status=OK
+[16:00:41] stevens institute of technology  pngs=18  status=OK
+[16:00:41] strayer college  pngs=3  status=OK
+[16:00:41] suffolk university  pngs=13  status=OK
+[16:00:41] sul ross state university  pngs=7  status=OK
+[16:00:41] susquehanna university  pngs=17  status=OK
+[16:00:41] swarthmore college  pngs=8  status=OK
+[16:00:41] sweet briar college  pngs=16  status=OK
+[16:00:41] syracuse university  pngs=48  status=OK
+[16:00:41] tabor college  pngs=7  status=OK
+[16:00:41] tarleton state university  pngs=12  status=OK
+[16:00:41] taylor university  pngs=20  status=OK
+[16:00:41] teachers college, columbia university  pngs=19  status=OK
+[16:00:41] teikyo marycrest university  pngs=19  status=OK
+[16:00:41] temple university  pngs=46  status=OK
+[16:00:41] tennessee state university  pngs=6  status=OK
+[16:00:41] tennessee technological university  pngs=15  status=OK
+[16:00:41] texas a&m international university  pngs=19  status=OK
+[16:00:41] texas a&m university-college station  pngs=27  status=OK
+[16:00:41] texas a&m university-corpus christi  pngs=23  status=OK
+[16:00:41] texas a&m university-kingsville  pngs=26  status=OK
+[16:00:41] texas christian university  pngs=18  status=OK
+[16:00:41] texas southern university  pngs=20  status=OK
+[16:00:41] texas tech university  pngs=19  status=OK
+[16:00:41] texas tech university-health sciences center  pngs=5  status=OK
+[16:00:41] texas woman's university  pngs=19  status=OK
+[16:00:41] the catholic university of america  pngs=31  status=OK
+[16:00:41] the chicago school of professional psychology  pngs=2  status=Sparse
+[16:00:41] the citadel  pngs=11  status=OK
+[16:00:41] the college of wooster  pngs=8  status=OK
+[16:00:41] the cooper union for the advancement of science and art  pngs=15  status=OK
+[16:00:41] the jewish theological seminary  pngs=6  status=OK
+[16:00:41] the rockefeller university  pngs=8  status=OK
+[16:00:41] the sage colleges  pngs=3  status=OK
+[16:00:41] the union institute  pngs=1  status=Sparse
+[16:00:41] thomas college  pngs=4  status=OK
+[16:00:41] thomas edison state college  pngs=4  status=OK
+[16:00:41] thomas jefferson university  pngs=14  status=OK
+[16:00:41] thomas more college  pngs=6  status=OK
+[16:00:41] towson state university  pngs=13  status=OK
+[16:00:41] transylvania university  pngs=20  status=OK
+[16:00:41] trenton state college  pngs=21  status=OK
+[16:00:41] trinity university  pngs=10  status=OK
+[16:00:41] troy state university  pngs=38  status=OK
+[16:00:41] truman state university  pngs=10  status=OK
+[16:00:41] tucson university  pngs=34  status=OK
+[16:00:41] tufts university  pngs=33  status=OK
+[16:00:41] tulane university  pngs=30  status=OK
+[16:00:41] tuskegee university  pngs=49  status=OK
+[16:00:41] union college  pngs=20  status=OK
+[16:00:41] union university  pngs=12  status=OK
+[16:00:41] united states air force academy  pngs=30  status=OK
+[16:00:41] united states merchant marine academy  pngs=25  status=OK
+[16:00:41] united states military academy  pngs=56  status=OK
+[16:00:41] united states naval academy  pngs=113  status=OK
+[16:00:41] university of akron  pngs=9  status=OK
+[16:00:41] university of alabama at birmingham  pngs=11  status=OK
+[16:00:41] university of alabama at huntsville  pngs=7  status=OK
+[16:00:41] university of alabama at tuscaloosa  pngs=36  status=OK
+[16:00:41] university of alaska  pngs=13  status=OK
+[16:00:41] university of alaska-anchorage  pngs=13  status=OK
+[16:00:41] university of alaska-fairbanks  pngs=10  status=OK
+[16:00:41] university of alaska-southeast  pngs=7  status=OK
+[16:00:41] university of arizona  pngs=34  status=OK
+[16:00:41] university of arkansas - fayetteville  pngs=53  status=OK
+[16:00:41] university of arkansas - little rock  pngs=12  status=OK
+[16:00:41] university of arkansas - monticello  pngs=5  status=OK
+[16:00:41] university of arkansas for medical sciences  pngs=8  status=OK
+[16:00:41] university of baltimore  pngs=11  status=OK
+[16:00:41] university of bridgeport  pngs=12  status=OK
+[16:00:42] university of california, berkeley  pngs=37  status=OK
+[16:00:42] university of california, davis  pngs=51  status=OK
+[16:00:42] university of california, irvine  pngs=24  status=OK
+[16:00:42] university of california, los angeles  pngs=32  status=OK
+[16:00:42] university of california, riverside  pngs=20  status=OK
+[16:00:42] university of california, san diego  pngs=35  status=OK
+[16:00:42] university of california, san francisco  pngs=21  status=OK
+[16:00:42] university of california, santa barbara  pngs=37  status=OK
+[16:00:42] university of california, santa cruz  pngs=53  status=OK
+[16:00:42] university of central arkansas  pngs=10  status=OK
+[16:00:42] university of central florida  pngs=38  status=OK
+[16:00:42] university of central texas  pngs=7  status=OK
+[16:00:42] university of charleston  pngs=6  status=OK
+[16:00:42] university of chicago  pngs=37  status=OK
+[16:00:42] university of cincinnati  pngs=21  status=OK
+[16:00:42] university of colorado at boulder  pngs=39  status=OK
+[16:00:42] university of colorado at colorado springs  pngs=12  status=OK
+[16:00:42] university of colorado at denver  pngs=13  status=OK
+[16:00:42] university of colorado health sciences center  pngs=10  status=OK
+[16:00:42] university of connecticut  pngs=42  status=OK
+[16:00:42] university of dallas  pngs=8  status=OK
+[16:00:42] university of dayton  pngs=11  status=OK
+[16:00:42] university of delaware  pngs=35  status=OK
+[16:00:42] university of denver  pngs=32  status=OK
+[16:00:42] university of detroit mercy  pngs=10  status=OK
+[16:00:42] university of dubuque  pngs=9  status=OK
+[16:00:42] university of evansville  pngs=10  status=OK
+[16:00:42] university of florida  pngs=62  status=OK
+[16:00:42] university of georgia  pngs=40  status=OK
+[16:00:42] university of great falls  pngs=8  status=OK
+[16:00:42] university of guam  pngs=6  status=OK
+[16:00:42] university of hartford  pngs=9  status=OK
+[16:00:42] university of hawaii at manoa  pngs=22  status=OK
+[16:00:42] university of houston  pngs=39  status=OK
+[16:00:42] university of idaho  pngs=25  status=OK
+[16:00:42] university of ilinois at urbana-champaign  pngs=28  status=OK
+[16:00:42] university of illinois at chicago  pngs=41  status=OK
+[16:00:42] university of illinois at springfield  pngs=5  status=OK
+[16:00:42] university of indianapolis  pngs=4  status=OK
+[16:00:42] university of iowa  pngs=25  status=OK
+[16:00:42] university of kansas  pngs=19  status=OK
+[16:00:42] university of kansas school of medicine  pngs=6  status=OK
+[16:00:42] university of kentucky  pngs=29  status=OK
+[16:00:42] university of la verne  pngs=7  status=OK
+[16:00:42] university of louisville  pngs=43  status=OK
+[16:00:42] university of maine  pngs=18  status=OK
+[16:00:42] university of maine at farmington  pngs=2  status=Sparse
+[16:00:42] university of maine at fort kent  pngs=1  status=Sparse
+[16:00:42] university of maine at machias  pngs=2  status=Sparse
+[16:00:42] university of maine system  pngs=3  status=OK
+[16:00:42] university of maryland - university college  pngs=6  status=OK
+[16:00:42] university of maryland at baltimore  pngs=29  status=OK
+[16:00:42] university of maryland at baltimore county  pngs=29  status=OK
+[16:00:42] university of maryland at college park  pngs=51  status=OK
+[16:00:42] university of massachusetts at amherst  pngs=35  status=OK
+[16:00:42] university of massachusetts at dartmouth  pngs=20  status=OK
+[16:00:42] university of massachusetts at lowell  pngs=17  status=OK
+[16:00:42] university of massachusetts system  pngs=26  status=OK
+[16:00:42] university of memphis  pngs=39  status=OK
+[16:00:42] university of miami  pngs=23  status=OK
+[16:00:42] university of michigan-ann arbor  pngs=76  status=OK
+[16:00:42] university of michigan-dearborn  pngs=8  status=OK
+[16:00:42] university of minnesota  pngs=35  status=OK
+[16:00:42] university of minnesota-crookston  pngs=4  status=OK
+[16:00:42] university of minnesota-duluth  pngs=7  status=OK
+[16:00:42] university of minnesota-morris  pngs=11  status=OK
+[16:00:42] university of minnesota-twin cities  pngs=35  status=OK
+[16:00:42] university of mississippi  pngs=25  status=OK
+[16:00:42] university of mississippi medical center  pngs=4  status=OK
+[16:00:42] university of missouri system  pngs=7  status=OK
+[16:00:42] university of missouri-columbia  pngs=20  status=OK
+[16:00:42] university of missouri-kansas city  pngs=12  status=OK
+[16:00:42] university of missouri-rolla  pngs=15  status=OK
+[16:00:42] university of missouri-saint louis  pngs=8  status=OK
+[16:00:42] university of montana  pngs=18  status=OK
+[16:00:42] university of nebraska, kearney  pngs=3  status=OK
+[16:00:42] university of nebraska, lincoln  pngs=23  status=OK
+[16:00:42] university of nebraska, omaha  pngs=4  status=OK
+[16:00:42] university of nevada, las vegas  pngs=21  status=OK
+[16:00:42] university of nevada, reno  pngs=11  status=OK
+[16:00:42] university of new england  pngs=7  status=OK
+[16:00:42] university of new hampshire, durham  pngs=18  status=OK
+[16:00:42] university of new haven  pngs=3  status=OK
+[16:00:42] university of new mexico  pngs=16  status=OK
+[16:00:42] university of new orleans  pngs=8  status=OK
+[16:00:42] university of north carolina at asheville  pngs=5  status=OK
+[16:00:42] university of north carolina at chapel hill  pngs=44  status=OK
+[16:00:42] university of north carolina at charlotte  pngs=10  status=OK
+[16:00:42] university of north carolina at greensboro  pngs=10  status=OK
+[16:00:42] university of north carolina at wilmington  pngs=3  status=OK
+[16:00:42] university of north carolina system  pngs=10  status=OK
+[16:00:42] university of north dakota  pngs=13  status=OK
+[16:00:42] university of north florida  pngs=36  status=OK
+[16:00:42] university of north texas  pngs=12  status=OK
+[16:00:42] university of north texas health science center  pngs=3  status=OK
+[16:00:42] university of northern colorado  pngs=6  status=OK
+[16:00:42] university of northern iowa  pngs=8  status=OK
+[16:00:42] university of notre dame  pngs=59  status=OK
+[16:00:42] university of oklahoma  pngs=22  status=OK
+[16:00:42] university of oregon  pngs=39  status=OK
+[16:00:42] university of pennsylvania  pngs=55  status=OK
+[16:00:42] university of phoenix  pngs=6  status=OK
+[16:00:42] university of pittsburgh  pngs=48  status=OK
+[16:00:42] university of pittsburgh at johnstown  pngs=19  status=OK
+[16:00:42] university of portland  pngs=11  status=OK
+[16:00:42] university of puerto rico  pngs=18  status=OK
+[16:00:42] university of puget sound  pngs=6  status=OK
+[16:00:42] university of redlands  pngs=9  status=OK
+[16:00:42] university of rhode island  pngs=26  status=OK
+[16:00:42] university of richmond  pngs=10  status=OK
+[16:00:42] university of rochester  pngs=9  status=OK
+[16:00:42] university of san diego  pngs=14  status=OK
+[16:00:42] university of san francisco  pngs=15  status=OK
+[16:00:42] university of sarasota  pngs=5  status=OK
+[16:00:42] university of science & arts of oklahoma  pngs=9  status=OK
+[16:00:42] university of scranton  pngs=8  status=OK
+[16:00:42] university of sioux falls  pngs=3  status=OK
+[16:00:42] university of south alabama  pngs=9  status=OK
+[16:00:42] university of south carolina  pngs=29  status=OK
+[16:00:42] university of south carolina - aiken  pngs=5  status=OK
+[16:00:42] university of south dakota  pngs=17  status=OK
+[16:00:42] university of south florida  pngs=37  status=OK
+[16:00:42] university of southern california  pngs=46  status=OK
+[16:00:42] university of southern colorado  pngs=5  status=OK
+[16:00:42] university of southern indiana  pngs=11  status=OK
+[16:00:42] university of southern maine  pngs=12  status=OK
+[16:00:42] university of southern mississippi  pngs=34  status=OK
+[16:00:42] university of southwestern louisiana  pngs=16  status=OK
+[16:00:42] university of tampa  pngs=11  status=OK
+[16:00:42] university of tennessee, knoxville  pngs=30  status=OK
+[16:00:42] university of tennessee, martin  pngs=4  status=OK
+[16:00:42] university of texas at arlington  pngs=28  status=OK
+[16:00:42] university of texas at austin  pngs=35  status=OK
+[16:00:42] university of texas at brownsville  pngs=6  status=OK
+[16:00:42] university of texas at dallas  pngs=24  status=OK
+[16:00:42] university of texas at el paso  pngs=23  status=OK
+[16:00:42] university of texas at san antonio  pngs=36  status=OK
+[16:00:42] university of texas at tyler  pngs=7  status=OK
+[16:00:42] university of texas health center at tyler  pngs=7  status=OK
+[16:00:42] university of texas health science center at houston  pngs=10  status=OK
+[16:00:42] university of texas health science center at san antonio  pngs=13  status=OK
+[16:00:42] university of texas m.d. anderson cancer center  pngs=15  status=OK
+[16:00:42] university of texas medical branch  pngs=13  status=OK
+[16:00:42] university of texas southwestern medical center at dallas  pngs=33  status=OK
+[16:00:42] university of texas system  pngs=29  status=OK
+[16:00:42] university of texas-pan american  pngs=7  status=OK
+[16:00:42] university of the district of columbia  pngs=7  status=OK
+[16:00:42] university of the ozarks  pngs=8  status=OK
+[16:00:42] university of the virgin islands  pngs=7  status=OK
+[16:00:42] university of toledo  pngs=11  status=OK
+[16:00:42] university of tulsa  pngs=6  status=OK
+[16:00:42] university of utah  pngs=37  status=OK
+[16:00:42] university of vermont  pngs=34  status=OK
+[16:00:42] university of virginia, charlottesville  pngs=39  status=OK
+[16:00:42] university of washington  pngs=35  status=OK
+[16:00:42] university of west alabama  pngs=9  status=OK
+[16:00:42] university of west florida  pngs=11  status=OK
+[16:00:42] university of wisconsin system  pngs=36  status=OK
+[16:00:42] university of wisconsin-eau claire  pngs=13  status=OK
+[16:00:42] university of wisconsin-green bay  pngs=11  status=OK
+[16:00:42] university of wisconsin-lacrosse  pngs=24  status=OK
+[16:00:42] university of wisconsin-madison  pngs=30  status=OK
+[16:00:42] university of wisconsin-milwaukee  pngs=21  status=OK
+[16:00:42] university of wisconsin-oshkosh  pngs=19  status=OK
+[16:00:42] university of wisconsin-parkside  pngs=10  status=OK
+[16:00:42] university of wisconsin-platteville  pngs=15  status=OK
+[16:00:42] university of wisconsin-river falls  pngs=10  status=OK
+[16:00:42] university of wisconsin-stevens point  pngs=12  status=OK
+[16:00:42] university of wisconsin-stout  pngs=9  status=OK
+[16:00:42] university of wisconsin-superior  pngs=11  status=OK
+[16:00:42] university of wisconsin-whitewater  pngs=8  status=OK
+[16:00:42] university of wyoming  pngs=14  status=OK
+[16:00:42] upper iowa university  pngs=6  status=OK
+[16:00:42] ursinus college  pngs=16  status=OK
+[16:00:42] utah state university  pngs=39  status=OK
+[16:00:42] utah valley state college  pngs=8  status=OK
+[16:00:42] valdosta state university  pngs=13  status=OK
+[16:00:42] valley city state university  pngs=6  status=OK
+[16:00:42] valparaiso university  pngs=8  status=OK
+[16:00:42] vanderbilt university  pngs=60  status=OK
+[16:00:42] vassar college  pngs=41  status=OK
+[16:00:42] vermont technical college  pngs=2  status=Sparse
+[16:00:42] villa julie college  pngs=11  status=OK
+[16:00:42] villanova university  pngs=16  status=OK
+[16:00:42] virginia commonwealth university  pngs=24  status=OK
+[16:00:42] virginia intermont college  pngs=6  status=OK
+[16:00:42] virginia military institute  pngs=28  status=OK
+[16:00:42] virginia polytechnic institute and state university  pngs=20  status=OK
+[16:00:42] virginia state university  pngs=8  status=OK
+[16:00:42] virginia wesleyan college  pngs=6  status=OK
+[16:00:42] wabash college  pngs=7  status=OK
+[16:00:42] wake forest university  pngs=37  status=OK
+[16:00:42] walden university  pngs=3  status=OK
+[16:00:42] walla walla college  pngs=8  status=OK
+[16:00:42] warren wilson college  pngs=4  status=OK
+[16:00:42] wartburg college  pngs=6  status=OK
+[16:00:42] washburn university  pngs=7  status=OK
+[16:00:42] washington & lee university  pngs=22  status=OK
+[16:00:42] washington college  pngs=16  status=OK
+[16:00:42] washington state university  pngs=22  status=OK
+[16:00:42] washington state university at tri-cities  pngs=5  status=OK
+[16:00:42] washington state university at vancouver  pngs=5  status=OK
+[16:00:42] washington university, saint louis  pngs=48  status=OK
+[16:00:42] wayne state university  pngs=19  status=OK
+[16:00:42] waynesburg college  pngs=10  status=OK
+[16:00:42] weber state university  pngs=14  status=OK
+[16:00:42] webster university  pngs=10  status=OK
+[16:00:42] wellesley college  pngs=25  status=OK
+[16:00:42] wells college  pngs=5  status=OK
+[16:00:42] wentworth institute of technology  pngs=10  status=OK
+[16:00:42] wesley college  pngs=9  status=OK
+[16:00:42] wesleyan university  pngs=36  status=OK
+[16:00:42] west chester university of pennsylvania  pngs=17  status=OK
+[16:00:42] west coast university  pngs=1  status=Sparse
+[16:00:42] west georgia college  pngs=5  status=OK
+[16:00:42] west liberty state college  pngs=10  status=OK
+[16:00:42] west texas a&m university  pngs=10  status=OK
+[16:00:42] west virginia university  pngs=23  status=OK
+[16:00:42] west virginia university at parkersburg  pngs=7  status=OK
+[16:00:42] western carolina university  pngs=11  status=OK
+[16:00:42] western connecticut state university  pngs=9  status=OK
+[16:00:42] western illinois university  pngs=5  status=OK
+[16:00:42] western kentucky university  pngs=12  status=OK
+[16:00:42] western maryland college  pngs=8  status=OK
+[16:00:42] western michigan university  pngs=12  status=OK
+[16:00:42] western montana college  pngs=7  status=OK
+[16:00:42] western new england college  pngs=6  status=OK
+[16:00:42] western new mexico university  pngs=7  status=OK
+[16:00:42] western state college  pngs=3  status=OK
+[16:00:42] western washington university  pngs=11  status=OK
+[16:00:42] westfield state college  pngs=3  status=OK
+[16:00:42] westminster college  pngs=20  status=OK
+[16:00:42] westminster college of salt lake city  pngs=4  status=OK
+[16:00:42] westminster theological seminary  pngs=9  status=OK
+[16:00:42] westmont college  pngs=6  status=OK
+[16:00:42] wheaton college  pngs=16  status=OK
+[16:00:42] wheeling jesuit college  pngs=7  status=OK
+[16:00:42] whitman college  pngs=10  status=OK
+[16:00:42] whittier college  pngs=11  status=OK
+[16:00:42] whitworth college  pngs=9  status=OK
+[16:00:42] wichita state university  pngs=10  status=OK
+[16:00:42] widener university  pngs=9  status=OK
+[16:00:42] wilberforce university  pngs=9  status=OK
+[16:00:42] wilkes university  pngs=11  status=OK
+[16:00:42] willamette university  pngs=10  status=OK
+[16:00:42] william howard taft university  pngs=1  status=Sparse
+[16:00:42] william jewell college  pngs=5  status=OK
+[16:00:42] william mitchell college of law  pngs=3  status=OK
+[16:00:42] william paterson college  pngs=15  status=OK
+[16:00:42] william penn college  pngs=5  status=OK
+[16:00:42] william woods university  pngs=2  status=Sparse
+[16:00:42] williams college  pngs=45  status=OK
+[16:00:42] wilmington college  pngs=13  status=OK
+[16:00:42] winona state university  pngs=22  status=OK
+[16:00:42] winthrop university  pngs=13  status=OK
+[16:00:42] wittenberg university  pngs=10  status=OK
+[16:00:42] wofford college  pngs=12  status=OK
+[16:00:42] woodbury university  pngs=9  status=OK
+[16:00:42] worcester polytechnic institute  pngs=16  status=OK
+[16:00:42] wright state university  pngs=4  status=OK
+[16:00:42] xavier university of louisiana  pngs=19  status=OK
+[16:00:42] yale university  pngs=61  status=OK
+[16:00:42] yeshiva university  pngs=12  status=OK
+[16:00:42] york college of pennsylvania  pngs=16  status=OK
+[16:00:42] youngstown state university  pngs=8  status=OK
+[16:00:42] Wiki probe: american coastline university
+[16:00:44] american coastline university  wiki=None  status=No Wikipedia
+[16:00:45] Wiki probe: arkansas state university, jonesboro
+[16:00:46] arkansas state university, jonesboro  wiki=None  status=No Wikipedia
+[16:00:47] Wiki probe: assumption college
+[16:00:49] assumption college  wiki=Assumption College  status=No Wiki Images
+[16:00:51] Wiki probe: avila college
+[16:00:52] avila college  wiki=Avila College  status=No Wiki Images
+[16:00:54] Wiki probe: california pacific university
+[16:00:56] california pacific university  wiki=California Pacific University  status=No Wiki Images
+[16:00:57] Wiki probe: carlow college
+[16:00:59] carlow college  wiki=Carlow College  status=No Wiki Images
+[16:01:00] Wiki probe: castleton state university
+[16:01:01] castleton state university  wiki=None  status=No Wikipedia
+[16:01:02] Wiki probe: christian theological seminary
+[16:01:04] christian theological seminary  wiki=Christian Theological Seminary  status=No Wiki Images
+[16:01:06] Wiki probe: concordia college-seward
+[16:01:07] concordia college-seward  wiki=None  status=No Wikipedia
+[16:01:08] Wiki probe: concordia college-st. paul
+[16:01:09] concordia college-st. paul  wiki=None  status=No Wikipedia
+[16:01:10] Wiki probe: concordia university river forest, illinois
+[16:01:11] concordia university river forest, illinois  wiki=None  status=No Wikipedia
+[16:01:12] Wiki probe: cornerstone college
+[16:01:14] cornerstone college  wiki=Cornerstone College  status=No Wiki Images
+[16:01:15] Wiki probe: davenport college detroit college of business
+[16:01:16] davenport college detroit college of business  wiki=None  status=No Wikipedia
+[16:01:17] Wiki probe: devry institute of technology-dallas
+[16:01:18] devry institute of technology-dallas  wiki=None  status=No Wikipedia
+[16:01:19] Wiki probe: devry institute of technology-phoenix
+[16:01:20] devry institute of technology-phoenix  wiki=None  status=No Wikipedia
+[16:01:21] Wiki probe: east stroudsburg state university of pennsylvania
+[16:01:23] east stroudsburg state university of pennsylvania  wiki=None  status=No Wikipedia
+[16:01:24] Wiki probe: franciscan university
+[16:01:26] franciscan university  wiki=Franciscan University  status=No Wiki Images
+[16:01:27] Wiki probe: greenleaf university
+[16:01:28] greenleaf university  wiki=None  status=No Wikipedia
+[16:01:30] Wiki probe: huntington college
+[16:01:33] huntington college  wiki=Huntington University of Health Sciences  status=No Wiki Images
+[16:01:34] Wiki probe: indiana university southeast at new albany
+[16:01:35] indiana university southeast at new albany  wiki=None  status=No Wikipedia
+[16:01:36] Wiki probe: indiana wesleyan university, marion
+[16:01:37] indiana wesleyan university, marion  wiki=None  status=No Wikipedia
+[16:01:38] Wiki probe: johnson & wales university-charleston
+[16:01:40] johnson & wales university-charleston  wiki=None  status=No Wikipedia
+[16:01:41] Wiki probe: knox college
+[16:01:43] knox college  wiki=Knox College  status=No Wiki Images
+[16:01:44] Wiki probe: lincoln university
+[16:01:47] lincoln university  wiki=Lincoln University  status=No Wiki Images
+[16:01:48] Wiki probe: maharishi university of management
+[16:01:50]   wiki_has_images error [Maharishi University of Management stabbing]: Expecting value: line 1 column 1 (char 0)
+[16:01:50] maharishi university of management  wiki=Maharishi University of Management stabbing  status=No Wiki Images
+[16:01:51] Wiki probe: miami christian university
+[16:01:52] miami christian university  wiki=None  status=No Wikipedia
+[16:01:53] Wiki probe: northeastern louisiana university
+[16:01:54] northeastern louisiana university  wiki=None  status=No Wikipedia
+[16:01:56] Wiki probe: northland college
+[16:01:58] northland college  wiki=Northland College  status=No Wiki Images
+[16:01:59] Wiki probe: ohio dominican college
+[16:02:00] ohio dominican college  wiki=None  status=No Wikipedia
+[16:02:01] Wiki probe: ohio university, athens
+[16:02:02] ohio university, athens  wiki=None  status=No Wikipedia
+[16:02:04] Wiki probe: pacific western university
+[16:02:06] pacific western university  wiki=Pacific Western University (Hawaii)  status=No Wiki Images
+[16:02:07] Wiki probe: pennsylvania state university-schuylkill campus
+[16:02:08] pennsylvania state university-schuylkill campus  wiki=None  status=No Wikipedia
+[16:02:09] Wiki probe: platt college
+[16:02:11] platt college  wiki=Platt College  status=No Wiki Images
+[16:02:13] Wiki probe: prescott college
+[16:02:15] prescott college  wiki=Prescott College  status=Wiki Has Images
+[16:02:16] Wiki probe: purdue university calumet
+[16:02:18] purdue university calumet  wiki=Purdue University Northwest  status=Wiki Has Images
+[16:02:19] Wiki probe: saint john's university
+[16:02:22] saint john's university  wiki=Saint John's University  status=No Wiki Images
+[16:02:23] Wiki probe: saint mary college
+[16:02:25] saint mary college  wiki=Saint Mary's College  status=No Wiki Images
+[16:02:26] Wiki probe: state university of new york college at new paltz
+[16:02:27] state university of new york college at new paltz  wiki=None  status=No Wikipedia
+[16:02:28] Wiki probe: state university of new york college of agriculture and technology at cobleskill
+[16:02:29] state university of new york college of agriculture and technology at cobleskill  wiki=None  status=No Wikipedia
+[16:02:30] Wiki probe: summit university of louisiana
+[16:02:31] summit university of louisiana  wiki=None  status=No Wikipedia
+[16:02:32] Wiki probe: the uniformed services university of the health sciences
+[16:02:33] the uniformed services university of the health sciences  wiki=None  status=No Wikipedia
+[16:02:35] Wiki probe: trinity college
+[16:02:37] trinity college  wiki=Trinity College  status=No Wiki Images
+[16:02:38] Wiki probe: united states international university
+[16:02:40] united states international university  wiki=United States International University  status=No Wiki Images
+[16:02:41] Wiki probe: university of hawaii at hilo physics and astronomy
+[16:02:42]   wiki_resolve error [university of hawaii at hilo physics and astronomy]: Expecting value: line 1 column 1 (char 0)
+[16:02:42] university of hawaii at hilo physics and astronomy  wiki=None  status=No Wikipedia
+[16:02:43] Wiki probe: university of maine at presque island
+[16:02:44]   wiki_resolve error [university of maine at presque island]: Expecting value: line 1 column 1 (char 0)
+[16:02:44] university of maine at presque island  wiki=None  status=No Wikipedia
+[16:02:45] Wiki probe: university of saint thomas
+[16:02:48]   wiki_has_images error [St. Thomas University]: Expecting value: line 1 column 1 (char 0)
+[16:02:48] university of saint thomas  wiki=St. Thomas University  status=No Wiki Images
+[16:02:49] Wiki probe: university of the pacific
+[16:02:52]   wiki_has_images error [University of the Pacific]: Expecting value: line 1 column 1 (char 0)
+[16:02:52] university of the pacific  wiki=University of the Pacific  status=No Wiki Images
+[16:02:53] Wiki probe: ursuline college ua-b
+[16:02:54] ursuline college ua-b  wiki=None  status=No Wikipedia
+[16:02:55] Wiki probe: wheaton college, norton ma
+[16:02:56] wheaton college, norton ma  wiki=None  status=No Wikipedia
+[16:02:59] Done.
