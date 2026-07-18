@@ -87,8 +87,9 @@ import java.awt.Font;
 import java.awt.Frame;
 
 import java.nio.charset.StandardCharsets;
-
-
+import java.sql.Connection;
+import java.sql.SQLDataException;
+import org.alting.PostgresDB;
 
 
 
