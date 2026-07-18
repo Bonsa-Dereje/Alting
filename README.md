@@ -1,7 +1,7 @@
 # Alting
 ![Java](https://img.shields.io/badge/Java-24-B07219?style=flat-square&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3-3776AB?style=flat-square&logo=python&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-build-C71A36?style=flat-square&logo=apachemaven&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-scraping-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 ![Status](https://img.shields.io/badge/status-active%20dev-brightgreen?style=flat-square)
@@ -24,7 +24,7 @@ A companion Python script (`fetch_logos.py`) handles fetching college logos from
 | Scraping | [Jsoup](https://jsoup.org/) + [Playwright (Java)](https://playwright.dev/java/) |
 | HTTP | Apache HttpClient |
 | JSON | Jackson + org.json |
-| Database | MySQL 8 |
+| Database | PostgreSQL |
 | Build | Maven |
 | Logo fetching | Python 3 + Playwright + Pillow |
 
@@ -38,7 +38,8 @@ Alting/
 ├── imgDataset/             # Collected college images
 ├── logs/                   # Run logs
 ├── fetch_logos.py          # Wikipedia logo fetcher (Python)
-├── scrapperDB.sql          # DB schema
+├── migrations/Schema.sql    # DB schema
+├── migrations/Seed.sql      # Seed data
 └── pom.xml
 ```
 
@@ -46,7 +47,7 @@ Alting/
 
 ## Setup
 
-**Prerequisites:** Java 24, Maven, MySQL 8, Python 3 (for logo fetching)
+**Prerequisites:** Java 24, Maven, PostgreSQL 14+, Python 3 (for logo fetching)
 
 ```bash
 # 1. Clone
@@ -54,7 +55,9 @@ git clone https://github.com/Bonsa-Dereje/Alting.git
 cd Alting
 
 # 2. Set up the database
-mysql -u root -p < scrapperDB.sql
+# 2. Set up the database
+psql -U postgres -d spotlightDB -f migrations/Schema.sql
+psql -U postgres -d spotlightDB -f migrations/Seed.sql
 
 # 3. Build and run
 mvn exec:java

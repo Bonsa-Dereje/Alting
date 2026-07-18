@@ -92,7 +92,7 @@
             <version>3.1.0</version>
             <configuration>
                 <!-- Update this to your actual main class full name -->
-                <mainClass>org.alting.MainWindow</mainClass>
+                <mainClass>org.alting.altingMainWindow</mainClass>
             </configuration>
         </plugin>
     </plugins>

@@ -1,4 +1,4 @@
-package org.alting.db;
+package org.alting;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,14 +6,14 @@ import java.sql.SQLException;
 import io.github.cdimascio.dotenv.Dotenv;
 
 public final class PostgresDB {
-    Dotenv dotenv = Dotenv.load();
-    private static final String host = dotenv.get("DB_HOST");
-    private static final String port = dotenv.get("DB_PORT");
-    private static final String database = dotenv.get("DB_DATABASE");
-    private static final String username = dotenv.get("DB_USERNAME");
-    private static final String password = dotenv.get("DB_PASSWORD");
+    private static final Dotenv staticDotenv = Dotenv.load();
+    private static final String host = staticDotenv.get("DB_HOST");
+    private static final String port = staticDotenv.get("DB_PORT");
+    private static final String database = staticDotenv.get("DB_DATABASE");
+    private static final String username = staticDotenv.get("DB_USERNAME");
+    private static final String password = staticDotenv.get("DB_PASSWORD");
 
-    String url = String.format(
+    private static final String url = String.format(
             "jdbc:postgresql://%s:%s/%s",
             host,
             port,
