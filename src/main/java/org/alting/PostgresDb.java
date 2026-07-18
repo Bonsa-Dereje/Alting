@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import io.github.cdimascio.dotenv.Dotenv;
 
-public class Main {
+public class PostgresDB {
     public static void main(String [] args) {
         Dotenv dotenv = Dotenv.load();
         String host = dotenv.get("DB_HOST");
