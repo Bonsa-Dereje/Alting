@@ -11,12 +11,12 @@ public class TelegramFetcher {
                 .userAgent("Mozilla/5.0")
                 .get();
         
-        Elements posts = doc.select("div.tgme_widget_message_wrap");
+        Elements posts = doc.select("div.tgme_widget_message[data-post]");
     if (posts.isEmpty()) {
         System.out.println("No posts found.");
     } else {
         for(Element post : posts) {
-            String dataPost = post.attr("data_post");
+            String dataPost = post.attr("data-post");
             String messageId = dataPost.substring(dataPost.indexOf('/') + 1);
 
             Element textEl = post.selectFirst("div.tgme_widget_message_text");
