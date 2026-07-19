@@ -41,3 +41,7 @@ build/
 /logos
 /handPicked
 /sniped
+
+/alting-tg/data
+
+/.env
