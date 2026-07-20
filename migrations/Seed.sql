@@ -7,5 +7,6 @@ INSERT INTO channels (channel_name, channel_username) VALUES
 ('Scholarships Corner', 'scholarshipscorner'),
 ('Scholarships & Fellowships', 'Scholarg4'),
 ('GlobeDock Scholar |Study Abroad Experts', 'GlobeDockConsultancy'),
-('ETHIO SCHOLARSHIPS CONSULT', 'ethioscholarshipopportunity')
+('ETHIO SCHOLARSHIPS CONSULT', 'ethioscholarshipopportunity'),
+('RiTZY YOUTH', 'curiousiTea')
 ON CONFLICT (channel_username) DO NOTHING;
