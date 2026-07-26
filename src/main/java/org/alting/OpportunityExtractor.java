@@ -29,7 +29,10 @@ Rules:
   no hashtags.
 - summary: 1-2 plain sentences describing what it is and what the applicant
   gets. No emojis.
-- category: choose the single best fit from the allowed values.
+- category: - category: choose the single best fit. Use "fellowship" for funded
+  fellowships/programs, "scholarship" for study funding, "job" for paid
+  employment, "training"/"workshop" for skills programs, "volunteer" for
+  unpaid roles. Use "other" only if nothing fits.
 - tags: 2-5 short lowercase keywords (e.g. "fully funded", "remote", "women").
 - deadline: the application deadline as an ISO date (YYYY-MM-DD). If no
   deadline is stated, use null. If only a month/year is given, use null.
@@ -40,4 +43,96 @@ Rules:
 - Ignore hashtags, emojis, "share this", contact numbers, and the
   "follow us @channel" footer — they are never part of the data.
 """;
+
+    private static JSONObject buildResponseFormat() {
+        JSONObject props = new JSONObject();
+        props.put("is_opportunity", new JSONObject().put("type", "boolean"));
+        props.put("title",   new JSONObject().put("type", "string"));
+        props.put("summary", new JSONObject().put("type", "string"));
+        props.put("category", new JSONObject()
+                .put("type", "string")
+                .put("enum", new JSONArray()
+                        .put("scholarship").put("internship").put("competition").put("fellowship").put("volunteer").put("job")
+                        .put("workshop").put("conference").put("hackathon").put("other")));
+        props.put("tags", new JSONObject()
+                .put("type", "array")
+                .put("items", new JSONObject().put("type", "string")));
+        props.put("deadline",        nullableString());
+        props.put("location",        nullableString());
+        props.put("target_audience", nullableString());
+        props.put("importance_level", new JSONObject()
+                .put("type", "string")
+                .put("enum", new JSONArray().put("high").put("medium").put("low")));
+
+        JSONObject schema = new JSONObject()
+                .put("type", "object")
+                .put("additionalProperties", false)
+                .put("required", new JSONArray()
+                        .put("is_opportunity").put("title").put("summary")
+                        .put("category").put("tags").put("deadline")
+                        .put("location").put("target_audience").put("importance_level"))
+                .put("properties", props);
+
+        JSONObject jsonSchema = new JSONObject()
+                .put("name", "opportunity")
+                .put("strict", true)
+                .put("schema", schema);
+
+        return new JSONObject().put("type", "json_schema").put("json_schema", jsonSchema);
+    }
+
+    // Helper: a field that may be a string OR null — {"type": ["string","null"]}
+    private static JSONObject nullableString() {
+        return new JSONObject().put("type", new JSONArray().put("string").put("null"));
+    }
+    public static JSONObject structureOnePost(String messageText) throws Exception {
+        JSONObject body = new JSONObject();
+        body.put("models", new JSONArray()
+                .put("nvidia/nemotron-3-super-120b-a12b:free")
+                .put("openai/gpt-oss-20b:free")
+                .put("google/gemma-4-26b-a4b-it:free"));
+        body.put("messages", new JSONArray()
+                .put(new JSONObject().put("role", "system").put("content", SYSTEM_PROMPT))
+                .put(new JSONObject().put("role", "user").put("content", messageText)));
+        body.put("response_format", buildResponseFormat());
+
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder(URI.create(URL))
+            .header("Authorization", "Bearer " + apiKey)
+            .header("Content-Type", "application/json")
+            .POST(HttpRequest.BodyPublishers.ofString(body.toString()))
+            .build();
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+        if (response.statusCode() != 200) {
+            System.out.println("HTTP " + response.statusCode() + ": " + response.body());
+            return null;
+        }
+        JSONObject root = new JSONObject(response.body());
+        String servedBy = root.getString("model");
+        String content = root.getJSONArray("choices")
+            .getJSONObject(0)
+            .getJSONObject("message")
+            .getString("content");
+        // Free models sometimes wrap the JSON in ```fences``` or stray text.
+        // Slice from the first '{' to the last '}' so we parse only the object.
+        int start = content.indexOf('{');
+        int end = content.lastIndexOf('}');
+        if (start < 0 || end < 0) {
+            System.out.println("No JSON found in response:\n" + content);
+            return null;
+        }
+        content = content.substring(start, end + 1);
+
+        System.out.println("served by: " + servedBy);
+        return new JSONObject(content);
+    }
+
+    public static void main(String[] args) throws Exception {
+        String post2258 = """
+            #Opportunity_Alerts📣 🚀Fully Funded Africa CDC Fellowship 2026 for Public Health Professionals🚀 ✨Are you public health professional ready to strengthen disease prevention & outbreak response across Africa? Apply for Africa CDC African Epidemic Services – Epidemiology Track Fellowship 2026. What You'll Gain: 🔹3 months of training in Addis Ababa, Ethiopia 🔹21 months of field placement in an African Union Member State 🔹Monthly stipend, travel, health insurance, learning materials & other Who Can Apply? 🔸Citizens of an AU Member State 🔸Under 35 years old 🔸Bachelor's or Master's degree in a health field 🔸At least 3 years of public health experience 🔸Proficient in at least one AU official language 📅Duration: 2 Years 🗓Program Starts: October 2026 📍Location: Addis Ababa, Ethiopia + Field Placement in an AU Member State 🔗Apply: https://ow.ly/H8O650Zob1b 📝Deadline: August 26, 2026 "If this isn't for you, please share it with others who might be interested."🙏 Follow us👇for more opportunities @opportunity_alerts
+            """;
+        JSONObject data = structureOnePost(post2258);
+        System.out.println(data.toString(2));
+    }
 }
