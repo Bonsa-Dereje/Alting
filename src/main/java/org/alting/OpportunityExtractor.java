@@ -1,5 +1,10 @@
 package org.alting;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -10,6 +15,8 @@ import io.github.cdimascio.dotenv.Dotenv;
 
 
 public class OpportunityExtractor {
+    record RawPost(long id, String channelName, String messageText, String imageUrls) {}
+
     private static final Dotenv dotenv = Dotenv.load();
     private static final String apiKey = dotenv.get("OPENROUTER_API_KEY");
     private static final String URL = "https://openrouter.ai/api/v1/chat/completions";   
@@ -127,6 +134,34 @@ Rules:
         System.out.println("served by: " + servedBy);
         return new JSONObject(content);
     }
+
+    public static void processUnprocessed() throws Exception {
+    List<RawPost> posts = new ArrayList<>();
+
+    String selectSql =
+        "SELECT id, channel_name, message_text, image_urls FROM raw_posts " +
+        "WHERE processed = false AND message_text <> 'no text' " +
+        "ORDER BY id LIMIT 3";
+
+    try (Connection conn = PostgresDB.getConnection();
+         PreparedStatement ps = conn.prepareStatement(selectSql);
+         ResultSet rs = ps.executeQuery()) {
+
+        while (rs.next()) {
+            posts.add(new RawPost(
+                rs.getLong("id"),
+                rs.getString("channel_name"),
+                rs.getString("message_text"),
+                rs.getString("image_urls")));
+        }
+    }
+
+    System.out.println("Read " + posts.size() + " posts:");
+    for (RawPost post : posts) {
+        System.out.println("  #" + post.id() + "  " + post.channelName());
+    }
+}
+
 
     public static void main(String[] args) throws Exception {
         String post2258 = """
