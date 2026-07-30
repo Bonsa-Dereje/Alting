@@ -36,7 +36,7 @@ Rules:
   no hashtags.
 - summary: 1-2 plain sentences describing what it is and what the applicant
   gets. No emojis.
-- category: - category: choose the single best fit. Use "fellowship" for funded
+- category: choose the single best fit. Use "fellowship" for funded
   fellowships/programs, "scholarship" for study funding, "job" for paid
   employment, "training"/"workshop" for skills programs, "volunteer" for
   unpaid roles. Use "other" only if nothing fits.
@@ -141,7 +141,7 @@ Rules:
     String selectSql =
         "SELECT id, channel_name, message_text, image_urls FROM raw_posts " +
         "WHERE processed = false AND message_text <> 'no text' " +
-        "ORDER BY id LIMIT 3";
+        "ORDER BY id LIMIT 45";
 
     try (Connection conn = PostgresDB.getConnection();
          PreparedStatement ps = conn.prepareStatement(selectSql);
@@ -157,17 +157,86 @@ Rules:
     }
 
     System.out.println("Read " + posts.size() + " posts:");
-    for (RawPost post : posts) {
-        System.out.println("  #" + post.id() + "  " + post.channelName());
+    int opportunities = 0, junk = 0, failed = 0, consecutiveFails = 0;
+
+        String insertSql =
+        "INSERT INTO spotlight_opportunities " +
+        "(raw_post_id, title, summary, category, tags, deadline, location, " +
+        " target_audience, importance_level, image_url, source_channel_name, original_post) " +
+        "VALUES (?, ?, ?, ?, ?::jsonb, ?::timestamptz, ?, ?, ?, ?, ?, ?) " +
+        "ON CONFLICT (raw_post_id) DO NOTHING";
+    String markSql = "UPDATE raw_posts SET processed = true WHERE id = ?";
+
+    try (Connection conn = PostgresDB.getConnection();
+         PreparedStatement insert = conn.prepareStatement(insertSql);
+         PreparedStatement mark = conn.prepareStatement(markSql)) {
+
+        for (RawPost post : posts) {
+            JSONObject data = structureOnePost(post.messageText());
+            Thread.sleep(3500);   // pace: stay under 20 requests/minute
+
+            if (data == null) {                        // AI failed — leave for next run
+                failed++;
+                consecutiveFails++;
+                if(consecutiveFails > 3) {
+                    System.out.println(" More than 3 failures in a row, Likely Rate-Limited. Stopping.");
+                    break;
+                }
+                continue;
+            }
+            consecutiveFails = 0;
+            if (!data.getBoolean("is_opportunity")) {  // junk — mark done, insert nothing
+                junk++;
+                mark.setLong(1, post.id());
+                mark.executeUpdate();
+                System.out.println("#" + post.id() + "  not an opportunity");
+                continue;
+            }
+
+            // A model occasionally returns is_opportunity=true with a blank title.
+            // Treat that like junk: mark done, insert nothing (no empty cards).
+            if (data.getString("title").isBlank()) {
+                junk++;
+                mark.setLong(1, post.id());
+                mark.executeUpdate();
+                System.out.println("#" + post.id() + "  blank title, skipped");
+                continue;
+            }
+
+            opportunities++;
+            JSONArray imgs = new JSONArray(post.imageUrls());
+            String imageUrl = imgs.isEmpty() ? null : imgs.getString(0);
+
+            insert.setLong(1, post.id());
+            insert.setString(2, data.getString("title"));
+            insert.setString(3, data.getString("summary"));
+            insert.setString(4, data.getString("category"));
+            insert.setString(5, data.getJSONArray("tags").toString());
+            insert.setString(6, data.isNull("deadline") ? null : data.getString("deadline"));
+            insert.setString(7, data.isNull("location") ? null : data.getString("location"));
+            insert.setString(8, data.isNull("target_audience") ? null : data.getString("target_audience"));
+            insert.setString(9, data.getString("importance_level"));
+            insert.setString(10, imageUrl);
+            insert.setString(11, post.channelName());
+            insert.setString(12, post.messageText());
+            insert.executeUpdate();
+
+            mark.setLong(1, post.id());
+            mark.executeUpdate();
+            System.out.println("#" + post.id() + "  -> " + data.getString("title"));
+        }
     }
+    System.out.println("opportunity=" + opportunities + " junk=" + junk + " failed=" + failed);
 }
 
 
     public static void main(String[] args) throws Exception {
-        String post2258 = """
-            #Opportunity_Alerts📣 🚀Fully Funded Africa CDC Fellowship 2026 for Public Health Professionals🚀 ✨Are you public health professional ready to strengthen disease prevention & outbreak response across Africa? Apply for Africa CDC African Epidemic Services – Epidemiology Track Fellowship 2026. What You'll Gain: 🔹3 months of training in Addis Ababa, Ethiopia 🔹21 months of field placement in an African Union Member State 🔹Monthly stipend, travel, health insurance, learning materials & other Who Can Apply? 🔸Citizens of an AU Member State 🔸Under 35 years old 🔸Bachelor's or Master's degree in a health field 🔸At least 3 years of public health experience 🔸Proficient in at least one AU official language 📅Duration: 2 Years 🗓Program Starts: October 2026 📍Location: Addis Ababa, Ethiopia + Field Placement in an AU Member State 🔗Apply: https://ow.ly/H8O650Zob1b 📝Deadline: August 26, 2026 "If this isn't for you, please share it with others who might be interested."🙏 Follow us👇for more opportunities @opportunity_alerts
-            """;
-        JSONObject data = structureOnePost(post2258);
-        System.out.println(data.toString(2));
+        // String post2258 = """
+        //     #Opportunity_Alerts📣 🚀Fully Funded Africa CDC Fellowship 2026 for Public Health Professionals🚀 ✨Are you public health professional ready to strengthen disease prevention & outbreak response across Africa? Apply for Africa CDC African Epidemic Services – Epidemiology Track Fellowship 2026. What You'll Gain: 🔹3 months of training in Addis Ababa, Ethiopia 🔹21 months of field placement in an African Union Member State 🔹Monthly stipend, travel, health insurance, learning materials & other Who Can Apply? 🔸Citizens of an AU Member State 🔸Under 35 years old 🔸Bachelor's or Master's degree in a health field 🔸At least 3 years of public health experience 🔸Proficient in at least one AU official language 📅Duration: 2 Years 🗓Program Starts: October 2026 📍Location: Addis Ababa, Ethiopia + Field Placement in an AU Member State 🔗Apply: https://ow.ly/H8O650Zob1b 📝Deadline: August 26, 2026 "If this isn't for you, please share it with others who might be interested."🙏 Follow us👇for more opportunities @opportunity_alerts
+        //     """;
+        // JSONObject data = structureOnePost(post2258);
+        // System.out.println(data.toString(2));
+        TelegramFetcher.fetchAllChannels();
+        processUnprocessed();
     }
 }
